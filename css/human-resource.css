@@ -1,0 +1,14 @@
+.human-resource .box-menus .item-box {
+  background-image: none !important;
+  background-color: transparent !important;
+  min-height: 350px;
+}
+
+.human-resource .main-nav{
+  background: url(../images/sub-pages/human-resource-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.human-resource .main-nav .col-sm-6 {
+  padding: 0;
+}

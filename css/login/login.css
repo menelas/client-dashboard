@@ -1,0 +1,130 @@
+/************ Log in Page ************/
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  color: #005697;
+  margin: 0 auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  font-size: 12px;
+  color: #777;
+}
+
+.form-signin form {
+  padding: 70px 40px;
+  background-color: #fff;
+}
+
+.form-signin fieldset {
+  border: 1px solid #005697;
+}
+
+.form-signin fieldset legend {
+  width: auto;
+  margin: 0 10px;
+  padding: 0 5px;
+  font-size: inherit;
+}
+
+.label-top-wr input {
+  border: 0;
+  padding: 10px 15px;
+}
+
+.label-top-wr {
+  position: relative;
+  border: 1px solid #005697;
+}
+
+.label-top-wr span.label-top {
+  position: absolute;
+  background-color: #fff;
+  z-index: 5;
+  top: -12px;
+  left: 10px;
+  padding: 0 5px;
+}
+
+.label-top-wr input:focus {
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+}
+
+h1.welcome {
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.welcome span {
+  letter-spacing: 5px;
+  font-size: 22px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.form-signin .forgot-password {
+  text-decoration: underline;
+
+}
+
+.input-group-prepend-log-in span.input-group-text {
+  background: #005697;
+  color: #fff;
+  border: none;
+  padding: 0 0 0 10px;
+}
+
+.input-group-prepend-log-in select {
+  background: #005697;
+  color: #fff;
+  border: none;
+}
+
+.input-group-prepend-log-in select:focus {
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+}
