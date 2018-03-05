@@ -27,12 +27,6 @@
             $('.btn-open').show();
         }
     });
-    $('.btn-search').click(function(e){
-        e.preventDefault();
-        $('.search-nav-wrap .form-s-wrap').addClass('f-expanded');
-        $('.search-nav-wrap form input.input-md').focus();
-        $('.search-nav-wrap form').show();
-    });
     $('.item-box h4').click(function(e){
         $(this).parents('.item-box').addClass("p-a-actived");
         $(this).siblings('.btn-learn-more').addClass("a-actived");

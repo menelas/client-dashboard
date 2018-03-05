@@ -336,6 +336,7 @@
      border: 0;
      overflow: hidden;
 }
+
  .box-menus .item-box:before, .box-menus .collapse-menu:before {
      content: '';
      position: absolute;
@@ -458,6 +459,7 @@
      z-index: 3;
      height: 100%;
      width: 100%;
+     cursor: pointer;
 }
 /************ Top Navigation ************/
  .top-navi{
@@ -659,6 +661,7 @@
 }
 
 /************ Global Navigation Styling ************/
+
  div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right {
      display: block !important;
      position: absolute;
@@ -684,7 +687,7 @@
      top: -25px;
 }
  .expanded-menu-3{
-     top: -40px;
+     top: -54px;
 }
 
 .expanded-menu-4{
@@ -783,3 +786,80 @@
     }
 }
  
+
+/************ Global Modal ************/
+
+.modal-content {
+  position: relative;
+}
+
+.modal-header .close{
+  top: 10px;
+  right: 10px;
+  left: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+.image-modal{
+  position: absolute;
+  top: 15px;left: 0;
+}
+
+.pt-image{
+  padding-top: 90px !important;
+}
+.pt-image a{
+  color: #045791;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.pt-image a i{
+  margin-right: 5px;
+}
+.call-action.col-6{
+  padding: 0 10px;
+}
+.call-action h3{
+  margin-bottom: 15px;
+}
+.call-action p{
+  margin-bottom: 25px;
+  line-height: 22px;
+}
+.modal-title{
+  margin: 0;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: bold;
+}
+.call-action a.btn-primary {
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 10px;
+}
+.modal-header {
+  padding: 1rem;
+}
+.main-nav .modal-body .col-sm-6 {
+  padding: 1rem;
+}
+@media (max-width: 1300px){
+  .pt-image {
+    padding-top: 120px !important;
+  }
+}
+@media (max-width: 575px){
+  .image-modal {
+    position: static;
+  }
+  .pt-image {
+    padding-top: 0 !important;
+  }
+  .modal-title {
+    text-align: center;
+  }
+}
