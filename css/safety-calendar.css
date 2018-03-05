@@ -1,0 +1,14 @@
+.safety-calendar .box-menus .item-box {
+  background-image: none !important;
+  background-color: transparent !important;
+  min-height: 600px;
+}
+
+.safety-calendar .main-nav{
+  background: url(../images/sub-pages/safety-calendar-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.safety-calendar .box-menus h4 a span {
+  text-align: center;
+}

@@ -1,3 +1,35 @@
+/************ Form ************/
+
 .form-control {
 	border: 1px solid #62bdf5;
+}
+
+
+/************ Modal ************/
+
+.modal-dialog {
+	color: #000;
+}
+
+.modal-content {
+	border-radius: 0;
+}
+
+.modal-title {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.modal-header {
+	background-image: linear-gradient(to bottom right,#2c83bc,#0f66a3);
+	color: #fff;
+	border-radius: 0;
+	padding: 30px;
+}
+
+.modal-header .close {
+	color: #fff;
+	opacity: 1;
+	padding: 0px;
 }

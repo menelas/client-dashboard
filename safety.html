@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="favicon.ico">
 
-    <title>myIOA</title>
+    <title>Insurance Office of America - myIOA</title>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -14,15 +14,15 @@
     <link href="fonts/specimen_files/specimen_stylesheet.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/app.bootstrap.css" rel="stylesheet">
     <link href="css/safety.css" rel="stylesheet">
 </head>
 
 <body class="safety">
     <div class="container-fluid p-0 nav-bread">
         <div class="row no-gutters">
-            <div class="col-3 col-sm-1"><a class="back" href="dashboard.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a></div>
-            <div class="col-9 col-sm-11">
+            <div class="col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1"><a class="back" href="dashboard.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a></div>
+            <div class="col-9 col-sm-9 col-md-11 col-lg-11 col-xl-11">
                 <nav aria-label="breadcrumb">
                     <ul class="breadcrumb p-0">
                         <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
@@ -36,29 +36,88 @@
         <span class="btn-open rounded-circle"><i class="fa fa-align-right" aria-hidden="true"></i></span>
         <div class="main-nav">
             <div class="row no-gutters box-menus">
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center dash-transition" id="safety">
-                    <a href="#" class="cover-href"></a>
+                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="safety">
+                    <a href="https://lms.ioausa.com/main.aspx" target="_blank" class="cover-href"></a>
                     <h4 class="d-inline-flex align-items-center"><span class="ext-link"></span> <span>Learning<br />Management<br />System</span></h4>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="human-resource">
-                    <a href="#" class="cover-href"></a>
-                    <h4 class="d-inline-flex align-items-center"><span class="ext-link"></span> <span>IOA RiskScore<br />Client Portal</span></h4>
+                    <a href="http://www.ioausa.com/riskscore/" target="_blank" class="cover-href"></a>
+                    <h4 class="d-inline-flex align-items-center"><span class="ext-link"></span> <span>RiskScore<sup>&reg;</sup></span></h4>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="employee-benefits">
-                    <a href="#" class="cover-href"></a>
+                    <a href="https://safetylinks.net/" target="_blank" class="cover-href"></a>
                     <h4 class="d-inline-flex align-items-center"><span class="ext-link"></span> <span>Safety Links</span></h4>
                 </div>
+
+                <!--
                 <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="documents">
                     <a href="#" class="cover-href"></a>
                     <h4 class="d-inline-flex align-items-center"><span>Safety Calendar</span></h4>
                 </div>
+
+                -->
+
+                    <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center justify-content-center dash-transition nav-has-sub" id="middle-left-container" tabindex="4">
+                        <h4 class="d-inline-flex align-items-center"><span>Safety Calendar</span></h4>
+
+                        <div id="middle-left" class="expanded-menu expanded-menu-2 align-items-center justify-content-center dash-transition">
+                            <span class="exit pull-right"><a href="#">X</a></span>
+                            <h4 class="d-inline-flex flex-column">
+
+                                <a href="#"><span class="dash-8"></span> <span>Seay<br />Management</span></a>
+                                <ul class="nav-sub-2 text-left">
+                                    <li><a href="#">Policies and Certicates</a></li>
+                                    <li><a href="#">ID Cards</a></li>
+                                    <li><a href="#">Risk Manavement</a></li>
+                                    <li><a href="#">Service Calendar</a></li>
+                                    <li><a href="#">My Team</a></li>
+                                    <li><a href="#">News and Information</a></li>
+                                </ul>
+                            </h4>
+                        </div>
+
+                    </div>
+
+
+
                 <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="business-insurance">
-                    <a href="#" class="cover-href"></a>
+                    <a href="https://www.osha.gov/" target="_blank" class="cover-href"></a>
                     <h4 class="d-inline-flex align-items-center"><span class="ext-link"></span> <span>OSHA</span></h4>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="claims">
-                    <a href="#" class="cover-href"></a>
+                    <a data-toggle="modal" data-target="#safety-manual" class="cover-href"></a>
                     <h4 class="d-inline-flex align-items-center"><span class="pdf-file"></span> <span>Safety Manual</span></h4>
+                </div>
+
+                <!-- Safety Manual Modal -->
+                <div class="modal fade" id="safety-manual" tabindex="-1" role="dialog" aria-labelledby="safety-manuallLabel" aria-hidden="true">
+                  <div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <div class="col-6 col-sm-6"><img src="images/sub-pages/seay.jpg" alt="Seay" /></div>
+                          <div class="col-6 col-sm-6">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+
+                          <h5 class="modal-title" id="safety-manualLabel">Seay Management</h5>
+
+                          </div>
+
+                
+                    
+                      </div>
+                      <div class="modal-body">
+                        <h3>Hotline</h3>
+                            <div class="row">
+                                <div class="col-sm-4">e</div>
+                                <div class="col-sm-8">e</div>
+                                <div class="col-sm-4">e</div>
+                                <div class="col-sm-8">e</div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

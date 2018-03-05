@@ -1,10 +1,10 @@
-.safety .box-menus .item-box{
+.safety .box-menus .item-box {
   background-image: none !important;
   background-color: transparent !important;
   min-height: 350px;
 }
 
-.safety .main-nav{
+.safety .main-nav {
   background: url(../images/sub-pages/safety-bg.jpg) no-repeat;
   background-size: cover;
 }

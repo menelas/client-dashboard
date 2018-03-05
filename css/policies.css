@@ -1,0 +1,108 @@
+.policies .main-nav{
+  background: #4978ae;
+}
+.policies .box-menus .item-box:hover {
+  border: 0;
+  cursor: inherit;
+}
+.policies .box-menus .item-box:before {
+  display: none;
+}
+#policies-fap{
+  padding-bottom: 5%;
+  background-image: url(../images/dashboard/business-insurance.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.links-list li{
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 7px;
+}
+.links-list li:before{
+  position: absolute;
+  content: "\f08e";
+  left: 0;
+  top: 0;
+  font-family: "fontAwesome"
+}
+#search-items{
+  background-color: #fff;
+  color: #000;
+  padding: 0;
+}
+#search-items a{
+  color: #000;
+}
+.main-nav #start-date.col-sm-6, .main-nav #ends-date.col-sm-6{
+  padding: 0;
+}
+#start-date li, #ends-date li{
+  padding: 15px 5px;
+  margin-bottom: 10px;
+  height: 51px;
+}
+#start-date li:hover, #ends-date li:hover, #start-date li.active, #ends-date li.active{
+  background-color: #d42043;
+  color: #fff;
+}
+#start-date li:first-child, #ends-date li:first-child{
+  background-color: #005596;
+}
+#search-items select{
+  padding: 15px 10px;
+  height: 51px;
+  border: 1px solid #646565;
+  width: 100%;
+}
+#search-items input{
+  height: 51px;
+  padding: 15px 55px 15px 10px;
+  border: 1px solid #646565;
+  border-left: 0;
+  width: 100%;
+}
+.col-results{
+  padding: 10px 0;
+}
+.col-results .list li{
+  padding: 10px 15px 10px 90px;
+}
+.col-results .list li a.policy-file{
+  position: relative;
+}
+.col-results .list li a.policy-file:before{
+  content: "\f1c1";
+  padding-right: 50px;
+  font-size: 30px;
+  vertical-align: middle;
+  font-family: "fontAwesome"
+}
+.p-search-wrap:after{
+  position: absolute;
+  content: "\f002";
+  left: auto;
+  font-size: 20px;
+  top: 50%;
+  font-family: "fontAwesome";
+  right: 15px;
+  margin-top: -10px;
+}
+.col-results .list li:hover, .col-results .list li.active{
+  background-color: #4878af;
+  color: #fff;
+}
+#search-items .list li:hover a, #search-items .list li.active a{
+  color: #fff;
+}
+.poli-actions{
+  float: right;
+  display: none;
+}
+.poli-actions i{
+  padding: 0 6px;
+}
+.col-results .list li:hover .poli-actions, .col-results .list li.active .poli-actions{
+  display: inline-block;
+}

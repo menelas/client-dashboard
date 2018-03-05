@@ -1,14 +1,51 @@
 .human-resource .box-menus .item-box {
-  background-image: none !important;
-  background-color: transparent !important;
-  min-height: 350px;
+     background-image: none !important;
+     background-color: transparent !important;
+     min-height: 350px;
 }
-
-.human-resource .main-nav{
-  background: url(../images/sub-pages/human-resource-bg.jpg) no-repeat;
-  background-size: cover;
+ .human-resource .main-nav{
+     background: url(../images/sub-pages/human-resource-bg.jpg) no-repeat;
+     background-size: cover;
 }
-
-.human-resource .main-nav .col-sm-6 {
-  padding: 0;
+ .human-resource .main-nav .col-sm-6 {
+     padding: 0;
 }
+ h4.d-inline-flex.flex-column{
+     padding-top: 70px;
+}
+ h4.d-inline-flex.flex-column.aca{
+     padding-top: 180px;
+}
+ .box-menus .expanded-menu:before{
+     background-color: #1e518a;
+}
+ .employee-benefits .box-menus h4 a span {
+     text-align: center;
+}
+ div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right{
+     background: #1e518a;
+}
+ div#top-middle-container:focus div#top-middle{
+     height: 104% !important;
+}
+ @media (max-width: 767px) {
+     div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right{
+         width: 100% !important;
+    }
+     h4.d-inline-flex.flex-column.aca{
+         padding-top: 70px;
+    }
+     div#top-middle-container:focus div#top-middle {
+         height: 307% !important;
+    }
+     div#top-middle-container:focus body{
+         overflow-y: hidden;
+    }
+}
+ #top-left-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li {
+     padding-bottom: 0;
+}
+ #top--container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #business-insurance > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #news > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a {
+     padding-top: 0;
+}
+ 
