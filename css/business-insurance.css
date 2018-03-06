@@ -1,11 +1,11 @@
 .business-insurance .box-menus .item-box {
   background-image: none !important;
   background-color: transparent !important;
-  min-height: 600px;
+  min-height: 350px;
 }
 
 .business-insurance .main-nav{
-  background: url(../images/sub-pages/employee-benefits-bg.jpg) no-repeat;
+  background: url(../images/sub-pages/business-insurance-bg.jpg) no-repeat;
   background-size: cover;
 }
 

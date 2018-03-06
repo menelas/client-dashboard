@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="favicon.ico">
 
-    <title>myIOA</title>
+    <title>Insurance Office of America - myIOA</title>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -16,6 +16,7 @@
     <link href="css/app.css" rel="stylesheet">
     <link href="css/app.bootstrap.css" rel="stylesheet">
     <link href="css/human-resource.css" rel="stylesheet">
+
 </head>
 
 <body class="human-resource">
@@ -39,24 +40,26 @@
         <div class="main-nav">
             <div class="row no-gutters box-menus">
                 <div class="col-12 col-sm-6 col-md-4">
-                    <div class="item-box item-box-hover d-flex align-items-center justify-content-center dash-transition">
+                    <div class="item-box item-box-hover d-flex align-items-center justify-content-center dash-transition" id="top-left-container" tabindex="1">
                         <a href="http://www.seay.us/index.shtml" target="_blank" class="cover-href"></a>
-                        <h4 class="d-inline-flex"><span class="ext-link"></span> <span>Seay<br />Management</span></h4>
+                        <h4 class="d-inline-flex align-items-center human"><span class="ext-link"></span> <span>Seay<br />Management</span></h4>                        
                     </div>
-                    <div class="item-box item-box-hover d-flex align-items-center justify-content-center dash-transition">
+
+
+                    <div class="item-box item-box-hover d-flex align-items-center justify-content-center dash-transition" id="bottom-left-container" tabindex="2">
                         <a href="https://www.zywave.net/clientportallogin.asp" target="_blank" class="cover-href"></a>
-                        <h4 class="d-inline-flex align-items-center"><span class="ext-link"></span> <span>RiskScore<sup>&reg;</sup></span></h4>
+                        <h4 class="d-inline-flex align-items-center human"><span class="ext-link"></span> <span>RiskScore<sup>&reg;</sup></span></h4>
                     </div>
                 </div>
 
 
                 <div class="col-12 col-sm-6 col-md-4 ful">
                     <div class="item-box item-box-hover d-flex align-items-center justify-content-center dash-transition nav-has-sub h-100" id="top-middle-container" tabindex="3">
-                        <h4 class="d-inline-flex align-items-center"><span class="pdf-file"></span> <span>ACA<br />Updates</span></h4>
+                        <h4 class="d-inline-flex align-items-center aca"><span class="pdf-file"></span> <span>ACA<br />Updates</span></h4>
                         <div id="top-middle" class="expanded-menu expanded-menu-2 align-items-center justify-content-center dash-transition">
 
                             <span class="exit pull-right"><a href="#">X</a></span>
-                            <h4 class="d-inline-flex flex-column aca">
+                            <h4 class="d-inline-flex flex-column acatall">
 
                                 <a href="#"><span class="dash-8"></span><span class="pdf-file"></span> <span>ACA<br />Updates</span></a>
                                 <ul class="nav-sub-2 text-left">
@@ -74,23 +77,23 @@
 
                 <!-- PDF Modal -->
                 <div class="modal fade" id="pdf-open" tabindex="-1" role="dialog" aria-labelledby="pdf-openlLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg h-50 d-flex flex-column justify-content-center my-0" role="document">
+                    <div class="modal-dialog modal-lg d-flex flex-column justify-content-center my-0" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                           </button>
-                                <div class="col-12">
+                                <div class="col-12s">
                                     <h5 class="modal-title" id="pdf-openLabel"><strong>Sample PDF Document</strong></h5>
                                 </div>
 
                             </div>
                             <div class="modal-body">
-                                <div class="col-12">
-                                    <object width="100%" height="200px" type="application/pdf" data="docs/pdf-sample.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
+
+                                <object width="100%" height="100%" type="application/pdf" data="docs/pdf-sample.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
                                 <p>Error for IE. PDF Cannot be displayed. </p>
                                 </object>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -100,15 +103,15 @@
 
                     <div class="item-box item-box-hover d-flex align-items-center justify-content-center dash-transition nav-has-sub" id="top-right-container" tabindex="4">
                         <a href="https://merchantsinfo.com" target="_blank" class="cover-href"></a>
-                        <h4 class="d-inline-flex align-items-center"><a href="#"><span class="ext-link"></span> <span>Integrity<br />Testing</span></a></h4>
+                        <h4 class="d-inline-flex align-items-center human"><a href="#"><span class="ext-link"></span> <span>Integrity<br />Testing</span></a></h4>
                     </div>
 
                     <div class="item-box item-box-hover d-flex align-items-center justify-content-center dash-transition nav-has-sub" id="bottom-right-container" tabindex="5">
-                        <h4 class="d-inline-flex align-items-center"><a href="#"><span class="ext-link"></span> <span>Background<br />Check</span></a></h4>
+                        <h4 class="d-inline-flex align-items-center human"><a href="#"><span class="ext-link"></span> <span>Background<br />Check</span></a></h4>
 
                         <div id="bottom-right" class="expanded-menu expanded-menu-4 align-items-center justify-content-center dash-transition">
                             <span class="exit pull-right"><a href="#">X</a></span>
-                            <h4 class="d-inline-flex flex-column">
+                            <h4 class="d-inline-flex flex-column human">
 
                                 <a href="#"><span class="dash-8"></span><span class="ext-link"></span> <span>Background<br />Check</span></a>
                                 <ul class="nav-sub-2 text-left">
@@ -130,7 +133,7 @@
     </div>
 
     <footer>
-        <a href="#"><img alt="Logo" src="images/logo.png"></a>
+        <a href="#"><img alt="Insurance Office of America" src="images/logo.png"></a>
         <div class="ft-quote">
             “Success seems to be connected with action. Successful people keep moving. They make mistakes but they never quit.” <strong>—  Conrad Hilton</strong>
         </div>

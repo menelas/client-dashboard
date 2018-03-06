@@ -2,13 +2,6 @@
  .btn-event {
      padding: 13.5px;
 }
- .dash-transition {
-     -webkit-transition: all 0.25s ease;
-     -moz-transition: all 0.25s ease;
-     -ms-transition: all 0.25s ease;
-     -o-transition: all 0.25s ease;
-     transition: all 0.25s ease;
-}
  #safety > .bg-cover-img{
      background-image: url("../images/dashboard/safety.jpg");
     background-repeat: no-repeat;
@@ -21,64 +14,50 @@
     height: 100% 
 }
  #employee-benefits > .bg-cover-img {
-     background-image: url("../images/dashboard/employee-benefits.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/dashboard/employee-benefits.jpg") no-repeat center;
     background-size: cover;
-    background-position: center 
+}
+#news > .bg-cover-img {
+    background: url("../images/dashboard/news.jpg") no-repeat center;
+    background-size: cover;
 }
  #documents > .bg-cover-img{
-     background-image: url("../images/dashboard/documents.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/dashboard/documents.jpg") no-repeat center;
     background-size: cover;
-    background-position: center 
 }
  #claims > .bg-cover-img{
-     background-image: url("../images/dashboard/claims.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/dashboard/claims.jpg") no-repeat center;
     background-size: cover;
-    background-position: center 
 }
  #business-insurance > .bg-cover-img{
-     background-image: url("../images/dashboard/business-insurance.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/dashboard/business-insurance.jpg") no-repeat center;
     background-size: cover;
-    background-position: center 
 }
  #risk-score > .bg-cover-img {
-     background-image: url("../images/dashboard/risk-score.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/dashboard/risk-score.jpg") no-repeat center;
     background-size: cover;
-    background-position: center 
 }
  #webinar > .bg-cover-img {
-     background-image: url("../images/dashboard/webinar.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/dashboard/webinar.jpg") no-repeat center;
     background-size: cover;
-    background-position: center 
 }
  #human-resource > .bg-cover-img{
-     background-image: url("../images/dashboard/human-resource.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/dashboard/human-resource.jpg") no-repeat center;
     background-size: cover;
-    background-position: center 
 }
  #middle-middle-container .image-tran-wrap .bg-cover-img{
-     background-image: url("../images/dashboard/business-insurance.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/dashboard/business-insurance.jpg") no-repeat center;
     background-size: cover;
-    background-position: center 
 }
  #middle-middle-container > .bg-cover-img, #middle-middle-container .image-tran-wrap .bg-cover-img{
-     background-image: url("../images/dashboard/business-insurance.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 
+    background-position: center; 
 }
  #bottom-middle-container .bg-cover-img {
-     background-image: url("../images/dashboard/news.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 
+    background-position: center;
 }
  .dash-1 {
      background: url("../images/dashboard/icons/dash-1.png") no-repeat;
@@ -104,7 +83,6 @@
      background: url("../images/dashboard/icons/dash-5.png") no-repeat;
      width: 50px;
      height: 35px;
-     margin-top: 10px;
 }
  .dash-6 {
      background: url("../images/dashboard/icons/dash-6.png") no-repeat;
@@ -226,27 +204,6 @@
      .webinar {
          height: auto !important;
     }
-}
- .image-transition {
-     -webkit-transition: 0.8s;
-     -moz-transition: 0.8s;
-     -o-transition: 0.8s;
-     -ms-transition: 0.8s;
-     transition: 0.8s;
-     height: auto;
-}
- .image-transition:hover, .box-menus .item-box:hover .image-transition {
-     -moz-transform: scale(1.25) rotate(0deg);
-     -webkit-transform: scale(1.25) rotate(0deg);
-     -o-transform: scale(1.25) rotate(0deg);
-     -ms-transform: scale(1.25) rotate(0deg);
-     transform: scale(1.25) rotate(0deg);
-     -webkit-transition: 5s;
-     -moz-transition: 5s;
-     -o-transition: 5s;
-     -ms-transition: 5s;
-     transition: 5s;
-     background-color: red !important;
 }
  .carousel-control-prev {
      left: -21%;

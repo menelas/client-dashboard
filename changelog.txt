@@ -1,5 +1,9 @@
-## 2018-02-28
-• Initial commit
+## 2018-03-06
+• Updated dashboard, and human resources page
+• Started working on employee benefits, business insurance, and safety calendar
 
 ## 2018-03-05
-• Created dashboard, safety, and Human Resources page
+• Created dashboard, safety, and human resources page
+
+## 2018-02-28
+• Initial commit
