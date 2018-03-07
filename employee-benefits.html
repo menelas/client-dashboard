@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="favicon.ico">
 
-    <title>myIOA</title>
+    <title>Insurance Office of America - myIOA</title>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -14,13 +14,14 @@
     <link href="fonts/specimen_files/specimen_stylesheet.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
+    <link href="css/app.bootstrap.css" rel="stylesheet">
     <link href="css/employee-benefits.css" rel="stylesheet">
 </head>
 
 <body class="employee-benefits">
     <div class="container-fluid p-0 nav-bread">
         <div class="row no-gutters">
-            <di<div class="col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1"><a class="back" href="dashboard.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a></div>
+            <div class="col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1"><a class="back" href="dashboard.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a></div>
             <div class="col-9 col-sm-9 col-md-11 col-lg-11 col-xl-11">
                 <nav aria-label="breadcrumb">
                     <ul class="breadcrumb p-0">
@@ -35,32 +36,227 @@
         <span class="btn-open rounded-circle"><i class="fa fa-bars" aria-hidden="true"></i></span>
         <div class="main-nav">
             <div class="row no-gutters box-menus">
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="safety">
-                    <h4 class="d-inline-flex"><a href="#"><span>My Account</span></a></h4>
+                <div class="col-6 col-sm-6 col-md-3 item-box item-box-hover d-flex align-items-center justify-content-center dash-transition">
+                    <a href="#" target="_blank" class="cover-href"></a>
+                    <h4 class="d-inline-flex"><span>Calendar of<br />Service</span></h4>
+                    <!--links to events page filtered by benefits-->
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="human-resource">
-                    <h4 class="d-inline-flex"><a href="#"><span>Calendar of<br />Service</span></a></h4>
+                <div class="col-6 col-sm-6 col-md-3 item-box item-box-hover d-flex align-items-center justify-content-center dash-transition">
+                    <a href="news-and-updates.html" target="_blank" class="cover-href"></a>
+                    <h4 class="d-inline-flex"><span>News & <br /> Information</span></h4>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="employee-benefits">
-                    <h4 class="d-inline-flex"><a href="#"><span>News & Upcoming<br />Events</span></a></h4>
+
+                <div class="col-6 col-sm-6 col-md-3 item-box item-box-hover d-flex align-items-center justify-content-center nav-has-sub dash-transition" id="top-right-container" tabindex="3">
+                    <h4 class="d-inline-flex align-items-center"><span>Tools &<br />Service</span></h4>
+                    <div id="top-right" class="expanded-menu expanded-menu-1 align-items-center justify-content-center dash-transition">
+                        <span class="exit pull-right"><a href="#">X</a></span>
+                        <h4 class="d-inline-flex flex-column text-center">
+                            <a href="#"><span>Tools & <br /> Service</span></a>
+                            <ul class="nav-sub-2 text-left">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="human-resource.html">HR</a></li>
+                                <li><a data-toggle="modal" data-target="#support">Support</a></li>
+                                <li><a href="#">EE & E&OA</a></li>
+                            </ul>
+                        </h4>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="documents">
-                    <h4 class="d-inline-flex"><a href="#"><span>Tools & service</span></a></h4>
+
+                <!-- Support Modal -->
+                <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="supportlLabel" aria-hidden="true">
+                    <div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header row no-gutters">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                                <div class="col-12">
+                                    <h5 class="modal-title" id="safety-manualLabel"><strong>Support</strong></h5>
+                                </div>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-12 call-action">
+                                        <a href="mailto:company@support.com"><i class="fa fa-envelope" aria-hidden="true"></i> company@support.com</a><br>
+                                        <a href="tel:407-788-3000"><i class="fa fa-phone" aria-hidden="true"></i> 407-788-3000</a>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum augue nec justo vehicula egestas. Donec rutrum et lorem sit amet interdum. Nullam dictum ex ut elit condimentum volutpat. Duis ac lacus
+                                            aliquam, elementum arcu sed, pellentesque ipsum.</p>
+                                        <a class="btn btn-primary" href="tel:407-788-3000">Call Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="business-insurance">
-                    <h4 class="d-inline-flex"><a href="#"><span>Data Corner</span></a></h4>
+
+                <div class="col-6 col-sm-6 col-md-3 item-box item-box-hover d-flex align-items-center justify-content-center nav-has-sub dash-transition" id="top-right-container" tabindex="4">
+
+                    <h4 class="d-inline-flex align-items-center"><span>Data Corner</span></h4>
+                    <div id="top-right" class="expanded-menu expanded-menu-1 align-items-center justify-content-center dash-transition">
+                        <span class="exit pull-right"><a href="#">X</a></span>
+                        <h4 class="d-inline-flex flex-column text-center">
+                            <a href="#"><span>Data Corner</span></a>
+                            <ul class="nav-sub-2 text-left">
+                                <li><a data-toggle="modal" data-target="#pdf-open">What is Health Care Data?</a></li>
+                                <li><a data-toggle="modal" data-target="#pdf-open">Stewardship Reports</a></li>
+                                <li><a href="#"></a>Data Analysis</li>
+                            </ul>
+                        </h4>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="claims">
-                    <h4 class="d-inline-flex"><a href="#"><span>Compliance<br />Corner</span></a></h4>
+
+                <!-- PDF Modal -->
+                <div class="modal fade" id="pdf-open" tabindex="-1" role="dialog" aria-labelledby="pdf-openlLabel" aria-hidden="true">
+                    <div class="modal-dialog pdf-full-screen modal-lg d-flex flex-column justify-content-center my-0" role="document">
+                        <div class="modal-content pdf-full-screen">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                                <div class="col-12s">
+                                    <h5 class="modal-title" id="pdf-openLabel"><strong>Sample PDF Document</strong></h5>
+                                </div>
+
+                            </div>
+                            <div class="modal-body">
+                                <object width="100%" height="100%" type="application/pdf" data="docs/pdf-sample.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
+                                <p>Error for IE. PDF Cannot be displayed. </p>
+                                </object>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="documents">
-                    <h4 class="d-inline-flex"><a href="#"><span>Documents</span></a></h4>
+
+                <div class="col-6 col-sm-6 col-md-3 item-box item-box-hover d-flex align-items-center justify-content-center nav-has-sub dash-transition" id="bottom-left-container" tabindex="4">
+
+                    <h4 class="d-inline-flex align-items-center"><span>Compliance<br />Corner</span></h4>
+                    <div id="bottom-left" class="expanded-menu expanded-menu-4 align-items-center justify-content-center dash-transition">
+                        <span class="exit pull-right"><a href="#">X</a></span>
+                        <h4 class="d-inline-flex flex-column">
+                            <a href="#"><span>Compliance<br />Corner</span></a>
+                            <ul class="nav-sub-2 text-left">
+                                <li><a data-toggle="modal" data-target="#pdf-open">Wrap Document</a></li>
+                                <li><a data-toggle="modal" data-target="#multiple-pdf">Employee Notices</a></li>
+                                <li><a href="#"></a>Data Analysis</li>
+                            </ul>
+                        </h4>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 item-box d-flex align-items-center justify-content-center" id="business-insurance">
-                    <h4 class="d-inline-flex"><a href="#"><span>Wellness &<br />Well Being</span></a></h4>
+
+                <!-- Multiple PDF List Modal -->
+                <div class="modal fade" id="multiple-pdf" tabindex="-1" role="dialog" aria-labelledby="multiple-pdfLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg d-flex flex-column justify-content-center my-0" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="col-12">
+                                    <h5 class="modal-title" id="pdf-openLabel"><strong>Multiple PDF Sample</strong></h5>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-pane tabs-info client-tables">
+                                    <table class="table-hover table-striped table-condensed">
+                                        <thead class="cf">
+                                            <tr>
+                                                <th>Filename</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Filename">PDF Sample One</td>
+                                                <td data-title="Action" class="actionBtn">
+                                                    <div class="btn-cell">
+                                                        <a href="" data-toggle="tooltip" data-placement="top" title="View PDF" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Filename">PDF Sample Two</td>
+                                                <td data-title="Action" class="actionBtn">
+                                                    <div class="btn-cell">
+                                                        <a href="" data-toggle="tooltip" data-placement="top" title="View PDF" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Filename">PDF Sample Three</td>
+                                                <td data-title="Action" class="actionBtn">
+                                                    <div class="btn-cell">
+                                                        <a href="" data-toggle="tooltip" data-placement="top" title="View PDF" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Filename">PDF Sample Four</td>
+                                                <td data-title="Action" class="actionBtn">
+                                                    <div class="btn-cell">
+                                                        <a href="" data-toggle="tooltip" data-placement="top" title="View PDF" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Filename">PDF Sample Five</td>
+                                                <td data-title="Action" class="actionBtn">
+                                                    <div class="btn-cell">
+                                                        <a href="" data-toggle="tooltip" data-placement="top" title="View PDF" class="actionBlue"><i class="fa fa-eye"></i></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="row justify-content-md-center mt-3">
+                                        <nav aria-label="...">
+                                            <ul class="pagination">
+                                                <li class="page-item disabled">
+                                                    <span class="page-link">Previous</span>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <span class="page-link">1
+                                        <span class="sr-only">(current)</span>
+                                                    </span>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4 item-box d-flex align-items-center justify-content-center" id="claims">
-                    <h4 class="d-inline-flex"><a href="#"><span>Team</span></a></h4>
+
+                <div class="col-6 col-sm-6 col-md-3 item-box item-box-hover d-flex align-items-center justify-content-center dash-transition">
+                    <a href="documents.html" class="cover-href"></a>
+                    <h4 class="d-inline-flex"><span>Documents</span></h4>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 item-box item-box-hover d-flex align-items-center justify-content-center nav-has-sub dash-transition" id="bottom-left-container" tabindex="5">
+
+                    <h4 class="d-inline-flex align-items-center"><span>Wellness &<br />Well Being</span></h4>
+                    <div id="bottom-left" class="expanded-menu expanded-menu-4 align-items-center justify-content-center dash-transition">
+                        <span class="exit pull-right"><a href="#">X</a></span>
+                        <h4 class="d-inline-flex flex-column">
+                            <a href="#"><span>Compliance<br />Corner</span></a>
+                            <ul class="nav-sub-2 text-left">
+                                <li><a data-toggle="modal" data-target="#pdf-open">Wellness Program</a></li>
+                                <li><a data-toggle="modal" data-target="#pdf-open">Wellness Agreement</a></li>
+                            </ul>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 item-box item-box-hover d-flex align-items-center justify-content-center dash-transition">
+                    <a href="#" class="cover-href"></a>
+                    <h4 class="d-inline-flex"><span>Team</span></h4>
                 </div>
             </div>
         </div>
@@ -76,16 +272,24 @@
     <span id="close-sub-p" style="display: none"><i class="fa fa-times" aria-hidden="true"></i></span>
     <div id="hamburger-nav" class="zindex-dropdown" style="display: none">
         <button id="btn-close"><div class="exit-icon" aria-hidden="true"></div></button>
-        <a href="#" class="seach-nav"><div class="search-icon" aria-hidden="true"></div></a>
+        <a href="#" class="seach-nav">
+            <div class="search-icon" aria-hidden="true"></div>
+        </a>
         <div class="tooltip-search">Search</div>
 
-        <a href="#" class="acc-nav"><div class="user-icon" aria-hidden="true"></div></a>
+        <a href="#" class="acc-nav">
+            <div class="user-icon" aria-hidden="true"></div>
+        </a>
         <div class="tooltip-acc">User Profile</div>
 
-        <a href="#" class="group-nav"><div class="team-icon" aria-hidden="true"></div></a>
+        <a href="#" class="group-nav">
+            <div class="team-icon" aria-hidden="true"></div>
+        </a>
         <div class="tooltip-group">Team</div>
 
-        <a href="#" class="signoff-nav"><div class="log-out-icon" aria-hidden="true"></div></a>
+        <a href="#" class="signoff-nav">
+            <div class="log-out-icon" aria-hidden="true"></div>
+        </a>
         <div class="tooltip-signoff">Log out</div>
     </div>
 
@@ -93,7 +297,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/expanded-nav.js"></script>
 </body>
 
 </html>

@@ -23,7 +23,7 @@
      animation: fadein .3s;
 }
 /************ Font Styling ************/
- strong, .breadcrumb-item.active, .back {
+ strong, .breadcrumb-item.active, .back, th {
      font-family: "gotham_htfbold", Helvetica Neue, sans-serif;
 }
  p {
@@ -323,10 +323,9 @@
     }
 }
 /************ Dashboard Tiles ************/
-
-.box-menus{
-  position: relative;
-  height: 100%;
+ .box-menus{
+     position: relative;
+     height: 100%;
 }
  .box-menus .item-box {
      min-height: 280.19px;
@@ -377,7 +376,7 @@
      position: absolute;
      right: -20px;
      top: -20px;
-     z-index: 5;
+     z-index: 10;
      line-height: 0;
 }
  @media (max-width: 767px) {
@@ -420,6 +419,16 @@
      width: 70px;
      height: 50px;
      background-position: center 
+}
+ .pdf-full-screen {
+     height: 100%;
+}
+ object{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 0;
+     top: 0 
 }
  .dash-transition {
      -webkit-transition: all 0.25s ease;
@@ -493,14 +502,14 @@
  .top-navi{
      text-align: right;
 }
- .top-navi-item:hover {
-     opacity: 0.9;
-     cursor: pointer;
-}
  .top-navi .top-navi-item {
      text-align: center;
      padding: 10px 5px;
      min-width: 60px;
+}
+ .top-navi .top-navi-item:hover {
+     opacity: 0.7;
+     cursor: pointer;
 }
  .top-navi .top-navi-item a, .top-navi .top-navi-item {
      color: #fff;
@@ -679,17 +688,13 @@
          margin: 10px auto;
     }
 }
-
-.dblue {
-   background-color: #63bdf5;
+ .dblue {
+     background-color: #63bdf5;
 }
-
-.lblue {
-   background-color: #2ea6f1;
+ .lblue {
+     background-color: #2ea6f1;
 }
-
 /************ Global Navigation Styling ************/
-
  div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right {
      display: block !important;
      position: absolute;
@@ -718,11 +723,30 @@
      top: -25px;
 }
  .expanded-menu-3{
-     top: -54px;
+     top: -40px;
 }
-
-.expanded-menu-4{
-   top: -70px;
+ .expanded-menu-4{
+     top: -70px;
+}
+ .nav-sub-2 li{
+     position: relative;
+}
+ .nav-sub-2 li:hover{
+     padding-left: 7px;
+}
+ .nav-sub-2 li:before{
+     font-size: 13px;
+     display: none;
+     left: 0;
+     font-family: 'fontAwesome';
+     content: "\f0da";
+     position: absolute;
+}
+ .nav-sub-2 li:hover:before{
+     display: block;
+}
+ ul.sub-ul {
+     margin-left: 10px;
 }
  .no-scroll{
      overflow-y: hidden;
@@ -777,6 +801,11 @@
          font-weight: 100;
          margin-bottom: 15px;
     }
+     ul.sub-ul {
+         margin-top: 40px !important;
+         margin-bottom: -50px !important;
+         margin-left: 0px;
+    }
      ul.nav-sub-2.text-left{
          margin-top: 30px;
     }
@@ -808,81 +837,353 @@
          top:0px;
     }
 }
- 
-
 /************ Global Modal ************/
-
-.modal-content {
-  position: relative;
+ .modal-content {
+     position: relative;
 }
-
-.modal-header .close{
-  top: 10px;
-  right: 10px;
-  left: auto;
-  margin: 0;
-  padding: 0;
-  position: absolute;
+ .modal-header .close{
+     top: 25px;
+     right: 10px;
+     left: auto;
+     margin: 0;
+     padding: 0;
+     position: absolute;
 }
-.image-modal{
-  position: absolute;
-  top: 15px;left: 0;
+ .image-modal{
+     position: absolute;
+     top: 15px;
+    left: 0;
 }
-
-.pt-image{
-  padding-top: 90px !important;
+ .pt-image{
+     padding-top: 90px !important;
 }
-.pt-image a{
-  color: #045791;
-  display: inline-block;
-  margin-bottom: 10px;
+ .modal-content a {
+     color: #045791;
+     display: inline-block;
+     margin-bottom: 10px;
 }
-.pt-image a i{
-  margin-right: 5px;
+ .pt-image a i{
+     margin-right: 5px;
 }
-.call-action.col-6{
-  padding: 0 10px;
+ .call-action.col-6{
+     padding: 0 10px;
 }
-.call-action h3{
-  margin-bottom: 15px;
+ .call-action h3{
+     margin-bottom: 15px;
 }
-.call-action p{
-  margin-bottom: 25px;
-  line-height: 22px;
+ .call-action p{
+     margin-bottom: 25px;
+     line-height: 22px;
 }
-.modal-title{
-  margin: 0;
-  font-size: 30px;
-  line-height: 33px;
-  font-weight: bold;
+ .modal-title{
+     margin: 0;
+     font-size: 30px;
+     line-height: 33px;
+     font-weight: bold;
 }
-.call-action a.btn-primary {
-  border: 0;
-  border-radius: 0;
-  color: #fff;
-  font-weight: bold;
-  width: 100%;
-  padding: 12px 10px;
+ .call-action a.btn-primary {
+     border: 0;
+     border-radius: 0;
+     color: #fff;
+     font-weight: bold;
+     width: 100%;
+     padding: 12px 10px;
 }
-.modal-header {
-  padding: 1rem;
+ .modal-header {
+     padding: 1rem;
 }
-.main-nav .modal-body .col-sm-6 {
-  padding: 1rem;
+ .main-nav .modal-body .col-sm-6 {
+     padding: 1rem;
 }
-@media (max-width: 1300px){
-  .pt-image {
-    padding-top: 120px !important;
-  }
+ @media (max-width: 1300px){
+     .pt-image {
+         padding-top: 120px !important;
+    }
 }
-@media (max-width: 575px){
-  .image-modal {
-    position: static;
-  }
-  .pt-image {
-    padding-top: 0 !important;
-  }
-  .modal-title {
-    text-align: center;
-  }
+ @media (max-width: 575px){
+     .image-modal {
+         position: static;
+    }
+     .pt-image {
+         padding-top: 0 !important;
+    }
+     .modal-title {
+         text-align: center;
+    }
+}
+/************ Global Tables ************/
+ table {
+     width: 100%;
+}
+ .panel {
+     box-shadow: none;
+}
+ .client-tables {
+     border: 1px solid #b9b5b5;
+}
+ .dash-launch-tables {
+     padding: 0px;
+     margin-top: 30px;
+}
+ .tablecontainer .panel-body {
+     clear: both;
+     padding: 0 !important;
+}
+ @media (max-width: 400px) {
+     .content {
+         margin-left: 10px;
+         margin-right: 10px;
+    }
+     .tablecontainer {
+         padding: 0;
+    }
+}
+ .btn-group.open .dropdown-toggle {
+     box-shadow: none;
+     color: #fff;
+}
+ .btn-cell {
+     display: table-cell;
+     padding-left: 2px;
+     padding-right: 2px;
+}
+ .statistics .dropdown-menu>li>a:hover {
+     color: #000 !important;
+}
+ .fa-3x {
+     font-size: 2em;
+}
+ .navbar-toggle:hover {
+     background-color: transparent;
+}
+ .head-drop {
+     padding: 11px 16px;
+     margin: 0;
+     font-size: 14px;
+}
+ .btn-group>p {
+     font-size: 15px;
+}
+ .tablecontainer .tableheader .type {
+     margin: 0 !important;
+}
+ @media (max-width: 767px) {
+     .skin-blue .main-header .navbar .dropdown-menu li a {
+         color: #000 !important;
+    }
+}
+ @media only screen and (max-width: 1279px) {
+    /* Force table to not be like tables anymore */
+     .client-tables table, .client-tables thead, .client-tables tbody, .client-tables th, .client-tables td, .client-tables tr {
+         display: block;
+    }
+    /* Hide table headers (but not display: none;
+    , for accessibility) */
+     .client-tables thead tr {
+         position: absolute;
+         top: -9999px;
+         left: -9999px;
+    }
+     .client-tables tr {
+         border: 1px solid #ccc;
+    }
+     .client-tables td:before {
+        /* Now like a table header */
+         position: absolute;
+        /* Top/left values mimic padding */
+         top: 6px;
+         left: 6px;
+         width: 45%;
+         padding-right: 10px;
+         white-space: nowrap;
+         text-align: left;
+         font-weight: 700;
+    }
+     .client-tables td {
+        /* Behave like a "row" */
+         border: none;
+         border-bottom: 1px solid #eee;
+         position: relative;
+         padding-left: 50%;
+         white-space: normal;
+         text-align: left;
+    }
+     .client-tables td {
+         padding-left: 60% !important;
+    }
+    /* Label the data */
+     .client-tables td:before {
+         content: attr(data-title);
+    }
+     .tablecontainer .tableheader .elem {
+         padding: 10px;
+         width: 100%;
+         text-align: left;
+    }
+     .tablecontainer .tableheader .type {
+         margin: 0;
+    }
+     .same-claims td:first-child, .same-claims-parent td:first-child {
+         text-indent: 0px !important;
+    }
+}
+/***** Media queries for th and td ***********************************/
+ @media only screen and (max-width: 767px) and (min-width: 480px), only screen and (max-width: 479px) {
+     th {
+         font-size: 12px;
+    }
+     td {
+         font-size: 12px;
+    }
+     .sidebar-toggle {
+         display: block;
+    }
+}
+ @media only screen and (max-width: 991px) and (min-width: 768px) {
+     .txtSearch, .txtMain {
+         display: none;
+    }
+     .sidebar-toggle {
+         display: none;
+    }
+}
+ @media only screen and (max-width: 1199px) and (min-width: 992px) {
+     .sidebar-toggle {
+         display: none;
+    }
+}
+/***** Table Navbar ****************************/
+ thead tr {
+     background-color: #fcfcfc;
+}
+ .clickable-row {
+     cursor: pointer;
+}
+ .table-striped>tbody>tr:nth-of-type(odd) {
+     background-color: #efefef;
+}
+ th {
+     text-align: left;
+     font-weight: 700;
+     font-size: 13px;
+     vertical-align: middle;
+     padding: 8px !important;
+}
+ td {
+     text-align: left;
+     font-size: 12px;
+     vertical-align: middle;
+     padding: 10px !important;
+}
+ td a {
+     color: #337ab7;
+     cursor: pointer;
+}
+ .info p {
+     margin-bottom: 8px;
+}
+ .info ul li {
+     padding: 4px;
+}
+ .actionBtn a {
+     display: block;
+     padding: 5px 7px 6px;
+     border-radius: 3px;
+     text-align: center;
+     color: #fff;
+     font-size: 10px;
+     white-space: nowrap;
+}
+ .actionBtn a.actionBlue {
+     background: #4995cf;
+}
+ .actionBtn a.actionRed {
+     background: #d9534f;
+}
+ .actionBtn a.actionGray {
+     background: #adadad;
+}
+ .actionBtn a:not(:first-child) {
+     margin-top: 6px;
+}
+ .actionBtn a:hover {
+     text-decoration: none;
+     color: #fff;
+}
+ .statusBtn {
+     display: inline-block;
+     color: #fff;
+     padding: 5px 10px;
+     width: 70px;
+     border-radius: 5px;
+     font-size: 11px;
+     text-transform: uppercase;
+     text-align: center;
+}
+ .statusBtn.green {
+     background: #58c71f;
+}
+ .statusBtn.blue {
+     background: #3f7ebc;
+}
+ .statusBtn.grey {
+     background: #adadad;
+}
+ .tablecontainer {
+     margin-bottom: 30px;
+}
+ .tablecontainer .tableheader {
+     padding: 0;
+     background: #4995cf;
+     color: #fff;
+     display: block;
+     clear: both;
+     text-align: center;
+}
+ .tablecontainer .tableheader .type {
+     margin: 0 20px;
+     font-size: 13px;
+}
+ .tablecontainer .tableheader .search {
+     background: #296198;
+     padding: 6px 9px;
+     border-radius: 4px;
+     font-size: 12px;
+     margin-top: 4px;
+     margin-right: 4px;
+}
+ .tablecontainer .tableheader .search1 {
+     background: #296198;
+     padding: 4px;
+     margin: 0;
+     width: 100%;
+     float: left;
+}
+ .tablecontainer .tableheader .elem {
+     font-size: 12px;
+     padding: 12px 17px;
+}
+ .tablecontainer .tableheader .type:hover {
+     background: #3f7ebc;
+}
+ .tablecontainer .cf {
+     padding: 0;
+     width: 100%;
+}
+ .th-icon {
+     width: 2%;
+}
+ .tablecontainer .cf td {
+     padding: 15px 7px;
+}
+ .tablecontainer .cf td.actionBtn {
+     padding-left: 10px;
+     padding-right: 10px;
+}
+ .table-bordered {
+     padding-left: 0;
+     padding-right: 0;
+}
+ .numeric {
+     text-align: right;
 }

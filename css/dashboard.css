@@ -4,60 +4,59 @@
 }
  #safety > .bg-cover-img{
      background-image: url("../images/dashboard/safety.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center 
 }
  .bg-cover-img img{
      visibility: hidden;
-    width: 100%;
-    height: 100% 
+     width: 100%;
+     height: 100% 
 }
  #employee-benefits > .bg-cover-img {
-    background: url("../images/dashboard/employee-benefits.jpg") no-repeat center;
-    background-size: cover;
+     background: url("../images/dashboard/employee-benefits.jpg") no-repeat center;
+     background-size: cover;
 }
-#news > .bg-cover-img {
-    background: url("../images/dashboard/news.jpg") no-repeat center;
-    background-size: cover;
+ #news > .bg-cover-img {
+     background: url("../images/dashboard/news.jpg") no-repeat center;
+     background-size: cover;
 }
  #documents > .bg-cover-img{
-    background: url("../images/dashboard/documents.jpg") no-repeat center;
-    background-size: cover;
+     background: url("../images/dashboard/documents.jpg") no-repeat center;
+     background-size: cover;
 }
  #claims > .bg-cover-img{
-    background: url("../images/dashboard/claims.jpg") no-repeat center;
-    background-size: cover;
+     background: url("../images/dashboard/claims.jpg") no-repeat center;
+     background-size: cover;
 }
  #business-insurance > .bg-cover-img{
-    background: url("../images/dashboard/business-insurance.jpg") no-repeat center;
-    background-size: cover;
+     background: url("../images/dashboard/business-insurance.jpg") no-repeat center;
+     background-size: cover;
 }
  #risk-score > .bg-cover-img {
-    background: url("../images/dashboard/risk-score.jpg") no-repeat center;
-    background-size: cover;
+     background: url("../images/dashboard/risk-score.jpg") no-repeat center;
+     background-size: cover;
 }
  #webinar > .bg-cover-img {
-    background: url("../images/dashboard/webinar.jpg") no-repeat center;
-    background-size: cover;
+     background: url("../images/dashboard/webinar.jpg") no-repeat center;
+     background-size: cover;
 }
  #human-resource > .bg-cover-img{
-    background: url("../images/dashboard/human-resource.jpg") no-repeat center;
-    background-size: cover;
+     background: url("../images/dashboard/human-resource.jpg") no-repeat center;
+     background-size: cover;
 }
  #middle-middle-container .image-tran-wrap .bg-cover-img{
-    background: url("../images/dashboard/business-insurance.jpg") no-repeat center;
-    background-size: cover;
+     background-size: cover;
 }
  #middle-middle-container > .bg-cover-img, #middle-middle-container .image-tran-wrap .bg-cover-img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
 }
  #bottom-middle-container .bg-cover-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
 }
  .dash-1 {
      background: url("../images/dashboard/icons/dash-1.png") no-repeat;
@@ -304,23 +303,6 @@
      min-height: 40px;
      z-index: 5;
 }
- .nav-sub-2 li{
-     position: relative;
-}
- .nav-sub-2 li:hover{
-     padding-left: 7px;
-}
- .nav-sub-2 li:before{
-     font-size: 13px;
-     display: none;
-     left: 0;
-     font-family: 'fontAwesome';
-     content: "\f0da";
-     position: absolute;
-}
- .nav-sub-2 li:hover:before{
-     display: block;
-}
  .weather.f-expanded .weather-wrap .weather-item, .stock.f-expanded .stock-wrap .stock-item{
      width: 114px;
      padding: 0 10px;
@@ -338,6 +320,9 @@
      position: relative;
      width: 0;
      display: none;
+}
+ .stock > .stock-item{
+     width: 100%;
 }
  .stock-wrap .stock-item:last-child, .weather-wrap .weather-item:last-child{
      display: inline-block;

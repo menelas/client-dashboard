@@ -1,3 +1,6 @@
+## 2018-03-07
+• Completed employee benefits, business insurance, safety calendar, riskscore, and news & updates
+
 ## 2018-03-06
 • Updated dashboard, and human resources page
 • Started working on employee benefits, business insurance, and safety calendar

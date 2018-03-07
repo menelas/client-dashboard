@@ -54,17 +54,3 @@
  #top--container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #business-insurance > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #news > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a {
      padding-top: 0;
 }
-
-.modal-dialog, .modal-content{
-    height: 100%;
-}
-.modal-body{
-    position: relative;
-}
-object{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0
-}

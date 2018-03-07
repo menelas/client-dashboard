@@ -1,87 +1,88 @@
 .news-and-updates{
-  color: #000;
+     color: #000;
 }
-.news-and-updates .main-content-page {
-  color: #000;
+ .news-and-updates .main-content-page {
+     color: #000;
 }
-#news-fap h4{
-  color: #fff;
-  font-size: 40px;
-  line-height: 42px;
+ #news-fap h4{
+     color: #fff;
+     font-size: 40px;
+     line-height: 42px;
 }
-.news-and-updates .main-nav{
-  background: #f3f4f4;
+ .news-and-updates .main-nav{
+     background: #f3f4f4;
 }
-.news-and-updates .box-menus .item-box:hover {
-  border: 0;
-  cursor: inherit;
+ .news-and-updates .box-menus .item-box:hover {
+     border: 0;
+     cursor: inherit;
 }
-.news-and-updates .box-menus .item-box:before {
-  display: none;
+ .news-and-updates .box-menus .item-box:before {
+     display: none;
 }
-#news-fap{
-  background-image: url(../images/dashboard/business-insurance.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+ #news-fap{
+     background-image: url(../images/dashboard/business-insurance.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
 }
-.latest-news h2{
-  font-size: 30px;
-  line-height: 32px;
-  color: #005697;
+ .latest-news h2{
+     font-size: 30px;
+     line-height: 32px;
+     color: #005697;
 }
-.content-paras{
-  font-size: 14px;
+ .content-parag{
+     font-size: 14px;
+     line-height: 1.7;
 }
-.news-and-updates .box-menus .item-box{
-  background-color: transparent;
+ .news-and-updates .box-menus .item-box{
+     background-color: transparent;
 }
-.filter-category select{
-  padding: 10px;
-  background: transparent;
-  min-width: 250px;
+ .filter-category select{
+     padding: 10px;
+     background: transparent;
+     min-width: 250px;
 }
-.news-and-updates fieldset{
-  border: 1px solid #005697;
-  padding: 10px 15px;
+ .news-and-updates fieldset{
+     border: 1px solid #005697;
+     padding: 10px 15px;
 }
-.news-and-updates legend{
-  width: auto;
-  color: #005697;
-  padding: 0 9px;
-  background-color: #f3f4f4;
-  font-size: 13px;
+ .news-and-updates legend{
+     width: auto;
+     color: #005697;
+     padding: 0 9px;
+     background-color: #f3f4f4;
+     font-size: 13px;
 }
-.news-and-updates fieldset:hover{
-  background-color: #005697;
-  color: #fff;
-  cursor: pointer;
+ .news-and-updates fieldset:hover{
+     background-color: #005697;
+     color: #fff;
+     cursor: pointer;
 }
-.box-menus legend a{
-  color: #005697;
+ .box-menus legend a{
+     color: #005697;
 }
-.news-date {
-  color: #005697;
-  font-size: 40px;
-  text-align: center;
+ .news-date {
+     color: #005697;
+     font-size: 40px;
+     text-align: center;
 }
-.news-date .special-mon{
-  font-weight: 900;
+ .news-date .special-mon{
+     font-weight: 900;
 }
-.news-date sup{
-  font-size: 29px;
+ .news-date sup{
+     font-size: 29px;
 }
-.news-content h3{
-  font-size: 18px;
-  color: #005697;
+ .news-content h3{
+     font-size: 18px;
+     color: #005697;
 }
-.news-and-updates fieldset:hover .news-date, .news-and-updates fieldset:hover .news-content h3{
-  color: #fff;
+ .news-and-updates fieldset:hover .news-date, .news-and-updates fieldset:hover .news-content h3{
+     color: #fff;
 }
-.mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical {
-  right: -30px;
+ .mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical {
+     right: -30px;
 }
-.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-  background-color: #323232 !important;
-  width: 6px !important;
+ .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+     background-color: #323232 !important;
+     width: 6px !important;
 }

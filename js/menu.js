@@ -16,10 +16,10 @@
             $('.btn-open').show();
         }
     });
-    $('.item-box h4').click(function(e){
-        $(this).parents('.item-box').addClass("p-a-actived");
-        $(this).siblings('.btn-learn-more').addClass("a-actived");
-        $(this).siblings('.btn-learn-more').show();
+    $('.item-box-btn').click(function(e){
+        $(this).addClass("p-a-actived");
+        $(this).children('.btn-learn-more').addClass("a-actived");
+        $(this).children('.btn-learn-more').show();
     });
     $(document).click(function(e){
         if ( $(e.target).closest('.p-a-actived').length === 0 && $(e.target).closest('.a-actived').length === 0 ) {

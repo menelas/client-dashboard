@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="favicon.ico">
 
-    <title>myIOA</title>
+    <title>Insurance Office of America - myIOA</title>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="fonts/specimen_files/specimen_stylesheet.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
     <link href="css/policies.css" rel="stylesheet">
@@ -78,7 +79,6 @@
                     <div class="row no-gutters" id="policies-list">
                         <div class="col-5">
                             <select name="searchType">
-                                <option selected>Choose...</option>
                                 <option value="1">Policies</option>
                                 <option value="2">Policies</option>
                                 <option value="3">Policies</option>
@@ -89,6 +89,54 @@
                         </div>
                         <div class="col-12 col-results">
                             <ul class="list text-left">
+                                <li class="clearfix">
+                                    <a class="policy-file" href="#">newyork-policy-invation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="policy-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="policy-file" href="#">t-stark-policy.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="policy-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="policy-file" href="#">newyork-policy-invation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="policy-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="policy-file" href="#">t-stark-policy.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="policy-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
                                 <li class="clearfix">
                                     <a class="policy-file" href="#">newyork-policy-invation.pdf</a>
                                     <span class="poli-actions">
@@ -155,26 +203,35 @@
     <span id="close-sub-p" style="display: none"><i class="fa fa-times" aria-hidden="true"></i></span>
     <div id="hamburger-nav" class="zindex-dropdown" style="display: none">
         <button id="btn-close"><div class="exit-icon" aria-hidden="true"></div></button>
-        <a href="#" class="seach-nav"><div class="search-icon" aria-hidden="true"></div></a>
+        <a href="#" class="seach-nav">
+            <div class="search-icon" aria-hidden="true"></div>
+        </a>
         <div class="tooltip-search">Search</div>
 
-        <a href="#" class="acc-nav"><div class="user-icon" aria-hidden="true"></div></a>
+        <a href="#" class="acc-nav">
+            <div class="user-icon" aria-hidden="true"></div>
+        </a>
         <div class="tooltip-acc">User Profile</div>
 
-        <a href="#" class="group-nav"><div class="team-icon" aria-hidden="true"></div></a>
+        <a href="#" class="group-nav">
+            <div class="team-icon" aria-hidden="true"></div>
+        </a>
         <div class="tooltip-group">Team</div>
 
-        <a href="#" class="signoff-nav"><div class="log-out-icon" aria-hidden="true"></div></a>
+        <a href="#" class="signoff-nav">
+            <div class="log-out-icon" aria-hidden="true"></div>
+        </a>
         <div class="tooltip-signoff">Log out</div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/expanded-nav.js"></script>
     <script src="js/list.min.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/scrollbar_policies.js"></script>
 </body>
 
 </html>

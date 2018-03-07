@@ -1,0 +1,227 @@
+.webinars .main-nav{
+     background: #4978ae;
+}
+ .webinars .box-menus .item-box:hover {
+     border: 0;
+     cursor: inherit;
+}
+ .webinars .box-menus .item-box:before {
+     display: none;
+}
+ #webinars-fap{
+     padding-bottom: 5%;
+     background-image: url(../images/dashboard/business-insurance.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+ #webinars-fap h4{
+     font-size: 40px;
+     line-height: 42px;
+}
+ #webinars-fap h5{
+     font-size: 19px;
+     line-height: 22px;
+}
+ .list-tick-icon li{
+     padding-left: 30px;
+     position: relative;
+     margin-bottom: 7px;
+}
+ .list-tick-icon li:before{
+     position: absolute;
+     content: "";
+     left: 0;
+     top: 5px;
+     width: 15px;
+     height: 11px;
+     background: url("../images/tick_normal.png") no-repeat;
+}
+ .list-tick-icon li:hover:before{
+     background: url("../images/tick_hover.png") no-repeat;
+}
+ .webinbar-item a > img{
+     width: 100%;
+}
+ .webinbar-item h4{
+     font-size: 22px;
+     color: #3a3838;
+}
+ .webinbar-item a {
+     color: #3a3838;
+}
+ .webinbar-item small{
+     font-size: 15px;
+     color: #3a3838;
+}
+ #search-items{
+     background-color: #e0e2e3;
+     color: #000;
+     padding: 0;
+}
+ #search-items a{
+     color: #000;
+}
+ .main-nav #start-date.col-sm-6, .main-nav #ends-date.col-sm-6{
+     padding: 0;
+}
+ #start-date li, #ends-date li{
+     padding: 15px 5px;
+     margin-bottom: 10px;
+     height: 51px;
+}
+ #start-date li:hover, #ends-date li:hover, #start-date li.active, #ends-date li.active{
+     background-color: #d42043;
+     color: #fff;
+}
+ #start-date li:first-child, #ends-date li:first-child{
+     background-color: #005596;
+}
+ #search-items select{
+     padding: 5px 10px;
+     background: #e0e2e3;
+     height: 40px;
+     border: 1px solid #646565;
+     width: 100%;
+     -webkit-appearance: none;
+     font-weight: bold;
+     position: relative;
+     background-image: url("../images/search_icon.png");
+     background-repeat: no-repeat;
+     background-position: right center;
+}
+ #search-items select:after{
+     position: absolute;
+     content: "abc";
+}
+ #search-items input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+     font-weight: bold;
+     color: #000;
+}
+ #search-items input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+     font-weight: bold;
+     color: #000;
+}
+ #search-items input::-ms-input-placeholder {
+    /* Microsoft Edge */
+     font-weight: bold;
+     color: #000;
+}
+ #search-items input{
+     height: 40px;
+     padding: 5px 55px 5px 10px;
+     border: 1px solid #646565;
+     background: #e0e2e3;
+     width: 100%;
+     font-size: 16px;
+}
+ .col-results{
+     padding: 10px 0;
+}
+ .col-results .list li{
+     padding: 10px 15px 10px 90px;
+     background: url("../images/pdf_normal.png") no-repeat 50px center;
+}
+ .p-search-wrap{
+     position: relative;
+}
+ .p-search-wrap:after{
+     position: absolute;
+     content: "\f002";
+     left: auto;
+     font-size: 20px;
+     top: 50%;
+     font-family: "fontAwesome";
+     right: 15px;
+     margin-top: -10px;
+}
+ .video-wrap{
+     position: relative;
+}
+ .video-wrap > img{
+     width: 100%;
+}
+ .video-wrap .btn-play{
+     position: absolute;
+     background: transparent;
+     border: 0;
+     left: 50%;
+     top: 50%;
+     padding: 0;
+     margin: 0;
+     margin-top: -30px;
+     margin-left: -30px;
+}
+ .video-wrap .btn-play:hover{
+     cursor: pointer;
+}
+ .main-para p{
+     margin-bottom: 15px;
+}
+ .main-content-page #webinars-main{
+     color: #000;
+     background-color: #f3f3f4;
+}
+ .webinar-info h2{
+     color: #005697;
+     font-size: 35px;
+     line-height: 37px 
+}
+ .webinar-info h3{
+     margin: 5px 0 10px;
+}
+ .webinar-date{
+     font-style: italic;
+}
+ .category{
+     display: none;
+}
+ .num-count{
+     display: inline-block;
+     color: #a8bace;
+     font-size: 14px;
+     margin-bottom: 15px;
+}
+ .num-count > img{
+     padding-right: 7px;
+}
+ .prev-webinbar{
+     color: #005697;
+     font-size: 20px;
+}
+ .prev-webinbar span{
+     font-size: 25px;
+}
+ .modal-title {
+     margin-left: 0;
+}
+ .pt-image {
+     padding-top: 152px !important;
+     padding-left: 30px;
+}
+ .pt-image span img{
+     margin-right: 5px;
+}
+ .image-modal{
+     border-radius: 50%;
+     border: 5px solid #fff;
+}
+ @media (min-width: 576px){
+     .modal-dialog {
+         max-width: 700px;
+    }
+}
+ @media (max-width: 575px){
+     .pt-image {
+         padding-top: 0 !important;
+    }
+     .modal-header{
+         display: block;
+         text-align: center;
+    }
+     .modal-content{
+         display: block;
+    }
+}
