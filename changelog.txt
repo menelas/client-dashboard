@@ -1,3 +1,6 @@
+## 2018-03-08
+• Updated css and href links
+
 ## 2018-03-07
 • Completed employee benefits, business insurance, safety calendar, riskscore, and news & updates
 

@@ -357,6 +357,13 @@
  .box-menus .item-box:hover:before {
      background-image: linear-gradient(to bottom right,#1f88d8,#1f89d9);
 }
+.btn-open{
+     top: 0;
+     right: 0;
+}
+#main-dasboard .btn-open{
+     top: 37px;
+}
  #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li{
      font-size: 14px;
      padding-bottom: 10px;
@@ -379,6 +386,10 @@
      z-index: 10;
      line-height: 0;
 }
+#main-dasboard .btn-open {
+    right: 37px;
+    top: 37px;
+}
  @media (max-width: 767px) {
      .item-box h4 {
          text-align: center;
@@ -388,9 +399,6 @@
     }
      .box-menus .item-box:hover:not(:focus) {
          border: 0px solid #fff;
-    }
-     .btn-open {
-         right: 0;
     }
      .main-nav .col-sm-6 {
          padding: 1%;
@@ -543,7 +551,6 @@
      top: 0;
 }
  .expanded-menu{
-     display: none;
      position: absolute;
      left: 0;
      top: -25%;
@@ -695,17 +702,33 @@
      background-color: #2ea6f1;
 }
 /************ Global Navigation Styling ************/
- div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right {
-     display: block !important;
-     position: absolute;
-     width: 100%;
-     height: 120%;
-     z-index: 9;
-     border: 15px solid #fff;
-     cursor: pointer;
-     overflow-y: hidden;
+div#top-left-container:focus,div#top-middle-container:focus,div#top-right-container:focus,div#middle-left-container:focus,div#middle-middle-container:focus,div#middle-right-container:focus,div#bottom-left-container:focus,div#bottom-middle-container:focus,div#bottom-right-container:focus{
+    pointer-events: none;
 }
- span.exit.pull-right{
+
+div#top-left-container:focus div#top-left,div#top-middle-container:focus div#top-middle,div#top-right-container:focus div#top-right,div#middle-left-container:focus div#middle-left,div#middle-middle-container:focus div#middle-middle,div#middle-right-container:focus div#middle-right,div#bottom-left-container:focus div#bottom-left,div#bottom-middle-container:focus div#bottom-middle,div#bottom-right-container:focus div#bottom-right {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: 9;
+    border: 15px solid #fff;
+    pointer-events: auto;
+    overflow-y: hidden;
+}
+
+div#top-left,div#top-middle,div#top-right,div#middle-left,div#middle-middle,div#middle-right,div#bottom-left,div#bottom-middle,div#bottom-right{
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    z-index: 1;
+    width: 100%;
+    height: 120%;
+    /*/* disable visibility by default, delay to enable clicks */*/
+    /*visibility: hidden;*/
+    transition: visibility 0.5s;
+}
+
+span.exit.pull-right{
      position: absolute;
      right: 15px;
      top: 15px;
@@ -837,6 +860,8 @@
          top:0px;
     }
 }
+
+
 /************ Global Modal ************/
  .modal-content {
      position: relative;
