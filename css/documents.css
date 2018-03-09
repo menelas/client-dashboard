@@ -1,14 +1,14 @@
-.policies .main-nav{
+.documents .main-nav{
      background: #4978ae;
 }
- .policies .box-menus .item-box:hover {
+ .documents .box-menus .item-box:hover {
      border: 0;
      cursor: inherit;
 }
- .policies .box-menus .item-box:before {
+ .documents .box-menus .item-box:before {
      display: none;
 }
- #policies-fap{
+ #documents-fap{
      padding-bottom: 5%;
      background-image: url(../images/dashboard/business-insurance.jpg);
      background-repeat: no-repeat;
@@ -38,14 +38,16 @@
  .main-nav #start-date.col-sm-6, .main-nav #ends-date.col-sm-6{
      padding: 0;
 }
+
  #start-date li, #ends-date li{
-     padding: 15px 5px;
+     padding: 15px 5px 0px 12px;
      margin-bottom: 10px;
      height: 51px;
 }
  #start-date li:hover, #ends-date li:hover, #start-date li.active, #ends-date li.active{
      background-color: #d42043;
      color: #fff;
+     cursor: pointer;
 }
  #start-date li:first-child, #ends-date li:first-child{
      background-color: #005596;
@@ -54,6 +56,7 @@
      padding: 15px 10px;
      height: 51px;
      border: 1px solid #646565;
+     border-radius: 0px;
      background-color: #e1e3e3;
      width: 100%;
      -webkit-appearance: none;
@@ -68,6 +71,9 @@
      position: absolute;
      content: "abc";
 }
+ #search-items input {
+     font-size: 25px;
+ }
  #search-items input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
      font-weight: bold;
@@ -128,3 +134,5 @@
  .col-results .list li:hover .poli-actions, .col-results .list li.active .poli-actions{
      display: inline-block;
 }
+
+a { cursor: pointer; }

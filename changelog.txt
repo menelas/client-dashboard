@@ -1,3 +1,6 @@
+## 2018-03-09
+• Created latest webinar, documents, and team pages. Updated css.
+
 ## 2018-03-08
 • Updated css and href links
 

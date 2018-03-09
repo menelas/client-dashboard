@@ -28,6 +28,7 @@
 }
  p {
      font-family: "gotham_htfbook", Helvetica Neue, sans-serif;
+     line-height: 1.5;
 }
 /************ Main Content ************/
  .main-content {

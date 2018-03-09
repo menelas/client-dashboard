@@ -8,18 +8,18 @@
  .webinars .box-menus .item-box:before {
      display: none;
 }
- #webinars-fap{
+ #webinars-left{
      padding-bottom: 5%;
-     background-image: url(../images/dashboard/business-insurance.jpg);
+     background-image: url(../images/sub-pages/webinars-bg.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
 }
- #webinars-fap h4{
+ #webinars-left h4{
      font-size: 40px;
      line-height: 42px;
 }
- #webinars-fap h5{
+ #webinars-left h5{
      font-size: 19px;
      line-height: 22px;
 }
@@ -35,9 +35,6 @@
      top: 5px;
      width: 15px;
      height: 11px;
-     background: url("../images/tick_normal.png") no-repeat;
-}
- .list-tick-icon li:hover:before{
      background: url("../images/tick_hover.png") no-repeat;
 }
  .webinbar-item a > img{
@@ -58,9 +55,6 @@
      background-color: #e0e2e3;
      color: #000;
      padding: 0;
-}
- #search-items a{
-     color: #000;
 }
  .main-nav #start-date.col-sm-6, .main-nav #ends-date.col-sm-6{
      padding: 0;
@@ -124,6 +118,10 @@
      padding: 10px 15px 10px 90px;
      background: url("../images/pdf_normal.png") no-repeat 50px center;
 }
+.webinars h2 {
+     font-size: 21px;
+     margin-bottom: 10px;
+}
  .p-search-wrap{
      position: relative;
 }
@@ -139,6 +137,7 @@
 }
  .video-wrap{
      position: relative;
+     cursor: pointer;
 }
  .video-wrap > img{
      width: 100%;

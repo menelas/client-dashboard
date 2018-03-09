@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Insurance Office of America - myIOA</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="fonts/specimen_files/specimen_stylesheet.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/app.bootstrap.css" rel="stylesheet">
+    <link href="css/documents.css" rel="stylesheet">
+</head>
+
+<body class="documents">
+    <div class="container-fluid p-0 nav-bread">
+        <div class="row no-gutters">
+            <div class="col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1"><a class="back" href="dashboard.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a></div>
+            <div class="col-9 col-sm-9 col-md-11 col-lg-11 col-xl-11">
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb p-0">
+                        <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Documents</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="main-content-page container-fluid">
+        <span class="btn-open rounded-circle"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        <div class="main-nav">
+            <div class="row no-gutters box-menus">
+                <div class="col-12 col-sm-12 col-md-4 item-box d-flex justify-content-center" id="documents-fap">
+                    <div class="d-inline-flex flex-column align-self-end">
+                        <h1 class="mb-5"><strong>Documents</strong></h1>
+                        <h5 class="mb-2">Frequently Accessed Documents</h5>
+                        <ul class="text-left links-list">
+                            <li><a data-toggle="modal" data-target="#pdf-open">Document Sample 1.pdf</a></li>
+                            <li><a data-toggle="modal" data-target="#pdf-open">Document Sample 2.pdf</a></li>
+                            <li><a data-toggle="modal" data-target="#pdf-open">Document Sample 3.pdf</a></li>
+                            <li><a data-toggle="modal" data-target="#pdf-open">Document Sample 4.pdf</a></li>
+                            <li><a data-toggle="modal" data-target="#pdf-open">Document Sample 5.pdf</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PDF Modal -->
+                <div class="modal fade" id="pdf-open" tabindex="-1" role="dialog" aria-labelledby="pdf-openlLabel" aria-hidden="true">
+                    <div class="modal-dialog pdf-full-screen modal-lg d-flex flex-column justify-content-center my-0" role="document">
+                        <div class="modal-content pdf-full-screen ">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                                <div class="col-12s">
+                                    <h5 class="modal-title" id="pdf-openLabel"><strong>Sample PDF Document</strong></h5>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <object width="100%" height="100%" type="application/pdf" data="docs/pdf-sample.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" id="pdf_content">
+                                <p>Error for IE. PDF Cannot be displayed. </p>
+                                </object>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-1 item-box d-flex flex-column" id="start-date">
+                    <ul>
+                        <li><strong>Type</strong></li>
+                        <li><a href="#">ACA</a></li>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Risk Services</a></li>
+                        <li><a href="#">Human Resources<a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-1 item-box d-flex order-md-last flex-column text-center" id="ends-date">
+                    <ul>
+                        <li><strong>Year</strong></li>
+                        <li><a href="#"><strong>ANY</strong></a></li>
+                        <li><a href="#">2018</a></li>
+                        <li><a href="#">2017</a></li>
+                        <li><a href="#">2016</a></li>
+                        <li><a href="#">2015</a></li>
+                        <li><a href="#">2014</a></li>
+                        <li><a href="#">2013</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 item-box" id="search-items">
+                    <div class="row no-gutters" id="document-list">
+                        <div class="col-12 p-search-wrap">
+                            <input type="text" class="search" name="s" placeholder="Search">
+                        </div>
+                        <div class="col-12 col-results">
+                            <ul class="list text-left">
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">newyork-policy-invation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">t-stark-policy.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">newyork-policy-invation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">t-stark-policy.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">newyork-policy-invation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">t-stark-policy.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">newyork-policy-invation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">t-stark-policy.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a class="document-file" href="#">shield-documentation.pdf</a>
+                                    <span class="poli-actions">
+                                        <a href="#"><i class="fa fa-print" aria-hidden="true"></i></a><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#"><img alt="Insurance Office of America" src="images/logo.png"></a>
+        <div class="ft-quote">
+            “Success seems to be connected with action. Successful people keep moving. They make mistakes but they never quit.” <strong>—  Conrad Hilton</strong>
+        </div>
+    </footer>
+
+    <span id="close-sub-p" style="display: none"><i class="fa fa-times" aria-hidden="true"></i></span>
+    <div id="hamburger-nav" class="zindex-dropdown" style="display: none">
+        <button id="btn-close"><div class="exit-icon" aria-hidden="true"></div></button>
+        <a href="#" class="seach-nav">
+            <div class="search-icon" aria-hidden="true"></div>
+        </a>
+        <div class="tooltip-search">Search</div>
+
+        <a href="#" class="acc-nav">
+            <div class="user-icon" aria-hidden="true"></div>
+        </a>
+        <div class="tooltip-acc">User Profile</div>
+
+        <a href="#" class="group-nav">
+            <div class="team-icon" aria-hidden="true"></div>
+        </a>
+        <div class="tooltip-group">Team</div>
+
+        <a href="#" class="signoff-nav">
+            <div class="log-out-icon" aria-hidden="true"></div>
+        </a>
+        <div class="tooltip-signoff">Log out</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/list.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/scrollbar_documents.js"></script>
+</body>
+
+</html>

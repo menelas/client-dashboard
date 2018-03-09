@@ -1,4 +1,4 @@
 var options = {
-    valueNames: [ 'policy-file' ]
+    valueNames: [ 'document-file' ]
 };
-var policiesList = new List('policies-list', options);
+var policiesList = new List('document-list', options);
