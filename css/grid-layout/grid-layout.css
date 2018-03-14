@@ -1,4 +1,4 @@
-.box-menus .item-box{
+.box-menus .item-box {
   min-height: 350px;
 }
 .row.no-gutters.box-menus.two, .row.no-gutters.box-menus.three {
@@ -26,4 +26,36 @@ div#bottom-right-container:focus div#bottom-right  {
 }
 #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #business-insurance > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #news > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a {
   padding-top: 0;
+}
+
+.seven .col-3-rows .item-box{
+  min-height: 33.3333%;
+}
+.ten .col-5-10{
+  width: 20%;
+}
+.eleven .col-3-rows .item-box{
+  min-height: 33.33333%;
+}
+
+@media (max-width: 1024px) {
+  .ten .col-5-10{
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .seven .col-3-rows .item-box{
+    min-height: 350px
+  }
+  .ten .col-5-10{
+    width: 100%;
+  }
+  .eleven .col-3-rows .item-box{
+    min-height: 350px;
+  }
+}
+@media (max-width: 575px) {
+  .ten .col-5-10{
+    width: 100%;
+  }
 }

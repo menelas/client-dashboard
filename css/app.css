@@ -391,10 +391,6 @@
     right: 37px;
     top: 37px;
 }
-.fully-open{
-    right: 30px;
-    top: 37px;
-}
  @media (max-width: 767px) {
      .item-box h4 {
          text-align: center;

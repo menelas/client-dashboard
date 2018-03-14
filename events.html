@@ -16,6 +16,13 @@
     <link href="css/app.css" rel="stylesheet">
     <link href="css/app.bootstrap.css" rel="stylesheet">
     <link href="css/events.css" rel="stylesheet">
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <!-- Use default app date picker when programming date picker and not this demo version-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+    <script type="text/javascript" src="js/date-picker.js"></script>
 </head>
 
 <body class="events">
@@ -36,7 +43,7 @@
         <span class="btn-open rounded-circle"><i class="fa fa-bars" aria-hidden="true"></i></span>
         <div class="main-nav">
             <div class="row no-gutters box-menus">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-2 item-box d-flex justify-content-center" id="events-fap">
+                <div class="col-12 col-md-12 col-lg-2 item-box d-flex justify-content-center" id="events-fap">
                     <div class="d-inline-flex flex-column">
                         <h4 class="mb-1 pt-4"><span>Events</span></h4>
                         <h5 class="mb-5">Monday 11th </h5>
@@ -50,7 +57,7 @@
                         <button class="btn add-cat-btn"><i class="fa fa-plus" aria-hidden="true"></i> Add Category</button>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-10 item-box" id="webinars-main">
+                <div class="col-12 col-md-12 col-lg-10 item-box" id="webinars-main">
                     <div class="row events-month px-5 py-3">
                         <div class="col-12 col-sm-3">
 
@@ -64,7 +71,7 @@
                         </div>
                     </div>
                     <div class="row no-gutters">
-                        <div class="col-12 col-sm-12 col-lg-3 event-list">
+                        <div class="col-12 col-lg-3 event-list">
                             <div class="event-type p-4">
                                 <h3>Webinar Sales MKT Team</h3>
                                 <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
@@ -114,7 +121,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-lg-9 event-year">
+                        <div class="col-12 col-lg-9 event-year">
                             <div class="row justify-content-end text-right mb-5">
                                 <div class="col-6 col-lg-4 event-btns">
                                     <div class="btn-group" role="group" aria-label="Month year">

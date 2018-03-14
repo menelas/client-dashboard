@@ -1,3 +1,6 @@
+## 2018-03-14
+• Updated app
+
 ## 2018-03-13
 • Created login and events widget
 
