@@ -2,17 +2,16 @@
  .btn-event {
      padding: 13.5px;
 }
- #safety > .bg-cover-img{
-     background-image: url("../images/dashboard/safety.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center 
-}
- .bg-cover-img img{
+.bg-cover-img img{
      visibility: hidden;
      width: 100%;
      height: 100% 
 }
+#safety > .bg-cover-img {
+     background: url("../images/dashboard/safety.jpg") no-repeat center;
+     background-size: cover;
+}
+
  #employee-benefits > .bg-cover-img {
      background: url("../images/dashboard/employee-benefits.jpg") no-repeat center;
      background-size: cover;

@@ -1,0 +1,205 @@
+.events .main-nav{
+     background: #4978ae;
+}
+ .events .box-menus .item-box:hover {
+     border: 0;
+     cursor: inherit;
+}
+ .events .box-menus .item-box:before {
+     display: none;
+}
+ #events-fap{
+     padding-bottom: 5%;
+     background-image: url(../images/dashboard/business-insurance.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+ #events-fap h4{
+     font-size: 40px;
+     line-height: 42px;
+}
+ #events-fap h5{
+     font-weight: normal;
+}
+ .list-events li{
+     padding-left: 30px;
+     position: relative;
+     margin-bottom: 7px;
+}
+ .list-events li:before{
+     position: absolute;
+     content: "";
+     left: 0;
+     top: 5px;
+     height: 10px;
+     width: 10px;
+     border-radius: 50%;
+     border: 1px solid #d44352;
+     background: transparent;
+}
+ .list-events li.general:before{
+     border: 1px solid #d44352;
+     background: transparent;
+}
+.list-events li.sale:before{
+    border: 1px solid #fcce53;
+    background: #fcce53;
+}
+.list-events li.insurance:before{
+    border: 1px solid #3ab75c;
+    background-color: #3ab75c;
+}
+.list-events li.holiday:before{
+    border: 1px solid #528fcd;
+    background: transparent;
+}
+.list-events li.marketing:before{
+    border: 1px solid #7046d1;
+    background: #7046d1;
+}
+ .add-cat-btn:hover{
+     cursor: pointer;
+ }
+ .add-cat-btn{
+     background: none;
+     border: none;
+     color: #fff;
+ }
+ .event-type{
+     background-color: #fcce54;
+     color: #000;
+     position: relative;
+ }
+.event-type.event-type-2{
+    background-color: #3bb85d;
+    color: #fff;
+}
+.event-type.event-type-3{
+    background-color: #7147d1;
+    color: #fff;
+}
+.event-type.event-type-4{
+    background-color: #fdcf54;
+}
+.event-type h3{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.event-type .event-des{
+     font-size: 14px;
+}
+.events-month{
+    background-color: #4878af;
+}
+.item-box h4.month-ev{
+    font-size: 40px;
+}
+.row-month span i{
+    font-size: 30px;
+}
+.event-year{
+    padding: 25px 70px 50px 70px !important;
+    background-color: #045791;
+}
+.event-type .event-share{
+    position: absolute;
+    background-color: rgba(252, 206, 84, 0.9);
+    width: 50px;
+    top: 0;
+    height: 100%;
+    right: -50px;
+    display: none !important;
+    z-index: 5;
+}
+.event-type-2 .event-share{
+   background-color: rgba(59, 184, 93, 0.9);
+}
+.event-type-3 .event-share{
+    background-color: rgba(113, 71, 209, 0.9);
+}
+.event-type-4 .event-share{
+    background-color: rgba(253, 207, 84, 0.9);
+}
+.event-type:hover .event-share{
+    display: flex !important;
+}
+.current-year{
+    font-size: 30px;
+}
+.event-btns .btn-group{
+    border: 1px solid #fff;
+}
+.event-btns button{
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 10px 25px;
+    color: #fff;
+    box-shadow: none !important;
+}
+.event-btns button:focus, .event-btns button:hover, .event-btns button.actived{
+    background-color: #fff;
+    color: #005697;
+    border: 0;
+    outline: 0;
+}
+.fa:hover {
+    opacity: 0.6;
+}
+.date-d{
+    color: #5e93bb;
+}
+.calendar table tr th, .calendar table tr td{
+    font-size: 35px;
+    padding: 25px !important;
+    text-align: center;
+}
+.calendar table tr td.other-date{
+    color: #5e93bb;
+}
+.calendar table tr td:hover{
+    background-color: #fff;
+    color: #005697;
+}
+.event-share a{
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 0;
+    color: #000;
+}
+.event-type-2 .event-share a{
+    color: #fff;
+}
+.event-type-3 .event-share a{
+    color: #fff;
+}
+.event-type-4 .event-share a{
+    color: #000;
+}
+.underline-date{
+    text-decoration: underline;
+}
+@media (min-width: 576px) and (max-width: 1200px){
+    .event-year {
+        padding: 14px !important;
+    }
+    .calendar table tr th, .calendar table tr td {
+        font-size: 25px;
+        padding: 10px !important;
+    }
+}
+@media (max-width: 991px){
+    .event-type .event-share {
+        right: 0;
+    }
+}
+ @media (max-width: 575px){
+     .event-year {
+         padding: 25px !important;
+     }
+     .calendar table tr th, .calendar table tr td {
+         font-size: 15px;
+         padding: 15px 5px !important;
+     }
+}

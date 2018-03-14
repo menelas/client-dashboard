@@ -63,7 +63,7 @@
     width: 100%;
     -webkit-appearance: none;
     position: relative;
-    background-image: url("../images/search_icon.png");
+    background-image: url("../images/icons/search_icon.png");
     background-repeat: no-repeat;
     background-position: right center;
 }

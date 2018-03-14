@@ -35,7 +35,7 @@
      top: 5px;
      width: 15px;
      height: 11px;
-     background: url("../images/tick_hover.png") no-repeat;
+     background: url("../images/icons/tick_hover.png") no-repeat;
 }
  .webinbar-item a > img{
      width: 100%;
@@ -75,12 +75,13 @@
      padding: 5px 10px;
      background: #e0e2e3;
      height: 40px;
+     line-height: 20px;
      border: 1px solid #646565;
      width: 100%;
      -webkit-appearance: none;
      font-weight: bold;
      position: relative;
-     background-image: url("../images/search_icon.png");
+     background-image: url("../images/icons/search_icon.png");
      background-repeat: no-repeat;
      background-position: right center;
 }

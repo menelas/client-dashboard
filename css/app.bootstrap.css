@@ -25,3 +25,6 @@
      opacity: 1;
      padding: 0px;
 }
+button:hover {
+     opacity: 0.9;
+}

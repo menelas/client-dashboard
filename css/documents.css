@@ -40,9 +40,8 @@
 }
 
  #start-date li, #ends-date li{
-     padding: 15px 5px 0px 12px;
+     padding: 15px 5px 15px 12px;
      margin-bottom: 10px;
-     height: 51px;
 }
  #start-date li:hover, #ends-date li:hover, #start-date li.active, #ends-date li.active{
      background-color: #d42043;
@@ -63,7 +62,7 @@
      font-weight: bold;
      font-size: 18px;
      position: relative;
-     background-image: url("../images/search_icon.png");
+     background-image: url("../images/icons/search_icon.png");
      background-repeat: no-repeat;
      background-position: right center;
 }

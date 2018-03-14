@@ -1,0 +1,29 @@
+.box-menus .item-box{
+  min-height: 350px;
+}
+.row.no-gutters.box-menus.two, .row.no-gutters.box-menus.three {
+  min-height: 675px;
+}
+h4.d-inline-flex.flex-column{
+  padding-top: 70px;
+}
+.box-menus .expanded-menu:before{
+  background-color: #1e518a;
+}
+div#top-left-container:focus div#top-left,
+div#top-middle-container:focus div#top-middle,
+div#top-right-container:focus div#top-right,
+div#middle-left-container:focus div#middle-left,
+div#middle-middle-container:focus div#middle-middle,
+div#middle-right-container:focus div#middle-right,
+div#bottom-left-container:focus div#bottom-left,
+div#bottom-middle-container:focus div#bottom-middle,
+div#bottom-right-container:focus div#bottom-right  {
+  background: #1e518a;
+}
+#top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li {
+ padding-bottom: 0;
+}
+#top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #business-insurance > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #news > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a {
+  padding-top: 0;
+}
