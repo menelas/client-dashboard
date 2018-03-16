@@ -314,6 +314,41 @@
      margin-top: -3px;
      margin-bottom: 7px;
 }
+
+ .clear-sky {
+    background: url(../images/dashboard/icons/clear-sky.png) no-repeat center;
+    height: 60px;
+    width: 50px;
+    margin-bottom: 4px;
+}
+
+ .scattered-clouds {
+    background: url(../images/dashboard/icons/scattered-clouds.png) no-repeat center;
+    height: 60px;
+    width: 50px;
+    margin-bottom: 4px;
+}
+
+ .rain {
+    background: url(../images/dashboard/icons/rain.png) no-repeat center;
+    height: 60px;
+    width: 50px;
+    margin-bottom: 4px;
+}
+
+ .snow {
+    background: url(../images/dashboard/icons/snow.png) no-repeat center;
+    height: 60px;
+    width: 50px;
+    margin-bottom: 4px;
+}
+
+ .thunderstorm {
+    background: url(../images/dashboard/icons/thunderstorm.png) no-repeat center;
+    height: 60px;
+    width: 45px;
+    margin-bottom: 4px;
+}
  .stock-wrap .stock-item, .weather-wrap .weather-item{
      padding: 0;
      position: relative;
@@ -425,3 +460,11 @@
  .top-nav-title-search.top-nav-title:hover {
      color: #000;
 }
+/*full weather css*/
+.weather-only .expand-item {
+    width: 25%;
+}
+input[type="radio"]:checked+label~.top-nav-content.weather-only{
+    width: 60%;
+}
+/**full weather css**/

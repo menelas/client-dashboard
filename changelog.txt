@@ -1,3 +1,7 @@
+## 2018-03-15
+• Updated human-resources and dashboard as well as app.css
+• Completed grid layout
+
 ## 2018-03-14
 • Updated app
 

@@ -15,14 +15,10 @@
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
     <link href="css/app.bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
     <link href="css/events.css" rel="stylesheet">
 
-    <!-- Bootstrap Date-Picker Plugin -->
-    <!-- Use default app date picker when programming date picker and not this demo version-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
-
-    <script type="text/javascript" src="js/date-picker.js"></script>
 </head>
 
 <body class="events">
@@ -58,20 +54,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-10 item-box" id="webinars-main">
-                    <div class="row events-month px-5 py-3">
-                        <div class="col-12 col-sm-3">
-
-                        </div>
-                        <div class="col-12 col-sm-9 text-right">
-                            <div class="row align-content-center align-items-center row-month">
-                                <div class="col-2 col-md-1"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span></div>
-                                <div class="col-8 col-md-10"><h4 class="month-ev text-center">January</h4></div>
-                                <div class="col-2 col-md-1"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row no-gutters">
                         <div class="col-12 col-lg-3 event-list">
+                            <div class="clone-col d-md-none d-lg-block"></div>
                             <div class="event-type p-4">
                                 <h3>Webinar Sales MKT Team</h3>
                                 <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
@@ -122,73 +107,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-9 event-year">
-                            <div class="row justify-content-end text-right mb-5">
-                                <div class="col-6 col-lg-4 event-btns">
-                                    <div class="btn-group" role="group" aria-label="Month year">
-                                        <button type="button" class="btn actived">Month</button>
-                                        <button type="button" class="btn">Year</button>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-lg-4"><div class="current-year">2018</div></div>
-                            </div>
-                            <div class="calendar">
-                                <table>
-                                    <tr class="date-d">
-                                        <th>M</th>
-                                        <th>T</th>
-                                        <th>W</th>
-                                        <th>T</th>
-                                        <th>F</th>
-                                        <th>S</th>
-                                        <th>S</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="other-date">28</td>
-                                        <td class="other-date">29</td>
-                                        <td class="other-date">30</td>
-                                        <td class="other-date">31</td>
-                                        <td class="underline-date">1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>5</td>
-                                        <td>6</td>
-                                        <td>7</td>
-                                        <td>8</td>
-                                        <td class="underline-date">9</td>
-                                        <td>10</td>
-                                    </tr>
-                                    <tr>
-                                        <td>11</td>
-                                        <td>12</td>
-                                        <td class="underline-date">13</td>
-                                        <td>14</td>
-                                        <td class="underline-date">15</td>
-                                        <td>16</td>
-                                        <td>17</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18</td>
-                                        <td>19</td>
-                                        <td>20</td>
-                                        <td>21</td>
-                                        <td>22</td>
-                                        <td>23</td>
-                                        <td>24</td>
-                                    </tr>
-                                    <tr>
-                                        <td>25</td>
-                                        <td class="underline-date">26</td>
-                                        <td>27</td>
-                                        <td>28</td>
-                                        <td>29</td>
-                                        <td>30</td>
-                                        <td>31</td>
-                                    </tr>
-                                </table>
-                            </div>
+                            <div id="custom-calendar"></div>
                         </div>
                     </div>
                 </div>
@@ -230,7 +149,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <script src="js/menu.js"></script>
+    <script type="text/javascript" src="js/date-picker.js"></script>
 </body>
 
 </html>

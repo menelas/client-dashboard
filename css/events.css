@@ -99,7 +99,6 @@
     font-size: 30px;
 }
 .event-year{
-    padding: 25px 70px 50px 70px !important;
     background-color: #045791;
 }
 .event-type .event-share{
@@ -180,9 +179,66 @@
 .underline-date{
     text-decoration: underline;
 }
+.clone-col{
+    min-height: 100px;
+    background-color: #4878af;
+}
+#custom-calendar tr{
+    background: none !important;
+}
+#custom-calendar tr, #custom-calendar tr th, #custom-calendar tr td {
+    border-radius: 0;
+    font-size: 35px;
+}
+#custom-calendar tr:hover, #custom-calendar tr th:hover {
+    background: transparent !important;
+}
+#custom-calendar thead tr:first-child{
+    background-color: #4878af !important;
+}
+#custom-calendar thead tr:first-child th{
+    height: 100px;
+}
+#custom-calendar thead tr+tr th{
+    color: #5e93bb;
+    padding-top: 30px !important;
+}
+#custom-calendar .datepicker{
+    width: 100%;
+    padding: 0;
+}
+#custom-calendar table tr td:hover {
+    background-color: #fff;
+    color: #005697;
+}
+#custom-calendar table tr td.old, #custom-calendar table tr td.new {
+    color: #5e93bb;
+}
+#custom-calendar tbody{
+    padding: 20px !important;
+}
+#custom-calendar tbody tr td{
+    padding: 20px !important;
+}
+#custom-calendar table tr td[colspan='7']:hover {
+    background-color: transparent;
+    color: inherit;
+}
+#custom-calendar table tr td[colspan='7'] span.month, #custom-calendar table tr td[colspan='7'] span.year {
+   border-radius: 0;
+   padding: 20px !important;
+   height: auto;
+}
+#custom-calendar table tr th.prev, #custom-calendar table tr th.next {
+    width: auto;
+}
+#custom-calendar table tr td[colspan='7'] span.month:hover, #custom-calendar table tr td[colspan='7'] span.year:hover {
+    background-color: #fff;
+    color: #005697;
+}
 @media (min-width: 576px) and (max-width: 1200px){
     .event-year {
-        padding: 14px !important;
+
     }
     .calendar table tr th, .calendar table tr td {
         font-size: 25px;
@@ -196,7 +252,7 @@
 }
  @media (max-width: 575px){
      .event-year {
-         padding: 25px !important;
+
      }
      .calendar table tr th, .calendar table tr td {
          font-size: 15px;
