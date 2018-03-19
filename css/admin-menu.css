@@ -1,0 +1,60 @@
+/* Nav with admin */
+ #hamburger-nav .seach-nav {
+     top: 4%;
+     left: 5%;
+     position: absolute;
+     opacity: 0;
+     animation: show-nav .3s infinite;
+     animation-delay: .5s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+}
+ #hamburger-nav .acc-nav {
+     position: absolute;
+     top: 29%;
+     left: 9%;
+     opacity: 0;
+     animation: show-nav .3s infinite;
+     animation-delay: 0.7s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+}
+ #hamburger-nav .group-nav {
+     position: absolute;
+     top: 53%;
+     left: 22%;
+     opacity: 0;
+     animation: show-nav .3s infinite;
+     animation-delay: 0.9s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+}
+ #hamburger-nav .admin-nav {
+     position: absolute;
+     top: 70%;
+     left: 47%;
+     opacity: 0;
+     animation: show-nav .3s infinite;
+     animation-delay: 1.1s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+}
+ #hamburger-nav .signoff-nav {
+     position: absolute;
+     top: 75%;
+     left: 74%;
+     opacity: 0;
+     animation: show-nav .3s infinite;
+     animation-delay: 1.3s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+}
+
+ .tooltip-admin {
+     left: 24px;
+     top: 169px;
+}
+ .tooltip-signoff {
+     left: 74px;
+     top: 187px;
+}

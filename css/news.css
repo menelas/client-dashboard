@@ -45,6 +45,7 @@
  .news-and-updates fieldset{
      border: 1px solid #005697;
      padding: 10px 15px;
+     height: 100%;
 }
  .news-and-updates legend{
      width: auto;
@@ -72,6 +73,9 @@
  .news-date sup{
      font-size: 29px;
 }
+ .news-content{
+     word-wrap: break-word;
+ }
  .news-content h3{
      font-size: 18px;
      color: #005697;
@@ -87,6 +91,8 @@
      width: 6px !important;
 }
 
-.content-parag {
-
+@media (min-width: 768px){
+    #news-fap {
+        min-height: 750px;
+    }
 }

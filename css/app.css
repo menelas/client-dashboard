@@ -83,9 +83,18 @@
      height: 31px;
      background-position: center;
      padding: 18px;
+     cursor: pointer;
 }
  .user-icon {
      background: url("../images/menu/user-profile.png") no-repeat;
+     width: 25px;
+     height: 31px;
+     background-position: center;
+     padding: 19px;
+     cursor: pointer;
+}
+ .admin-icon {
+     background: url("../images/menu/admin.png") no-repeat;
      width: 25px;
      height: 31px;
      background-position: center;
@@ -114,6 +123,7 @@
      height: 31px;
      background-position: center;
      padding: 18px;
+     cursor: pointer;
 }
  .user-icon:hover {
      background: url("../images/menu/user-profile-hover.png") no-repeat;
@@ -121,6 +131,15 @@
      height: 31px;
      background-position: center;
      padding: 19px;
+     cursor: pointer;
+}
+ .admin-icon:hover {
+     background: url("../images/menu/admin-hover.png") no-repeat;
+     width: 25px;
+     height: 31px;
+     background-position: center;
+     padding: 18px;
+     cursor: pointer;
 }
  .team-icon:hover {
      background: url("../images/menu/team-hover.png") no-repeat;
@@ -128,6 +147,7 @@
      height: 32px;
      background-position: center;
      padding: 18px;
+     cursor: pointer;
 }
  .log-out-icon:hover {
      background: url("../images/menu/log-out-hover.png") no-repeat;
@@ -135,6 +155,7 @@
      height: 33px;
      background-position: center;
      padding: 18px;
+     cursor: pointer;
 }
  .btn-open:hover, #btn-close:hover {
      cursor: pointer;
@@ -154,6 +175,7 @@
      color: #fff;
      font-size: 15px;
      transition-duration: .5s;
+
 }
  #hamburger-nav:before {
      position: absolute;
@@ -358,6 +380,15 @@
  .box-menus .item-box:hover:before {
      background-image: linear-gradient(to bottom right,#1f88d8,#1f89d9);
 }
+ .box-menus .learn-more-box:before, .box-menus .learn-more-box:hover {
+    background-image: linear-gradient(to right,#4f4f4f,#454545) !important;
+    opacity: 0.7;
+}
+
+ .box-menus .learn-more-box:hover:not(:focus) {
+    background-image: linear-gradient(to right,#4f4f4f,#454545);
+    opacity: 0.8;
+}
 .btn-open{
      top: 0;
      right: 0;
@@ -449,7 +480,6 @@
      left: 0;
      top: 0;
 }
-}
  .dash-transition {
      -webkit-transition: all 0.25s ease;
      -moz-transition: all 0.25s ease;
@@ -498,6 +528,12 @@
      font-family: "gotham_htflight_italic", Helvetica Neue, sans-serif;
      width: 96%;
      text-align: right;
+}
+
+ @media (max-width: 1024px){
+    footer {
+        position: initial;
+    }
 }
 .copyright {
     font-size: 13px;
@@ -673,7 +709,8 @@
      position: relative;
      z-index: 9;
      margin-top: 25px;
-     display: none;
+     font-size: 14px;
+
 }
  .btn-border{
      border: 2px solid #fff;
@@ -686,8 +723,8 @@
      -o-transition: all 300ms ease;
 }
  .btn-learn-more:hover{
-     background-color: #fff;
-     color: #000;
+    opacity: 0.7;
+
 }
  #hamburger-nav.m-collapsed{
      position: fixed;
@@ -995,6 +1032,9 @@ span.exit.pull-right{
      padding-left: 2px;
      padding-right: 2px;
 }
+.btn-cell:hover {
+    opacity: 0.7;
+}
  .statistics .dropdown-menu>li>a:hover {
      color: #000 !important;
 }
@@ -1143,7 +1183,7 @@ span.exit.pull-right{
      border-radius: 3px;
      text-align: center;
      color: #fff;
-     font-size: 10px;
+     font-size: 14px;
      white-space: nowrap;
 }
  .actionBtn a.actionBlue {
@@ -1238,4 +1278,123 @@ span.exit.pull-right{
 }
  .numeric {
      text-align: right;
+}
+.btn-icon {
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+}
+
+/***** Profile Modal ****************************/
+
+.profile-container {
+    padding-top: 152px !important;
+    padding-left: 30px;
+}
+
+.profile-img {
+     border-radius: 50%;
+     border: 5px solid #fff;
+     position: absolute;
+}
+
+.profile label {
+    width: 100%;
+    text-align: left;
+}
+
+.profile fieldset{
+    border: 1px solid #005697;
+    margin-bottom: 25px;
+}
+
+.profile legend{
+    width: auto;
+    padding: 0 5px;
+    font-size: 14px;
+    margin: 0 10px;
+    font-weight: 600;
+    color: #005697;
+}
+
+.profile input {
+    border: none;
+    padding: 10px 15px;
+    color: #005697;
+}
+
+.profile input#email, .profile input#password, .profile input#tel {
+    color: #005697;
+}
+
+.profile input:focus{
+    box-shadow: none;
+    outline: 0;
+}
+.profile input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #005697;
+}
+.profile input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #005697;
+}
+.profile input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #005697;
+}
+
+
+/***** Input fields ****************************/
+
+.input-page {
+    color: #000;
+    padding: 10px;
+}
+
+.custom-control-label::before, .custom-control-label::after{
+    top: 0;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::after{
+    background-image: none !important;
+    border: 2px solid #005697;
+    border-radius: 50%;
+    background-color: #005697;
+    z-index: 5;
+}
+.custom-radio .custom-control-input:focus~.custom-control-label::before{
+    box-shadow: none;
+    outline: 0;
+}
+.custom-radio .custom-control-label::before{
+    background-color: #fff;
+    border: 2px solid #005697;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #005697;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    color: #000;
+    background-color: #005697;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+    z-index: 5;
+}
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+    box-shadow: none;
+    outline: 0;
+}
+.custom-checkbox .custom-control-label::before{
+    background-color: #fff;
+    border: 1px solid #005697;
+    border-radius: 0;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #005697;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    color: #000;
+    background-color: #005697;
 }

@@ -25,6 +25,11 @@
      opacity: 1;
      padding: 0px;
 }
+.btn-primary {
+     color: #fff;
+     background-color: #005696;
+     border-color: #005696;
+}
 button:hover {
      opacity: 0.9;
 }

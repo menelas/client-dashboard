@@ -132,11 +132,12 @@
      padding: 0 15px;
 }
  .team-title {
-     font-size: 14px;
+     font-size: 13px;
 }
 /************ Calendar ************/
  .sb-top {
      color: #000;
+     background-color: #f4f4f4;
 }
  body{
      display: block;
@@ -468,3 +469,20 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     width: 60%;
 }
 /**full weather css**/
+#main-dasboard > .container-fluid{
+    margin-bottom: 20px;
+}
+.carousel-item .col-6{
+    word-wrap: break-word;
+}
+.carousel.slide{
+    min-height: 344px;
+}
+@media (max-width: 1300px){
+    #top-nav-container .top-nav-social i {
+        padding: 15px 0
+    }
+    .top-navi  .top-nav-social .top-navi-item {
+        min-width: 0;
+    }
+}
