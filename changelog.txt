@@ -1,3 +1,7 @@
+## 2018-03-19
+• Created admin.html and profile modal on dashboard
+• Updated left side of news, webinars, etc.
+
 ## 2018-03-15
 • Updated human-resources and dashboard as well as app.css
 • Completed grid layout

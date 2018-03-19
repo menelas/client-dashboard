@@ -2,8 +2,11 @@
     position: relative;
     height: 100%;
     background: url("../images/sub-pages/login-bg.jpg") no-repeat;
-    background-position: top left;
-    background-size: 2000px 2000px cover;
+    /*background: url("../images/sub-pages/login-bg-2.jpg") no-repeat;
+    background: url("../images/sub-pages/login-bg-3.jpg") no-repeat;
+    background: url("../images/sub-pages/login-bg-4.jpg") no-repeat;*/
+    background-position: center;
+    background-size: cover;
 }
 .main-login:before{
     content: "";

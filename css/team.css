@@ -95,6 +95,7 @@
 .card{
     border-radius: 0;
     border: 1px solid #005697;
+    height: 100%;
 }
 .card-header{
     background-color: #4878af;
@@ -114,6 +115,11 @@
 .memberName{
     margin-top: 25px;
     font-size: 30px;
+}
+@media (min-width: 768px){
+    #team-fap {
+        min-height: 750px;
+    }
 }
 @media (max-width: 767px){
     .modal-dialog {

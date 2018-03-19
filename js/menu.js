@@ -16,16 +16,6 @@
             $('.btn-open').show();
         }
     });
-    $('.item-box-btn').click(function(e){
-        $(this).addClass("p-a-actived");
-        $(this).children('.btn-learn-more').addClass("a-actived");
-        $(this).children('.btn-learn-more').show();
-    });
-    $(document).click(function(e){
-        if ( $(e.target).closest('.p-a-actived').length === 0 && $(e.target).closest('.a-actived').length === 0 ) {
-            $('.a-actived').hide();
-        }
-    });
     $(document).click(function(e){
         if ( $(e.target).closest('.expanded-menu').length === 0 && $(e.target).closest('.nav-has-sub').length === 0 ) {
             $('.non-sub-item').css({'opacity':'1'});

@@ -208,6 +208,11 @@
      border-radius: 50%;
      border: 5px solid #fff;
 }
+@media (min-width: 768px){
+    #webinars-left {
+        min-height: 750px;
+    }
+}
  @media (min-width: 576px){
      .modal-dialog {
          max-width: 700px;

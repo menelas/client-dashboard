@@ -34,6 +34,9 @@
  h4.d-inline-flex.flex-column.bump{
      padding-top: 140px;
 }
+.item-box.nav-has-sub h4 ul, .item-box.nav-has-sub-tot h4 ul {
+    width: auto;
+}
  @media (max-width: 767px) {
      div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right{
          width: 100% !important;
