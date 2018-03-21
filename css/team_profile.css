@@ -31,10 +31,10 @@ fieldset a{
     cursor: inherit;
 }
 #team-fap{
-    background-image: url(../images/dashboard/business-insurance.jpg);
+    background-image: url(../images/sub-pages/team-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 .all-team h2{
     font-size: 30px;

@@ -14,6 +14,26 @@
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
+     position: relative;
+}
+#policies-fap:before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4978ae+0,207cca+0,2989d8+0,000256+48,0b0059+100,207cca+100 */
+    background: #4978ae; /* Old browsers */
+    background: -moz-linear-gradient(top, #4978ae 0%, #207cca 0%, #2989d8 0%, #000256 48%, #0b0059 100%, #207cca 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #4978ae 0%,#207cca 0%,#2989d8 0%,#000256 48%,#0b0059 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #4978ae 0%,#207cca 0%,#2989d8 0%,#000256 48%,#0b0059 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4978ae', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
+}
+#policies-fap h5, #policies-fap ul{
+    z-index: 2;
 }
  .links-list li{
      padding-left: 30px;
@@ -27,6 +47,10 @@
      top: 0;
      font-family: "fontAwesome" 
 }
+ #policies-fap h4{
+     font-size: 40px;
+     line-height: 42px;
+ }
  #search-items{
      background-color: #fff;
      color: #000;

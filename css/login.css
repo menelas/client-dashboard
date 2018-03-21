@@ -145,3 +145,17 @@ i.disabled{
         width: 96%;
     }
 }
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .main-login {
+        max-height: 700px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .main-login {
+        min-height: 800px;
+    }
+}

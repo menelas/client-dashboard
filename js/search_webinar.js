@@ -14,4 +14,19 @@ var webList = new List('search-webinars', options);
             webList.filter();
         }
     });
+    function sidebarWebinar(){
+        var videoWrap = $('.video-wrap').height();
+        var webinarInfo = $('.webinar-info').height();
+        var webTitle = $('.prev-webinbar').height();
+        var pSearch = $('.p-search-wrap').height();
+        var searchW = $('.search_w').height();
+        var hc = (videoWrap+webinarInfo) - (webTitle + pSearch + searchW);
+        if( hc > 600 ){
+            $('.col-results').css({'min-height': hc+'px'});
+        }
+    }
+    sidebarWebinar();
+    $(window).on('resize', function(){
+        sidebarWebinar();
+    });
 })(jQuery);

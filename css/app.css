@@ -23,7 +23,7 @@
      animation: fadein .3s;
 }
 /************ Font Styling ************/
- strong, .breadcrumb-item.active, .back, th {
+ strong, .breadcrumb-item.active, .back, th, .special-mon {
      font-family: "gotham_htfbold", Helvetica Neue, sans-serif;
 }
  p {
@@ -51,10 +51,7 @@
  .main-content-page.container-fluid {
      padding: 0;
 }
- .main-nav .col-sm-6 {
-     padding: 5%;
-     text-align: center;
-}
+
  .box-menus h4 a, .box-menus a {
      text-decoration: none;
      color: #fff;
@@ -351,13 +348,13 @@
      height: 100%;
 }
  .box-menus .item-box {
-     min-height: 280.19px;
      background: #4271a7;
      background-size: cover;
      position: relative;
      background-repeat: no-repeat;
      border: 0;
      overflow: hidden;
+     min-height: 190px;
 }
  .box-menus .item-box:before, .box-menus .collapse-menu:before {
      content: '';
@@ -388,6 +385,24 @@
  .box-menus .learn-more-box:hover:not(:focus) {
     background-image: linear-gradient(to right,#4f4f4f,#454545);
     opacity: 0.8;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+     .box-menus .item-box{
+        min-height: 300px;
+    }
+    .img-fluid {
+        max-width: 90%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+     .box-menus .item-box {
+        min-height: 250px;
+    }
+
 }
 .btn-open{
      top: 0;
@@ -508,17 +523,17 @@
      transition: 5s;
      background-color: red !important;
 }
+
 /************ Footer ************/
  footer {
     font-size: 14px;
     margin: 0;
-    position: fixed;
     bottom: 0;
     z-index: 9999;
-    background: #fff;
+    color: #000;
     min-height: 25px;
     width: 100%;
-    padding-top: 5px;
+    margin-top: 5px;
 }
 
  footer > a {
@@ -526,7 +541,7 @@
 }
  footer .ft-quote {
      font-family: "gotham_htflight_italic", Helvetica Neue, sans-serif;
-     width: 96%;
+     width: 100%;
      text-align: right;
 }
 
@@ -1397,4 +1412,9 @@ span.exit.pull-right{
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     color: #000;
     background-color: #005697;
+}
+a[href *= 'mailto:'] {
+    color: #000;
+    word-wrap: break-word;
+    word-break: break-all;
 }

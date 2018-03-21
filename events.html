@@ -12,6 +12,7 @@
     <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="fonts/specimen_files/specimen_stylesheet.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
     <link href="fonts/fonts.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
     <link href="css/app.bootstrap.css" rel="stylesheet">
@@ -54,60 +55,135 @@
                         <button class="btn add-cat-btn"><i class="fa fa-plus" aria-hidden="true"></i> Add Category</button>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-10 item-box" id="webinars-main">
+                <div class="col-12 col-md-12 col-lg-10 item-box" id="events-main">
                     <div class="row no-gutters">
-                        <div class="col-12 col-lg-3 event-list">
+                        <div class="col-12 col-lg-4 event-list">
                             <div class="clone-col d-md-none d-lg-block"></div>
-                            <div class="event-type p-4">
-                                <h3>Webinar Sales MKT Team</h3>
-                                <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-                                <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
-                                <div class="event-share text-center flex-column justify-content-center align-items-center">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    </ul>
+                            <div id="events-scrollbar">
+                                <div class="event-type p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="event-type event-type-2 p-4">
-                                <h3>Webinar Sales MKT Team</h3>
-                                <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-                                <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
-                                <div class="event-share text-center flex-column justify-content-center align-items-center">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    </ul>
+                                <div class="event-type event-type-2 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="event-type event-type-3 p-4">
-                                <h3>Webinar Sales MKT Team</h3>
-                                <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-                                <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
-                                <div class="event-share text-center flex-column justify-content-center align-items-center">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    </ul>
+                                <div class="event-type event-type-3 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="event-type event-type-4 p-4">
-                                <h3>Webinar Sales MKT Team</h3>
-                                <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-                                <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
-                                <div class="event-share text-center flex-column justify-content-center align-items-center">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    </ul>
+                                <div class="event-type event-type-4 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="event-type event-type-2 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="event-type event-type-3 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="event-type event-type-4 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="event-type event-type-2 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="event-type event-type-3 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="event-type event-type-4 p-3">
+                                    <h3>Webinar Sales MKT Team</h3>
+                                    <p class="mb-3 event-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                                    <p class="event-time"><strong><small>9:00 am - 11:30am</small></strong></p>
+                                    <div class="event-share text-center flex-column justify-content-center align-items-center">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-9 event-year">
+                        <div class="col-12 col-lg-8 event-year">
                             <div id="custom-calendar"></div>
                         </div>
                     </div>
@@ -155,8 +231,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/menu.js"></script>
     <script type="text/javascript" src="js/date-picker.js"></script>
+    <script type="text/javascript" src="js/scrollbar.js"></script>
 </body>
 
 </html>

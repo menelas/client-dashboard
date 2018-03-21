@@ -1,7 +1,6 @@
 .safety .box-menus .item-box{
   background-image: none !important;
   background-color: transparent !important;
-  min-height: 350px;
 }
 .safety .main-nav{
   background: url(../images/sub-pages/safety-bg.jpg) no-repeat;
@@ -29,4 +28,31 @@ div#bottom-right-container:focus div#bottom-right  {
 }
 #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #business-insurance > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #news > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a {
   padding-top: 0;
+}
+
+.box-menus .item-box:before, .box-menus .collapse-menu:before {
+	background-image: none;
+}
+
+.one-gradient:before {
+	background: red;
+	background: -moz-linear-gradient(135deg, #4a7aab 0%, #19335a 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #19335a), color-stop(100%, #4a7aab)); /* safari4+,chrome */
+background: -webkit-linear-gradient(135deg, #4a7aab 0%, #19335a 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(135deg, #4a7aab 0%, #19335a 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(135deg, #4a7aab 0%, #19335a 100%); /* ie10+ */
+background: linear-gradient(315deg, #4a7aab 0%, #19335a 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19335a', endColorstr='#4a7aab',GradientType=1 ); /* ie6-9 */
+
+	opacity: 0.7 !important;
+}
+
+.two-gradient:before {
+	background-color: orange;
+	opacity: 0.7 !important;
+}
+
+.three-gradient:before {
+	background-color: black;
+	opacity: 0.7 !important;
 }

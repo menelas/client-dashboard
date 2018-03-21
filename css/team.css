@@ -20,8 +20,24 @@
      display: none;
 }
  #team-fap{
-  background: url(../images/sub-pages/team-bg.jpg) no-repeat;
-  background-size: cover;
+     background-image: url(../images/sub-pages/team-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+}
+#team-fap:before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.box-menus .item-box#team-fap:before {
+    background-image: none;
 }
  .all-team h2{
      font-size: 30px;
@@ -116,16 +132,35 @@
     margin-top: 25px;
     font-size: 30px;
 }
-@media (min-width: 768px){
-    #team-fap {
-        min-height: 750px;
-    }
-}
 @media (max-width: 767px){
     .modal-dialog {
         max-width: 700px;
     }
     .member-img img {
         position: static;
+    }
+}
+
+ .box-menus .item-box:hover:before {
+     background-image: none !important;
+}
+
+@media (min-width: 768px){
+    #team-fap {
+        min-height: 610px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .box-menus .item-box {
+        max-height: 610px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .box-menus .item-box {
+        min-height: 800px;
     }
 }

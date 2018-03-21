@@ -1,6 +1,6 @@
 /************ Main Dashboard Content ************/
  .btn-event {
-     padding: 13.5px;
+     padding: 6px;
 }
 .bg-cover-img img{
      visibility: hidden;
@@ -149,7 +149,7 @@
  .events .row {
      background-color: #66bcf5;
      border-top: 1px solid #fff;
-     padding: 11px 10px 10px 10px;
+     padding: 5px 10px 5px 10px;
      margin-left: 0px;
      margin-right: 0px;
 }
@@ -468,15 +468,12 @@
 input[type="radio"]:checked+label~.top-nav-content.weather-only{
     width: 60%;
 }
-/**full weather css**/
-#main-dasboard > .container-fluid{
-    margin-bottom: 20px;
-}
+
 .carousel-item .col-6{
     word-wrap: break-word;
 }
 .carousel.slide{
-    min-height: 344px;
+    min-height: 290px;
 }
 @media (max-width: 1300px){
     #top-nav-container .top-nav-social i {
@@ -484,5 +481,43 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     }
     .top-navi  .top-nav-social .top-navi-item {
         min-width: 0;
+    }
+}
+@media (max-width: 992px){
+    .profile-img {
+        position: static;
+        max-width: 100%;
+    }
+    .profile-container {
+        padding-top: 0 !important;
+    }
+}
+.team-alt{
+    opacity: 0;
+ }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+     .box-menus .item-box{
+        min-height: 170px;
+    }
+    .sb-top h1 {
+        font-size: 45px;
+        padding: 0;
+    }
+    .img-fluid {
+        max-width: 90%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+     .box-menus .item-box {
+        min-height: 190px;
+    }
+
+    .sb-top h1 {
+        font-size: 45px;
+        padding-top: 100px;
     }
 }

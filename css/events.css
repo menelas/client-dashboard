@@ -1,5 +1,5 @@
 .events .main-nav{
-     background: #4978ae;
+     background: #000;
 }
  .events .box-menus .item-box:hover {
      border: 0;
@@ -10,7 +10,7 @@
 }
  #events-fap{
      padding-bottom: 5%;
-     background-image: url(../images/dashboard/business-insurance.jpg);
+     background-image: url(../images/sub-pages/clock-bg.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
@@ -19,15 +19,22 @@
      font-size: 40px;
      line-height: 42px;
 }
- #events-fap h5{
+
+#events-main h3 {
+     font-family: "gotham_htfbold", Helvetica Neue, sans-serif;
+}
+#events-fap h5{
      font-weight: normal;
 }
- .list-events li{
+.mCustomScrollBox {
+    background-color: #fff;
+}
+.list-events li{
      padding-left: 30px;
      position: relative;
-     margin-bottom: 7px;
+     font-size: 13px;
 }
- .list-events li:before{
+.list-events li:before{
      position: absolute;
      content: "";
      left: 0;
@@ -38,7 +45,7 @@
      border: 1px solid #d44352;
      background: transparent;
 }
- .list-events li.general:before{
+.list-events li.general:before{
      border: 1px solid #d44352;
      background: transparent;
 }
@@ -58,19 +65,25 @@
     border: 1px solid #7046d1;
     background: #7046d1;
 }
- .add-cat-btn:hover{
-     cursor: pointer;
- }
- .add-cat-btn{
+.add-cat-btn{
      background: none;
      border: none;
-     color: #fff;
- }
- .event-type{
+     color: #fff; 
+     font-size: 13px;
+}
+.add-cat-btn:hover{
+     font-size: 13px;
+     cursor: pointer;
+}
+.event-type{
      background-color: #fcce54;
      color: #000;
      position: relative;
- }
+}
+
+.event-type:not(last-child) {
+    border-bottom: 1px solid #eee;
+}
 .event-type.event-type-2{
     background-color: #3bb85d;
     color: #fff;
@@ -258,4 +271,24 @@
          font-size: 15px;
          padding: 15px 5px !important;
      }
+}
+
+@media (min-width: 768px){
+    #events-fap {
+        min-height: 640px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .box-menus .item-box {
+        max-height: 640px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .box-menus .item-box {
+        min-height: 800px;
+    }
 }

@@ -13,7 +13,18 @@
      background-image: url(../images/sub-pages/webinars-bg.jpg);
      background-repeat: no-repeat;
      background-size: cover;
-     background-position: center;
+     background-position: right;
+     position: relative;
+}
+#webinars-left:before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
  #webinars-left h4{
      font-size: 40px;
@@ -22,7 +33,11 @@
  #webinars-left h5{
      font-size: 19px;
      line-height: 22px;
+     z-index: 2;
 }
+ .list-tick-icon{
+     z-index: 2;
+ }
  .list-tick-icon li{
      padding-left: 30px;
      position: relative;
@@ -77,6 +92,7 @@
      height: 40px;
      line-height: 20px;
      border: 1px solid #646565;
+     border-radius: 0px;
      width: 100%;
      -webkit-appearance: none;
      font-weight: bold;
@@ -133,7 +149,7 @@
      font-size: 20px;
      top: 50%;
      font-family: "fontAwesome";
-     right: 15px;
+     right: 10px;
      margin-top: -10px;
 }
  .video-wrap{
@@ -143,6 +159,7 @@
  .video-wrap > img{
      width: 100%;
 }
+
  .video-wrap .btn-play{
      position: absolute;
      background: transparent;
@@ -208,11 +225,7 @@
      border-radius: 50%;
      border: 5px solid #fff;
 }
-@media (min-width: 768px){
-    #webinars-left {
-        min-height: 750px;
-    }
-}
+
  @media (min-width: 576px){
      .modal-dialog {
          max-width: 700px;
@@ -228,5 +241,22 @@
     }
      .modal-content{
          display: block;
+    }
+}
+
+.box-menus .item-box:before, .box-menus .collapse-menu:before {
+    background-image: none !important;
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .box-menus .item-box {
+        max-height: 650px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .box-menus .item-box {
+        min-height: 800px;
     }
 }

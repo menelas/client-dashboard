@@ -10,10 +10,16 @@
 }
  #documents-fap{
      padding-bottom: 5%;
-     background-image: url(../images/dashboard/business-insurance.jpg);
+     background-image: url(../images/sub-pages/documents-bg.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
+}
+
+ #documents-fap h4{
+     color: #fff;
+     font-size: 40px;
+     line-height: 42px;
 }
  .links-list li{
      padding-left: 30px;
@@ -92,16 +98,17 @@
      color: #000;
 }
  #search-items input{
-     height: 51px;
+     height: 46px;
      padding: 15px 55px 15px 10px;
      border: 1px solid #646565;
+     border-right: 0;
      border-left: 0;
      width: 100%;
 }
- .col-results{
+ .document-results{
      padding: 10px 0;
 }
- .col-results .list li{
+ .document-results .list li{
      padding: 10px 15px 10px 90px;
      background: url("../images/pdf_normal.png") no-repeat 50px center;
 }
@@ -115,7 +122,7 @@
      right: 15px;
      margin-top: -10px;
 }
- .col-results .list li:hover, .col-results .list li.active{
+ .document-results .list li:hover, .document-results .list li.active{
      background-color: #4878af;
      background-image: url("../images/pdf_hover.png");
      color: #fff;
@@ -130,13 +137,27 @@
  .poli-actions i{
      padding: 0 6px;
 }
- .col-results .list li:hover .poli-actions, .col-results .list li.active .poli-actions{
+ .document-results .list li:hover .poli-actions, .document-results .list li.active .poli-actions{
      display: inline-block;
 }
-
 a { cursor: pointer; }
+
 @media (min-width: 768px){
     #documents-fap {
-        min-height: 700px;
+        min-height: 640px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .box-menus .item-box {
+        max-height: 640px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .box-menus .item-box {
+        min-height: 800px;
     }
 }
