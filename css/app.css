@@ -508,7 +508,7 @@
 }
 
 /************ Gradient Tiles ************/
-.one-gradient:before {
+.gradient-1:before {
     background-image: -webkit-linear-gradient(135deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background-image: -o-linear-gradient(135deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background-image: -ms-linear-gradient(135deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -516,7 +516,7 @@
     background-image: linear-gradient(315deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     opacity: 0.8 !important;
 }
-.two-gradient:before, .eleven-gradient:before{
+.gradient-2:before, .gradient-11:before{
     background: -webkit-linear-gradient(90deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%)!important; 
     background: -o-linear-gradient(90deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%)!important;
     background: -ms-linear-gradient(90deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%)!important; 
@@ -525,7 +525,7 @@
     opacity: 0.8 !important;
 }
 
-.three-gradient:before, .seven-gradient:before, .twelve-gradient:before {
+.gradient-3:before, .gradient-7:before, .gradient-12:before {
     background: -webkit-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -o-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -ms-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -534,7 +534,7 @@
     opacity: 0.8 !important;
 }
 
-.four-gradient:before, .five-gradient:before {
+.gradient-4:before, .gradient-5:before {
     background: -webkit-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -o-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -ms-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -543,7 +543,7 @@
     opacity: 0.8 !important;
 }
 
-.six-gradient:before, .eight-gradient:before, .nine-gradient:before {
+.gradient-6:before, .gradient-8:before, .gradient-9:before {
     background: -webkit-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -o-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -ms-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -552,7 +552,7 @@
     opacity: 0.8 !important;
 }
 
-.ten-gradient:before {
+.gradient-10:before {
     background: -webkit-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -o-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -ms-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;

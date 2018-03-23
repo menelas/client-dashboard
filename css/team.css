@@ -10,7 +10,7 @@
      line-height: 42px;
 }
  .teams .main-nav{
-     background: #e0e2e3;
+     background: #f3f4f4;
 }
  .teams .box-menus .item-box:hover {
      border: 0;
@@ -73,7 +73,7 @@
 }
 #all-team select{
     padding: 5px 10px;
-    background: #e0e2e3;
+    background: #f3f4f4;
     height: 40px;
     border: 1px solid #646565;
     width: 100%;

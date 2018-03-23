@@ -149,7 +149,7 @@
  .events .row {
      background-color: #66bcf5;
      border-top: 1px solid #fff;
-     padding: 7px 10px 7px 10px;
+     padding: 5px 10px 5px 10px;
      margin-left: 0px;
      margin-right: 0px;
 }
@@ -275,7 +275,7 @@
 }
  .top-navi .top-navi-item {
      text-align: center;
-     padding: 4px 5px;
+     padding: 8px 5px;
 }
  .top-navi .top-navi-item a, .top-navi .top-navi-item {
      color: #fff;
@@ -394,14 +394,14 @@
 }
  .lblue {
      background-color: #63bdf5;
-     height: 55px;
+     height: 65px;
 }
  .dblue {
      background-color: #2ea6f1;
 }
  .date-time {
      font-size: 11px;
-     margin-top: -23.5px;
+     margin-top: -20.5px;
 }
  .expand-item{
      float: left;

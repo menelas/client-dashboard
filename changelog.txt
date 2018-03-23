@@ -1,3 +1,6 @@
+## 2018-03-22
+• Added gradients to grid layouts
+
 ## 2018-03-21
 • Updated entire app for pages to display without scroll
 
