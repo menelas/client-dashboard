@@ -56,3 +56,16 @@
  #top--container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #business-insurance > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #news > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a {
      padding-top: 0;
 }
+
+
+@media (min-width: 768px){
+    .human-resource .box-menus .item-box {
+        min-height: 300px;
+    }
+}
+
+@media only screen  and (min-width : 1824px) {
+    .human-resource .box-menus .item-box {
+        min-height: 400px;
+    }
+}

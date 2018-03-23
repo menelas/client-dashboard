@@ -109,3 +109,13 @@ fieldset a{
         position: static;
     }
 }
+
+@media (min-width: 768px){
+    .box-menus .item-box, .box-menus .item-box  {
+        min-height: 100%;
+    }
+
+    #team-fap {
+        min-height: 640px;
+    }
+}

@@ -375,7 +375,7 @@
      display: block;
 }
  .box-menus .item-box:hover:before {
-     background-image: linear-gradient(to bottom right,#1f88d8,#1f89d9);
+     background-image: linear-gradient(to bottom right,#1f88d8,#1f89d9) !important;
 }
  .box-menus .learn-more-box:before, .box-menus .learn-more-box:hover {
     background-image: linear-gradient(to right,#4f4f4f,#454545) !important;
@@ -387,23 +387,6 @@
     opacity: 0.8;
 }
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-     .box-menus .item-box{
-        min-height: 300px;
-    }
-    .img-fluid {
-        max-width: 90%;
-    }
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-     .box-menus .item-box {
-        min-height: 250px;
-    }
-
-}
 .btn-open{
      top: 0;
      right: 0;
@@ -523,6 +506,61 @@
      transition: 5s;
      background-color: red !important;
 }
+
+/************ Gradient Tiles ************/
+.one-gradient:before {
+    background-image: -webkit-linear-gradient(135deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background-image: -o-linear-gradient(135deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background-image: -ms-linear-gradient(135deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background-image: -moz-linear-gradient(135deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background-image: linear-gradient(315deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    opacity: 0.8 !important;
+}
+.two-gradient:before, .eleven-gradient:before{
+    background: -webkit-linear-gradient(90deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%)!important; 
+    background: -o-linear-gradient(90deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%)!important;
+    background: -ms-linear-gradient(90deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%)!important; 
+    background: -moz-linear-gradient(90deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%) !important;
+    background: linear-gradient(0deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%)!important;
+    opacity: 0.8 !important;
+}
+
+.three-gradient:before, .seven-gradient:before, .twelve-gradient:before {
+    background: -webkit-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -o-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -ms-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -moz-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    opacity: 0.8 !important;
+}
+
+.four-gradient:before, .five-gradient:before {
+    background: -webkit-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -o-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -ms-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -moz-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    opacity: 0.8 !important;
+}
+
+.six-gradient:before, .eight-gradient:before, .nine-gradient:before {
+    background: -webkit-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -o-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -ms-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -moz-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: linear-gradient(to right, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    opacity: 0.8 !important;
+}
+
+.ten-gradient:before {
+    background: -webkit-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -o-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -ms-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: -moz-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    background: linear-gradient(80deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
+    opacity: 0.8 !important;
+}
+
 
 /************ Footer ************/
  footer {

@@ -220,7 +220,7 @@
     width: 100%;
     padding: 0;
 }
-#custom-calendar table tr td:hover {
+#custom-calendar table tr td:hover, #custom-calendar table tr td.today {
     background-color: #fff;
     color: #005697;
 }
@@ -249,6 +249,9 @@
     background-color: #fff;
     color: #005697;
 }
+.day.cell_highlight{
+    text-decoration: underline;
+}
 @media (min-width: 576px) and (max-width: 1200px){
     .event-year {
 
@@ -274,21 +277,11 @@
 }
 
 @media (min-width: 768px){
+    .box-menus .item-box, .box-menus .item-box  {
+        min-height: 100%;
+    }
+
     #events-fap {
         min-height: 640px;
-    }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-    .box-menus .item-box {
-        max-height: 640px;
-    }
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-    .box-menus .item-box {
-        min-height: 800px;
     }
 }

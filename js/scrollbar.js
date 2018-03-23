@@ -1,6 +1,6 @@
 (function($) {
     $(".news-results, .team-results, .webinars-results").mCustomScrollbar({
-        setHeight:450,
+        setHeight:500,
         theme:"minimal-dark",
         alwaysShowScrollbar: 1
     });

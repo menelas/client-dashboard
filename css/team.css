@@ -146,21 +146,11 @@
 }
 
 @media (min-width: 768px){
+    .box-menus .item-box, .box-menus .item-box  {
+        min-height: 100%;
+    }
+
     #team-fap {
-        min-height: 610px;
-    }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-    .box-menus .item-box {
-        max-height: 610px;
-    }
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-    .box-menus .item-box {
-        min-height: 800px;
+        min-height: 640px;
     }
 }

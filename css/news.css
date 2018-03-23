@@ -124,21 +124,11 @@
 }
 
 @media (min-width: 768px){
+    .box-menus .item-box, .box-menus .item-box  {
+        min-height: 100%;
+    }
+
     #news-fap {
         min-height: 640px;
-    }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-    .box-menus .item-box {
-        max-height: 600px;
-    }
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-    .box-menus .item-box {
-        min-height: 800px;
     }
 }

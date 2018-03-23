@@ -149,7 +149,7 @@
  .events .row {
      background-color: #66bcf5;
      border-top: 1px solid #fff;
-     padding: 5px 10px 5px 10px;
+     padding: 7px 10px 7px 10px;
      margin-left: 0px;
      margin-right: 0px;
 }
@@ -215,8 +215,8 @@
      list-style: none;
 }
  #top-nav-container i {
-     font-size: 35px;
-     padding: 15px;
+     font-size: 23px;
+     padding: 13px;
      color: #fff;
 }
  .position-top-nav {
@@ -312,43 +312,43 @@
      margin-right: -10px;
 }
  .cloud {
-     margin-top: -3px;
+     margin-top: -9px;
      margin-bottom: 7px;
 }
 
  .clear-sky {
     background: url(../images/dashboard/icons/clear-sky.png) no-repeat center;
-    height: 60px;
+    height: 53px;
     width: 50px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
  .scattered-clouds {
     background: url(../images/dashboard/icons/scattered-clouds.png) no-repeat center;
-    height: 60px;
+    height: 53px;
     width: 50px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
  .rain {
     background: url(../images/dashboard/icons/rain.png) no-repeat center;
-    height: 60px;
+    height: 53px;
     width: 50px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
  .snow {
     background: url(../images/dashboard/icons/snow.png) no-repeat center;
-    height: 60px;
+    height: 53px;
     width: 50px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
  .thunderstorm {
     background: url(../images/dashboard/icons/thunderstorm.png) no-repeat center;
-    height: 60px;
+    height: 53px;
     width: 45px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
  .stock-wrap .stock-item, .weather-wrap .weather-item{
      padding: 0;
@@ -385,19 +385,23 @@
  sup {
      font-size: 10px;
 }
+
+.t-sup { 
+    font-size: 13px;
+}
  .mw-13 {
      min-width: 13%;
 }
  .lblue {
      background-color: #63bdf5;
+     height: 55px;
 }
  .dblue {
      background-color: #2ea6f1;
 }
  .date-time {
-     font-size: 12px;
-     margin-top: -19.5px;
-     margin-bottom: 3px;
+     font-size: 11px;
+     margin-top: -23.5px;
 }
  .expand-item{
      float: left;

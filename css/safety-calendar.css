@@ -1,7 +1,6 @@
 .safety-calendar .box-menus .item-box {
   background-image: none !important;
   background-color: transparent !important;
-  min-height: 600px;
 }
 .safety-calendar .main-nav{
   background: url(../images/sub-pages/safety-calendar-bg.jpg) no-repeat;
@@ -30,4 +29,16 @@ div#top-left-container:focus div#top-left{
 
 #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #business-insurance > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #news > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a {
   padding-top: 0;
+}
+
+@media (min-width: 768px){
+    .safety-calendar .box-menus .item-box {
+        min-height: 640px;
+    }
+}
+
+@media only screen  and (min-width : 1824px) {
+    .safety-calendar .box-menus .item-box {
+        min-height: 800px;
+    }
 }
