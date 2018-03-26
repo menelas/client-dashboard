@@ -315,7 +315,17 @@
      margin-top: -9px;
      margin-bottom: 7px;
 }
-
+.row-header, .modal-header{
+    background-image: linear-gradient(to bottom right,#2c83bc,#0f66a3);
+}
+.modal-header{
+    padding: 0 !important;
+    border: 0 !important;
+}
+.modal-header .close {
+    top: 15px;
+    z-index: 9;
+}
  .clear-sky {
     background: url(../images/dashboard/icons/clear-sky.png) no-repeat center;
     height: 53px;
@@ -478,6 +488,18 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
 }
 .carousel.slide{
     min-height: 290px;
+}
+.modal-title{
+    color: #fff;
+    margin: 0 !important;
+}
+@media (max-width: 991px){
+    .modal-header {
+        display: block;
+    }
+    .modal.show .modal-dialog{
+        display: block !important;
+    }
 }
 @media (max-width: 1300px){
     #top-nav-container .top-nav-social i {

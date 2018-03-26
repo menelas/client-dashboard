@@ -55,6 +55,7 @@
  .box-menus h4 a, .box-menus a {
      text-decoration: none;
      color: #fff;
+     line-height: 1.4;
 }
  .box-menus h4 a i {
      font-size: 50px;
@@ -436,7 +437,7 @@
      .safety .item-box h4 {
          text-align: center;
     }
-     .top-navi {
+     .top-navi, .lblue {
          display: none;
     }
      .item-box.nav-has-sub h4 ul li {
@@ -1027,9 +1028,6 @@ span.exit.pull-right{
      width: 100%;
      padding: 12px 10px;
 }
- .modal-header {
-     padding: 1rem;
-}
  .main-nav .modal-body .col-sm-6 {
      padding: 1rem;
 }
@@ -1332,25 +1330,44 @@ span.exit.pull-right{
  .numeric {
      text-align: right;
 }
-.btn-icon {
+
+.btn-edit {
     position: absolute;
     z-index: 4;
     top: 10px;
     right: 10px;
     font-size: 25px;
+    opacity: 0.2;
+}
+
+.btn-remove {
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    opacity: 0.2;
+}
+
+.btn-edit:hover, .btn-remove:hover {
+    opacity: 1;
 }
 
 /***** Profile Modal ****************************/
 
 .profile-container {
-    padding-top: 152px !important;
-    padding-left: 30px;
+    position: relative;
 }
-
+.modal-body{
+    position: relative;
+    padding: 20px;
+}
 .profile-img {
      border-radius: 50%;
      border: 5px solid #fff;
      position: absolute;
+    left: 30px;
+    top: -60px;
 }
 
 .profile label {
@@ -1360,7 +1377,8 @@ span.exit.pull-right{
 
 .profile fieldset{
     border: 1px solid #005697;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+    height: 65px;
 }
 
 .profile legend{
@@ -1380,6 +1398,12 @@ span.exit.pull-right{
 
 .profile input#email, .profile input#password, .profile input#tel {
     color: #005697;
+}
+
+.password-verdict {
+    font-size: 12px;
+    padding: 11px;
+    margin-left: -9px;
 }
 
 .profile input:focus{
