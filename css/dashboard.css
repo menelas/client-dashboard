@@ -489,33 +489,12 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
 .carousel.slide{
     min-height: 290px;
 }
-.modal-title{
-    color: #fff;
-    margin: 0 !important;
-}
-@media (max-width: 991px){
-    .modal-header {
-        display: block;
-    }
-    .modal.show .modal-dialog{
-        display: block !important;
-    }
-}
 @media (max-width: 1300px){
     #top-nav-container .top-nav-social i {
         padding: 15px 0
     }
     .top-navi  .top-nav-social .top-navi-item {
         min-width: 0;
-    }
-}
-@media (max-width: 992px){
-    .profile-img {
-        position: static;
-        max-width: 100%;
-    }
-    .profile-container {
-        padding-top: 0 !important;
     }
 }
 .team-alt{

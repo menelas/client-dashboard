@@ -36,7 +36,7 @@
     top: 0;
     z-index: 2;
 }
-.box-menus .item-box:before {
+.news-fap:hover {
     background-image: none;
 }
  .latest-news h2{

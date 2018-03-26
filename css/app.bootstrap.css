@@ -1,8 +1,11 @@
 /************ Form ************/
  .form-control {
-     border: 1px solid #62bdf5;
+     border: none;
 }
+
 /************ Modal ************/
+
+
  .modal-dialog {
      color: #000;
 }
@@ -12,7 +15,8 @@
  .modal-title {
      font-size: 25px;
      text-align: left;
-     margin-left: 20px;
+     margin: 20px;
+     color: #fff;
 }
  .modal-header {
      background-image: linear-gradient(to bottom right,#2c83bc,#0f66a3);

@@ -35,15 +35,19 @@
      line-height: 22px;
      z-index: 2;
 }
- .list-tick-icon{
+ .list-tick{
      z-index: 2;
  }
- .list-tick-icon li{
+ .list-tick li{
      padding-left: 30px;
      position: relative;
      margin-bottom: 7px;
 }
- .list-tick-icon li:before{
+
+.list-tick li a {
+    color: #fff;
+}
+ .list-tick-completed:before{
      position: absolute;
      content: "";
      left: 0;
@@ -51,6 +55,15 @@
      width: 15px;
      height: 11px;
      background: url("../images/icons/tick_hover.png") no-repeat;
+}
+ .list-tick-not-completed:before{
+     position: absolute;
+     content: "";
+     left: 0;
+     top: 5px;
+     width: 15px;
+     height: 11px;
+     background: url("../images/icons/tick_normal.png") no-repeat;
 }
  .webinbar-item a > img{
      width: 100%;

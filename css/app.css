@@ -982,11 +982,20 @@ span.exit.pull-right{
 }
  .modal-header .close{
      top: 25px;
-     right: 10px;
+     right: 25px;
      left: auto;
      margin: 0;
      padding: 0;
      position: absolute;
+}
+
+@media (max-width: 991px){
+    .modal-header {
+        display: block;
+    }
+    .modal.show .modal-dialog{
+        display: block !important;
+    }
 }
  .image-modal{
      position: absolute;
@@ -1013,12 +1022,6 @@ span.exit.pull-right{
  .call-action p{
      margin-bottom: 25px;
      line-height: 22px;
-}
- .modal-title{
-     margin: 0;
-     font-size: 30px;
-     line-height: 33px;
-     font-weight: bold;
 }
  .call-action a.btn-primary {
      border: 0;
@@ -1363,25 +1366,39 @@ span.exit.pull-right{
     padding: 20px;
 }
 .profile-img {
-     border-radius: 50%;
-     border: 5px solid #fff;
-     position: absolute;
-    left: 30px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    left: 15px;
     top: -60px;
 }
 
-.profile label {
+.profile-name {
+    margin: 0px !important;
+}
+
+@media (max-width: 992px){
+    .profile-img {
+        position: static;
+        max-width: 100%;
+    }
+    .profile-container {
+        padding-top: 0 !important;
+    }
+}
+
+label {
     width: 100%;
     text-align: left;
 }
 
-.profile fieldset{
+fieldset{
     border: 1px solid #005697;
     margin-bottom: 45px;
     height: 65px;
 }
 
-.profile legend{
+legend{
     width: auto;
     padding: 0 5px;
     font-size: 14px;
@@ -1390,13 +1407,13 @@ span.exit.pull-right{
     color: #005697;
 }
 
-.profile input {
+.form-control {
     border: none;
     padding: 10px 15px;
     color: #005697;
 }
 
-.profile input#email, .profile input#password, .profile input#tel {
+input#email, input#password, input#tel {
     color: #005697;
 }
 
@@ -1406,19 +1423,19 @@ span.exit.pull-right{
     margin-left: -9px;
 }
 
-.profile input:focus{
+.form-control:focus, input:focus{
     box-shadow: none;
     outline: 0;
 }
-.profile input::placeholder {
+input::placeholder, .form-control:placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #005697;
 }
-.profile input:-ms-input-placeholder {
+input:-ms-input-placeholder, {
     /* Internet Explorer 10-11 */
     color: #005697;
 }
-.profile input::-ms-input-placeholder {
+input::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #005697;
 }

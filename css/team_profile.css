@@ -45,9 +45,7 @@ fieldset a{
     border: 0;
     cursor: inherit;
 }
-.teams .box-menus .item-box:before {
-    display: none;
-}
+
 .teams .box-menus .item-box{
     background-color: transparent;
 }
@@ -73,7 +71,7 @@ fieldset a{
     color: #fff;
     -webkit-appearance: none;
     position: relative;
-    background-image: url("../images/select_icon2.jpg");
+    background-image: url("../images/icons/search_icon2.png");
     background-repeat: no-repeat;
     background-position: right center;
 }

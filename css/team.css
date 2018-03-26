@@ -36,9 +36,6 @@
     top: 0;
     z-index: 2;
 }
-.box-menus .item-box#team-fap:before {
-    background-image: none;
-}
  .all-team h2{
      font-size: 30px;
      line-height: 32px;
@@ -70,6 +67,7 @@
 }
 #all-team a{
     color: #000;
+    text-decoration: none;
 }
 #all-team select{
     padding: 5px 10px;

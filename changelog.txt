@@ -1,3 +1,7 @@
+## 2018-03-26
+• Updated safety.html, webinars, and dashboard
+• Added admin menu 
+
 ## 2018-03-22
 • Added gradients to grid layouts
 
