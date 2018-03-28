@@ -315,17 +315,6 @@
      margin-top: -9px;
      margin-bottom: 7px;
 }
-.row-header, .modal-header{
-    background-image: linear-gradient(to bottom right,#2c83bc,#0f66a3);
-}
-.modal-header{
-    padding: 0 !important;
-    border: 0 !important;
-}
-.modal-header .close {
-    top: 15px;
-    z-index: 9;
-}
  .clear-sky {
     background: url(../images/dashboard/icons/clear-sky.png) no-repeat center;
     height: 53px;
