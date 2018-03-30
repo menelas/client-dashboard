@@ -36,11 +36,21 @@
     <div class="main-content-page container-fluid">
         <span class="btn-open rounded-circle"><i class="fa fa-bars" aria-hidden="true"></i></span>
         <div class="main-nav">
-        <h2 class="mb-2">Sections</h2>
-            <div class="row no-gutters">
+            <div class="row">
 
-                <div class="col-9 col-sm-10 col-md-6 col-lg-6 col-xl-6 mb-3">
-                    <div class="input-group">
+                <div class="col-2">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item">Clients</a>
+                    <a href="#" class="list-group-item">Calendar Events</a>
+                    <a href="#" class="list-group-item active">Sections</a>
+                    <a href="#" class="list-group-item">Quotes</a>
+                    <a href="#" class="list-group-item">Users</a>
+                  </div>
+                </div>
+
+                <div class="col-10">
+                    <h2 class="mb-2">Sections</h2>
+                    <div class="input-group mb-3 pr-5">
                         <select class="custom-select" id="">
                             <option selected>Specify an area...</option>
                             <option value="100">Safety</option>
@@ -58,10 +68,7 @@
                             <button class="btn btn-outline-secondary" type="button">Add</button>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-12">
-
+ 
                     <div class="tab-pane tabs-info client-tables">
                         <table class="table-hover table-striped table-condensed">
                             <thead class="cf">

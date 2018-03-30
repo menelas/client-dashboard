@@ -216,7 +216,7 @@
      position: absolute;
      opacity: 0;
      animation: show-nav .3s infinite;
-     animation-delay: .5s;
+     animation-delay: .3s;
      animation-iteration-count: 1;
      animation-fill-mode: forwards;
 }
@@ -226,7 +226,7 @@
      left: 14%;
      opacity: 0;
      animation: show-nav .3s infinite;
-     animation-delay: 0.7s;
+     animation-delay: 0.5s;
      animation-iteration-count: 1;
      animation-fill-mode: forwards;
 }
@@ -236,7 +236,7 @@
      left: 35%;
      opacity: 0;
      animation: show-nav .3s infinite;
-     animation-delay: 0.9s;
+     animation-delay: 0.7s;
      animation-iteration-count: 1;
      animation-fill-mode: forwards;
 }
@@ -1428,6 +1428,12 @@ input#email, input#password, input#tel {
     color: #005697;
 }
 
+a[href *= 'mailto:'] {
+    color: #000;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
 .password-verdict {
     font-size: 12px;
     padding: 11px;
@@ -1502,9 +1508,4 @@ input::-ms-input-placeholder {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     color: #000;
     background-color: #005697;
-}
-a[href *= 'mailto:'] {
-    color: #000;
-    word-wrap: break-word;
-    word-break: break-all;
 }

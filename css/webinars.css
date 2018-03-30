@@ -239,7 +239,26 @@
      border: 5px solid #fff;
      top: 50px;
 }
-
+.webinar-img-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
+.webinar-img-wrap img{
+    width: 100%;
+}
+.webinar-img-wrap em {
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    line-height: initial;
+    padding: 3px 5px 3px 5px;
+}
  @media (min-width: 576px){
      .modal-dialog {
          max-width: 700px;
