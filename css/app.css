@@ -1345,7 +1345,7 @@ span.exit.pull-right{
      text-align: right;
 }
 
-.btn-edit {
+.btn-remove {
     position: absolute;
     z-index: 4;
     top: 10px;
@@ -1354,7 +1354,7 @@ span.exit.pull-right{
     opacity: 0.2;
 }
 
-.btn-remove {
+.btn-edit {
     position: absolute;
     z-index: 4;
     top: 10px;
