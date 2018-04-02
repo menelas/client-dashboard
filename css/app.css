@@ -1480,6 +1480,21 @@ input::-ms-input-placeholder {
     z-index: 2;
 }
 
+input, textarea{
+    color: #005697 !important;
+}
+input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #005697 !important;
+}
+input:-ms-input-placeholder, {
+    /* Internet Explorer 10-11 */
+    color: #005697 !important;
+}
+input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #005697 !important;
+}
 /***** Input fields ****************************/
 
 .input-page {
@@ -1532,7 +1547,7 @@ input::-ms-input-placeholder {
     background-color: #005697;
 }
 #profile-modal form > .form-group.form-group-pass{
-    margin-bottom: 60px;
+    margin: 60px 0px 60px 0px;
 }
 .form-group-pass .password-verdict {
     position: absolute;
