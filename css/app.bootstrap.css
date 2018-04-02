@@ -5,7 +5,6 @@
 
 /************ Modal ************/
 
-
  .modal-dialog {
      color: #000;
 }
@@ -29,10 +28,18 @@
      opacity: 1;
      padding: 0px;
 }
+
+/************ Button ************/
 .btn-primary {
      color: #fff;
      background-color: #005696;
      border-color: #005696;
+}
+
+.btn-secondary {
+     color: #000;
+     background-color: #fff;
+     border-color: #ccc;
 }
 button:hover {
      opacity: 0.9;

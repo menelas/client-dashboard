@@ -338,30 +338,36 @@
 
                             <div class="mb-3">
                                 <form>
-                                    <fieldset>
-                                        <legend>Email</legend>
+
+                                    <div class="form-group">
+                                        <label for="">Email</label>
                                         <input type="email" class="form-control" id="email" aria-describedby="email" value="marcus.right@company.com">
-                                    </fieldset>
+                                    </div>
 
-                                    <fieldset>
-                                        <legend>Password</legend>
+                                    <div class="form-group form-group-pass">
+                                        <label for="">Password</label>
                                         <input type="password" id="password" class="form-control" placeholder="Password">
-                                    </fieldset>
-                                    
+                                    </div>
 
-                                    <fieldset>
-                                        <legend>Retype New Pasword</legend>
-                                        <input type="password" id="password" class="form-control" aria-describedby="password" placeholder="Retype Password">
-                                    </fieldset>
+                                    <div class="form-group form-group-pass">
+                                        <label for="">Retype New Pasword</label>
+                                        <input type="password" id="retypePassword" class="form-control" placeholder="Password">
+                                    </div>
 
-                                    <fieldset>
-                                        <legend>Phone Number</legend>
+                                    <div class="form-group">
+                                        <label for="">Phone Number</label>
                                         <input type="tel" class="form-control" id="tel" aria-describedby="tel" value="407-788-3000">
-                                    </fieldset>
+                                    </div>
+
+                                </form>
                             </div>
-                            <a class="btn btn-primary" href="#">Save Changes</a>
                         </div>
                     </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
                 </div>
             </div>
         </div>

@@ -1021,6 +1021,9 @@ span.exit.pull-right{
      display: inline-block;
      margin-bottom: 10px;
 }
+.modal2 .modal-header .close {
+    top: 42px;
+}
  .pt-image a i{
      margin-right: 5px;
 }
@@ -1398,12 +1401,14 @@ span.exit.pull-right{
     }
 }
 
+/***** Form Fields ****************************/
+
 label {
     width: 100%;
     text-align: left;
 }
 
-fieldset{
+fieldset {
     border: 1px solid #005697;
     margin-bottom: 45px;
     height: 65px;
@@ -1456,7 +1461,24 @@ input::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #005697;
 }
-
+.modal label{
+    color: #005697;
+}
+#admin-modal form > .form-group, #profile-modal form > .form-group{
+    position: relative;
+    border: 1px solid #005697;
+    margin-bottom: 30px;
+}
+#admin-modal form > .form-group > label, #profile-modal form > .form-group > label{
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    width: auto;
+    padding: 0 5px;
+    left: 10px;
+    background-color: #fff;
+    z-index: 2;
+}
 
 /***** Input fields ****************************/
 
@@ -1508,4 +1530,25 @@ input::-ms-input-placeholder {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     color: #000;
     background-color: #005697;
+}
+#profile-modal form > .form-group.form-group-pass{
+    margin-bottom: 60px;
+}
+.form-group-pass .password-verdict {
+    position: absolute;
+    bottom: -55px;
+}
+
+/*choose*/
+.chosen-single, .chosen-choices{
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: #000;
+}
+.chosen-container {
+    padding: 7px;
+    width: 100% !important;
+    margin:  0 !important;
 }

@@ -17,6 +17,7 @@
     <link href="css/app.bootstrap.css" rel="stylesheet">
     <link href="css/admin-menu.css" rel="stylesheet">
     <link href="css/admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/chosen_v1.8.3/chosen.min.css">
 </head>
 
 <body class="employee-benefits">
@@ -39,19 +40,19 @@
             <div class="row">
 
                 <div class="col-2">
-                  <div class="list-group">
-                    <a href="#" class="list-group-item">Clients</a>
-                    <a href="#" class="list-group-item">Calendar Events</a>
-                    <a href="#" class="list-group-item active">Sections</a>
-                    <a href="#" class="list-group-item">Quotes</a>
-                    <a href="#" class="list-group-item">Users</a>
-                  </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">Clients</a>
+                        <a href="#" class="list-group-item">Calendar Events</a>
+                        <a href="#" class="list-group-item active">Sections</a>
+                        <a href="#" class="list-group-item">Quotes</a>
+                        <a href="#" class="list-group-item">Users</a>
+                    </div>
                 </div>
 
                 <div class="col-10">
                     <h2 class="mb-2">Sections</h2>
                     <div class="input-group mb-3 pr-5">
-                        <select class="custom-select" id="">
+                        <select class="custom-select">
                             <option selected>Specify an area...</option>
                             <option value="100">Safety</option>
                             <option value="200">Human Resources</option>
@@ -65,10 +66,83 @@
                             <option value="1000">Webinar</option>
                         </select>
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Add</button>
+                            <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#admin-modal" type="button">Add</button>
                         </div>
                     </div>
- 
+
+                    <!-- Sample Modal -->
+                    <div class="modal fade modal2" id="admin-modal" tabindex="-1" role="dialog" aria-labelledby="admin-modallLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg h-100 d-flex flex-column justify-content-center my-0" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body p-0">
+                                    <div class="row p-3 pt-0 row-header no-gutters">
+                                        <div class="col-12">
+                                            <h5 class="modal-title mt-4" id="webinar-modallLabel"><strong>Admin Modal</strong></h5>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3 pt-0 row-body no-gutters">
+                                        <div class="col-12">
+                                            <form>
+
+                                                <div class="form-group">
+                                                    <label for="">Email Address:</label>
+                                                    <input type="email" class="form-control" placeholder="name@example.com">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="">Select:</label>
+                                                    <select class="form-control">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                      <option>5</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="">Multiple select:</label>
+                                                    <select class="form-control chosen-select" multiple>
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                      <option>5</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="">Textarea:</label>
+                                                    <textarea class="form-control" rows="3"></textarea>
+                                                </div>
+
+
+                                                <div class="custom-control custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" id="customCheckboxInline1" name="customCheckboxInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customCheckboxInline1">Checkbox</label>
+                                                </div><br>
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadioInline1">Radio Button</label>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="tab-pane tabs-info client-tables">
                         <table class="table-hover table-striped table-condensed">
                             <thead class="cf">
@@ -233,25 +307,25 @@
                         </table>
                     </div>
 
-                        <div class="row justify-content-md-center mt-3">
-                            <nav aria-label="...">
-                                <ul class="pagination">
-                                    <li class="page-item disabled">
-                                        <span class="page-link">Previous</span>
-                                    </li>
-                                    <li class="page-item active">
-                                        <span class="page-link">1
+                    <div class="row justify-content-md-center mt-3">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <span class="page-link">Previous</span>
+                                </li>
+                                <li class="page-item active">
+                                    <span class="page-link">1
                                         <span class="sr-only">(current)</span>
-                                        </span>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+                                    </span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
 
             </div>
@@ -297,7 +371,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/chosen_v1.8.3/chosen.jquery.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/choose.js"></script>
 </body>
 
 </html>
