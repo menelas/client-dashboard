@@ -51,7 +51,6 @@
  .main-content-page.container-fluid {
      padding: 0;
 }
-
  .box-menus h4 a, .box-menus a {
      text-decoration: none;
      color: #fff;
@@ -173,7 +172,6 @@
      color: #fff;
      font-size: 15px;
      transition-duration: .5s;
-
 }
  #hamburger-nav:before {
      position: absolute;
@@ -297,7 +295,7 @@
      .main-nav .col-sm-6 {
          padding: 10px;
     }
-     .box-menus .item-box:hover:not(:focus) {
+     .box-menus .item-box:hover:not(:focus):not(.focused) {
          border: 5px solid #fff;
     }
      .item-box h4 {
@@ -370,7 +368,7 @@
      background-image: linear-gradient(to bottom right,#1b325a,#1e518a);
      opacity: .55;
 }
- .box-menus .item-box-hover:hover:not(:focus) {
+ .box-menus .item-box-hover:hover:not(:focus):not(.focused) {
      border: 15px solid #fff;
      cursor: pointer;
      display: block;
@@ -382,17 +380,15 @@
     background-image: linear-gradient(to right,#4f4f4f,#454545) !important;
     opacity: 0.7;
 }
-
- .box-menus .learn-more-box:hover:not(:focus) {
+.box-menus .learn-more-box:hover:not(:focus):not(.focused) {
     background-image: linear-gradient(to right,#4f4f4f,#454545);
     opacity: 0.8;
 }
-
 .btn-open{
      top: 0;
      right: 0;
 }
-#main-dasboard .btn-open{
+#main-layout .btn-open{
      top: 37px;
 }
  #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li{
@@ -417,9 +413,9 @@
      z-index: 10;
      line-height: 0;
 }
-#main-dasboard .btn-open {
-    right: 37px;
-    top: 37px;
+#main-layout .btn-open {
+    right: 15px;
+    top: 60px;
 }
  @media (max-width: 767px) {
      .item-box h4 {
@@ -428,7 +424,7 @@
      .box-menus h4 a span {
          text-align: center;
     }
-     .box-menus .item-box:hover:not(:focus) {
+     .box-menus .item-box:hover:not(:focus):not(.focused) {
          border: 0px solid #fff;
     }
      .main-nav .col-sm-6 {
@@ -507,7 +503,6 @@
      transition: 5s;
      background-color: red !important;
 }
-
 /************ Gradient Tiles ************/
 .gradient-1:before {
     background-image: -webkit-linear-gradient(135deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -525,7 +520,6 @@
     background: linear-gradient(0deg, rgba(74,122,171,0) 0%, rgba(25,51,90,1) 100%)!important;
     opacity: 0.8 !important;
 }
-
 .gradient-3:before, .gradient-7:before, .gradient-12:before, .gradient-9:before {
     background: -webkit-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -o-linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -534,7 +528,6 @@
     background: linear-gradient(245deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     opacity: 0.8 !important;
 }
-
 .gradient-4:before, .gradient-5:before {
     background: -webkit-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -o-linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -543,7 +536,6 @@
     background: linear-gradient(45deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     opacity: 0.8 !important;
 }
-
 .gradient-6:before, .gradient-8:before {
     background: -webkit-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -o-linear-gradient(left, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -552,7 +544,6 @@
     background: linear-gradient(to right, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     opacity: 0.8 !important;
 }
-
 .gradient-10:before {
     background: -webkit-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     background: -o-linear-gradient(10deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
@@ -561,8 +552,7 @@
     background: linear-gradient(80deg, rgba(74, 122, 171, 0.5) 0%, rgba(49, 86, 130, 0.5) 50%, rgb(25, 51, 90) 100%) !important;
     opacity: 0.8 !important;
 }
-
-
+ 
 /************ Footer ************/
  footer {
     font-size: 14px;
@@ -574,7 +564,6 @@
     width: 100%;
     margin-top: 5px;
 }
-
  footer > a {
      float: left;
 }
@@ -583,7 +572,6 @@
      width: 100%;
      text-align: right;
 }
-
  @media (max-width: 1024px){
     footer {
         position: initial;
@@ -764,7 +752,6 @@
      z-index: 9;
      margin-top: 25px;
      font-size: 14px;
-
 }
  .btn-border{
      border: 2px solid #fff;
@@ -778,7 +765,6 @@
 }
  .btn-learn-more:hover{
     opacity: 0.7;
-
 }
  #hamburger-nav.m-collapsed{
      position: fixed;
@@ -820,7 +806,6 @@
 div#top-left-container:focus,div#top-middle-container:focus,div#top-right-container:focus,div#middle-left-container:focus,div#middle-middle-container:focus,div#middle-right-container:focus,div#bottom-left-container:focus,div#bottom-middle-container:focus,div#bottom-right-container:focus{
     pointer-events: none;
 }
-
 div#top-left-container:focus div#top-left,div#top-middle-container:focus div#top-middle,div#top-right-container:focus div#top-right,div#middle-left-container:focus div#middle-left,div#middle-middle-container:focus div#middle-middle,div#middle-right-container:focus div#middle-right,div#bottom-left-container:focus div#bottom-left,div#bottom-middle-container:focus div#bottom-middle,div#bottom-right-container:focus div#bottom-right {
     opacity: 1;
     position: absolute;
@@ -831,7 +816,6 @@ div#top-left-container:focus div#top-left,div#top-middle-container:focus div#top
     pointer-events: auto;
     overflow-y: hidden;
 }
-
 div#top-left,div#top-middle,div#top-right,div#middle-left,div#middle-middle,div#middle-right,div#bottom-left,div#bottom-middle,div#bottom-right{
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -841,7 +825,6 @@ div#top-left,div#top-middle,div#top-right,div#middle-left,div#middle-middle,div#
     /*visibility: hidden;*/
     transition: visibility 0.5s;
 }
-
 span.exit.pull-right{
      position: absolute;
      right: 15px;
@@ -892,10 +875,12 @@ span.exit.pull-right{
      body{
          padding: 0;
     }
-     div#human-resource:focus{
+     div#human-resource:focus,
+     div#human-resource.focused{
          position: absolute;
     }
-     div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right {
+     div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right,
+     div#top-left-container.focused div#top-left, div#top-middle-container.focused div#top-middle, div#top-right-container.focused div#top-right, div#middle-left-container.focused div#middle-left, div#middle-middle-container.focused div#middle-middle, div#middle-right-container.focused div#middle-right, div#bottom-left-container.focused div#bottom-left, div#bottom-middle-container.focused div#bottom-middle, div#bottom-right-container.focused div#bottom-right {
          width: 100%;
          position: fixed;
          top: 0;
@@ -913,7 +898,8 @@ span.exit.pull-right{
      div#two:hover{
          border:0 !important;
     }
-     div#news:focus div#risk-score{
+     div#news:focus div#risk-score,
+     div#news.focused div#risk-score{
          position: absolute !important;
     }
      span.exit.pull-right{
@@ -952,7 +938,8 @@ span.exit.pull-right{
      .chrome-even-numbers{
          left: -100%;
     }
-     div#human-resource:focus body#body{
+     div#human-resource:focus body#body, 
+     div#human-resource.focused body#body{
          overflow-y: hidden;
     }
 }
@@ -974,8 +961,7 @@ span.exit.pull-right{
          top:0px;
     }
 }
-
-
+ 
 /************ Global Modal ************/
  .modal-content {
      position: relative;
@@ -988,7 +974,6 @@ span.exit.pull-right{
      padding: 0;
      position: absolute;
 }
-
 @media (max-width: 991px){
     .modal-header {
         display: block;
@@ -1011,7 +996,7 @@ span.exit.pull-right{
  .image-modal{
      position: absolute;
      top: 15px;
-     left: 0;
+    left: 0;
 }
  .pt-image{
      padding-top: 90px !important;
@@ -1347,7 +1332,6 @@ span.exit.pull-right{
  .numeric {
      text-align: right;
 }
-
 .btn-remove {
     position: absolute;
     z-index: 4;
@@ -1356,7 +1340,6 @@ span.exit.pull-right{
     font-size: 25px;
     opacity: 0.2;
 }
-
 .btn-edit {
     position: absolute;
     z-index: 4;
@@ -1365,13 +1348,10 @@ span.exit.pull-right{
     font-size: 25px;
     opacity: 0.2;
 }
-
 .btn-edit:hover, .btn-remove:hover {
     opacity: 1;
 }
-
 /***** Profile Modal ****************************/
-
 .profile-container {
     position: relative;
 }
@@ -1380,17 +1360,15 @@ span.exit.pull-right{
     padding: 20px;
 }
 .profile-img {
-    border-radius: 50%;
-    border: 5px solid #fff;
-    position: absolute;
+     border-radius: 50%;
+     border: 5px solid #fff;
+     position: absolute;
     left: 0px;
     top: -60px;
 }
-
 .profile-name {
     margin: 0px !important;
 }
-
 @media (max-width: 992px){
     .profile-img {
         position: static;
@@ -1400,20 +1378,16 @@ span.exit.pull-right{
         padding-top: 0 !important;
     }
 }
-
 /***** Form Fields ****************************/
-
 label {
     width: 100%;
     text-align: left;
 }
-
 fieldset {
     border: 1px solid #005697;
     margin-bottom: 45px;
     height: 65px;
 }
-
 legend{
     width: auto;
     padding: 0 5px;
@@ -1422,29 +1396,24 @@ legend{
     font-weight: 600;
     color: #005697;
 }
-
 .form-control {
     border: none;
     padding: 10px 15px;
     color: #005697;
 }
-
 input#email, input#password, input#tel {
     color: #005697;
 }
-
 a[href *= 'mailto:'] {
     color: #000;
     word-wrap: break-word;
     word-break: break-all;
 }
-
 .password-verdict {
     font-size: 12px;
     padding: 11px;
     margin-left: -9px;
 }
-
 .form-control:focus, input:focus{
     box-shadow: none;
     outline: 0;
@@ -1453,7 +1422,7 @@ input::placeholder, .form-control:placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #005697;
 }
-input:-ms-input-placeholder, {
+input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #005697;
 }
@@ -1464,12 +1433,12 @@ input::-ms-input-placeholder {
 .modal label{
     color: #005697;
 }
-#admin-modal form > .form-group, #profile-modal form > .form-group{
+#admin-modal form .form-group, #profile-modal form .form-group{
     position: relative;
     border: 1px solid #005697;
     margin-bottom: 30px;
 }
-#admin-modal form > .form-group > label, #profile-modal form > .form-group > label{
+#admin-modal form .form-group > label, #profile-modal form .form-group > label{
     position: absolute;
     top: -10px;
     display: inline-block;
@@ -1479,7 +1448,6 @@ input::-ms-input-placeholder {
     background-color: #fff;
     z-index: 2;
 }
-
 input, textarea{
     color: #005697 !important;
 }
@@ -1487,7 +1455,7 @@ input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #005697 !important;
 }
-input:-ms-input-placeholder, {
+input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #005697 !important;
 }
@@ -1496,12 +1464,10 @@ input::-ms-input-placeholder {
     color: #005697 !important;
 }
 /***** Input fields ****************************/
-
 .input-page {
     color: #000;
     padding: 10px;
 }
-
 .custom-control-label::before, .custom-control-label::after{
     top: 0;
 }
@@ -1553,7 +1519,6 @@ input::-ms-input-placeholder {
     position: absolute;
     bottom: -55px;
 }
-
 /*choose*/
 .chosen-single, .chosen-choices{
     margin: 0 !important;
@@ -1566,4 +1531,5 @@ input::-ms-input-placeholder {
     padding: 7px;
     width: 100% !important;
     margin:  0 !important;
-}
+} 
+ 
