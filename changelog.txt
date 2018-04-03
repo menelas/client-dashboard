@@ -1,3 +1,6 @@
+## 2018-04-03
+• Updated admin.html, and menu for admin, as well as text for spans
+
 ## 2018-04-02
 • Updated app.css, dashboard.html, admin.html, and other pages
 

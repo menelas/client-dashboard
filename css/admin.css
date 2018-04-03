@@ -19,3 +19,14 @@ table, h2 {
 	margin-top: 10px;
 	color: #fff;
 }
+
+.input-group-addon{
+	padding: 10px;
+	background-color: #eee;
+}
+.input-group-addon i{
+	vertical-align: middle;
+}
+.fa.fa-calendar:hover{
+	cursor: pointer;
+}
