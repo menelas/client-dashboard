@@ -66,9 +66,6 @@
      text-align: left;
      vertical-align: middle;
 }
-.box-menus:first-of-type h4 span:last-of-type {
-    max-width: 155px;
-}
 /************ Navigation ************/
  .exit-icon {
      background: url("../images/menu/exit.png") no-repeat;
@@ -1502,7 +1499,7 @@ input::-ms-input-placeholder {
 .modal label{
     color: #005697;
 }
-#admin-modal form .form-group, #profile-modal form .form-group{
+#admin-modal form .form-group, #profile-modal form .form-group, .form-group{
     position: relative;
     border: 1px solid #005697;
     margin-bottom: 30px;
