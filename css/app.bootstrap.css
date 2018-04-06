@@ -2,9 +2,7 @@
  .form-control {
      border: none;
 }
-
 /************ Modal ************/
-
  .modal-dialog {
      color: #000;
 }
@@ -23,24 +21,37 @@
      border-radius: 0;
      padding: 30px;
 }
- .modal-header .close {
+ .modal-header .close,  .row-header .close {
      color: #fff;
      opacity: 1;
      padding: 0px;
 }
-
 /************ Button ************/
 .btn-primary {
-     color: #fff;
-     background-color: #005696;
-     border-color: #005696;
+    color: #fff;
+    background-color: #005696;
+    border-color: #005696;
+    border-radius: 0px;
 }
-
 .btn-secondary {
-     color: #000;
-     background-color: #fff;
-     border-color: #ccc;
+    color: #000;
+    background-color: #fff;
+    border-color: #ccc;
+    border-radius: 0px;
+}
+.btn-default {
+    border-radius: 0px;
 }
 button:hover {
      opacity: 0.9;
 }
+.alert {
+    margin: 5px;
+    border-radius: 0px;
+}
+.alert-info {
+    color: #ffffff;
+    background-color: #59A7E3;
+    border: none;
+}
+ 

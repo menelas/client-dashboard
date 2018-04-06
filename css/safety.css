@@ -6,6 +6,18 @@
   background: url(../images/sub-pages/safety-bg.jpg) no-repeat;
   background-size: cover;
 }
+.modal-title {
+  margin-top: 75px;
+}
+.image-modal {
+  padding: 40px;
+}
+.pt-image {
+  padding-left: 40px !important;
+}
+h2 {
+  font-size: 20px;
+}
 h4.d-inline-flex.flex-column{
   padding-top: 70px;
 }
@@ -23,9 +35,11 @@ div#bottom-middle-container:focus div#bottom-middle,
 div#bottom-right-container:focus div#bottom-right  {
   background: #1e518a;
 }
+
 #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li {
  padding-bottom: 0;
 }
+
 #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #business-insurance > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #news > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a {
   padding-top: 0;
 }
