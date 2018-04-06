@@ -1,4 +1,4 @@
-.main-login{
+.main-login {
     position: relative;
     height: 100%;
     background: url("../images/sub-pages/login-bg.jpg") no-repeat;
@@ -8,7 +8,7 @@
     background-position: center;
     background-size: cover;
 }
-.main-login:before{
+.main-login:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -16,104 +16,71 @@
     background-image: linear-gradient(to bottom right,#1b325a,#1e518a);
     opacity: 0.3;
 }
-.login-form{
+.login-form {
     position: relative;
     z-index: 2;
 }
-.modal-backdrop{
+.modal-backdrop {
     z-index: 99999;
 }
 .modal{
     z-index: 999999;
 }
-h1{
+h1 {
     color: #fff;
     font-weight: normal;
 }
-.letter-spacing{
+.letter-spacing {
     letter-spacing: 10px;
     color: #fff;
 }
-.myIoa{
+.myIoa {
     font-size: 50px;
 }
-.myIoa strong{
+.myIoa strong {
     font-weight: bold;
     font-size: 55px;
 }
-.login-form form{
+.login-form form {
     color: #005697;
     background-color: #fff;
     padding: 40px;
     min-width: 400px;
 }
-.login-form fieldset{
-    border: 1px solid #005697;
-}
-#loginModal i{
+
+#loginModal i {
     font-size: 80px;
     color: #005697;
 }
-#passwordModal h2{
+#passwordModal h2 {
     font-size: 35px;
     color: #005697;
     font-weight: bold;
 }
-#passwordModal .btn{
+#passwordModal .btn {
     font-size: 15px;
     font-weight: normal;
 }
-#loginModal .modal-body .btn{
+#loginModal .modal-body .btn {
     border-radius: 0;
     border: 0;
     background-color: #005697;
 }
-#loginModal h5{
+#loginModal h5 {
     font-size: 40px;
     color: #005697;
     font-weight: bold;
 }
-.login-form legend{
-    width: auto;
-    padding: 0 5px;
-    font-size: 14px;
-    margin: 0 10px;
-    font-weight: 600;
-}
-.login-form input{
-    border: none;
-    padding: 10px 15px;
-    color: #005697;
-}
-input#email, input#password {
-    color: #005697;
-}
-.login-form input:focus{
-    box-shadow: none;
-    outline: 0;
-}
-.login-form input::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #005697;
-}
-.login-form input:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #005697;
-}
-.login-form input::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: #005697;
-}
-.forgot-password{
+.forgot-password {
     min-width: 160px;
     text-align: center;
     clear: both;
 }
-.forgot-password a{
-    text-decoration: underline;
+.forgot-password a {
     font-size: 14px;
+    border-bottom: 1px solid #005697;
 }
-.login-form .btn{
+.login-form .btn {
     min-width: 160px;
     padding: 8px;
     font-size: 19px;
@@ -123,10 +90,10 @@ input#email, input#password {
     color: #fff;
     font-weight: bold;
 }
-.form-wrap-eye{
+.form-wrap-eye {
     position: relative;
 }
-i.disabled{
+i.disabled {
     opacity: .3;
 }
 .form-wrap-eye i {
@@ -136,7 +103,23 @@ i.disabled{
     top: 50%;
     margin-top: -15px;
 }
-@media  (max-width: 767px){
+
+input, textarea{
+    color: #005697 !important;
+}
+input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #005697 !important;
+}
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #005697 !important;
+}
+input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #005697 !important;
+}
+@media  (max-width: 767px) {
     .login-form form{
         padding: 20px;
         min-width: 100%;

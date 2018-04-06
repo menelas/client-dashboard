@@ -134,6 +134,13 @@
  .team-title {
      font-size: 13px;
 }
+
+.logged-in {
+    font-size: 13px;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 10px 20px !important;
+}
 /************ Calendar ************/
  .sb-top {
      color: #000;
@@ -476,7 +483,7 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     word-wrap: break-word;
 }
 .carousel.slide{
-    min-height: 290px;
+    min-height: 325px;
 }
 @media (max-width: 1300px){
     #top-nav-container .top-nav-social i {
@@ -486,9 +493,6 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
         min-width: 0;
     }
 }
-.team-alt{
-    opacity: 0;
- }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {

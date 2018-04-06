@@ -9,12 +9,12 @@
      display: none;
 }
  #webinars-left{
-     padding-bottom: 5%;
      background-image: url(../images/sub-pages/webinars-bg.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: right;
      position: relative;
+     padding-left: 10%;
 }
 #webinars-left:before{
     width: 100%;
@@ -27,8 +27,9 @@
     z-index: 2;
 }
  #webinars-left h4{
-     font-size: 40px;
-     line-height: 42px;
+     font-size: 42px;
+     line-height: 44px;
+     padding-left: 20px;
 }
  #webinars-left h5{
      font-size: 19px;
@@ -39,7 +40,7 @@
      z-index: 2;
  }
  .list-tick li{
-     padding-left: 30px;
+     padding-left: 20px;
      position: relative;
      margin-bottom: 7px;
 }
@@ -65,15 +66,49 @@
      height: 11px;
      background: url("../images/icons/tick_normal.png") no-repeat;
 }
+#webinars-left ul{
+    z-index: 2;
+}
+ #webinars-left ul li a{
+     display: block;
+     color: #fff;
+     padding: 15px 20px 15px 20px;
+ }
+#webinars-left ul li a:hover, #webinars-left ul li a.active{
+    background-color: #fff;
+    color: #005697;
+    text-decoration: none;
+}
+.ribbon {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    padding: 14px 14px 14px 20px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #d52044;
+    height: 30px;
+}
+
+.ribbon-icon {
+    background: url("../images/icons/ribbon-icon.png") no-repeat;
+     position: absolute;
+     left: 4px;
+     top: 5px;
+     width: 15px;
+     height: 18px;
+}
  .webinbar-item a > img{
      width: 100%;
 }
  .webinbar-item h4{
-     font-size: 22px;
+     font-size: 18px;
      color: #3a3838;
+    font-family: "gotham_htfbook", Helvetica Neue, sans-serif;
 }
  .webinbar-item a {
      color: #3a3838;
+
 }
  .webinbar-item small{
      font-size: 15px;
@@ -114,24 +149,20 @@
      background-repeat: no-repeat;
      background-position: right center;
 }
- #search-items select:after{
-     position: absolute;
-     content: "abc";
+input, textarea{
+    color: inherit;
 }
- #search-items input::placeholder {
+input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-     font-weight: bold;
-     color: #000;
+    color: inherit;
 }
- #search-items input:-ms-input-placeholder {
+input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-     font-weight: bold;
-     color: #000;
+    color: inherit;
 }
- #search-items input::-ms-input-placeholder {
+input::-ms-input-placeholder {
     /* Microsoft Edge */
-     font-weight: bold;
-     color: #000;
+    color: inherit;
 }
  #search-items input{
      height: 40px;
@@ -149,7 +180,7 @@
      background: url("../images/pdf_normal.png") no-repeat 50px center;
 }
 .webinars h2 {
-     font-size: 21px;
+     font-size: 25px;
      margin-bottom: 10px;
 }
  .p-search-wrap{
@@ -197,10 +228,17 @@
  .webinar-info h2{
      color: #005697;
      font-size: 35px;
-     line-height: 37px 
+     font-family: "gotham_htfbold", Helvetica Neue, sans-serif;
+     line-height: 37px;
 }
  .webinar-info h3{
      margin: 5px 0 10px;
+     font-size: 25px;
+}
+
+.text-left h3 {
+    font-family: "gotham_htfbold", Helvetica Neue, sans-serif; 
+    max-width: 70%;
 }
  .webinar-date{
      font-style: italic;
@@ -212,20 +250,29 @@
      display: inline-block;
      color: #a8bace;
      font-size: 14px;
-     margin-bottom: 15px;
+     margin-bottom: 5px;
+     margin-right: 10px;
 }
+ #webinars-main .webinar-item{
+     border-bottom: 1px solid #8c8f92
+ }
  .num-count > img{
      padding-right: 7px;
 }
  .prev-webinbar{
      color: #005697;
-     font-size: 20px;
-}
- .prev-webinbar span{
-     font-size: 25px;
+     font-size: 34px;
 }
  .modal-title {
      margin-left: 0;
+}
+.btn.register-now {
+    border: 0;
+    border-radius: 0;
+    color: #fff !important;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
 }
  .pt-image {
      padding-top: 152px !important;
@@ -291,5 +338,19 @@
 @media only screen  and (min-width : 1824px) {
     .box-menus .item-box {
         min-height: 800px;
+    }
+}
+
+@media only screen  and (max-width : 1024px) {
+    #webinars-left {
+        padding-left: 0;
+    }
+    #webinars-left ul li a{
+        display: block;
+        color: #fff;
+        padding: 20px;
+    }
+    #webinars-left h4 {
+        padding-top: 15px;
     }
 }

@@ -22,21 +22,17 @@
     <div class="main-login d-flex justify-content-center align-items-center">
         <div class="login-form">
             <h1 class="text-center mb-5"><span class="letter-spacing d-block mb-3">welcome to</span><span class="myIoa d-block">my<strong>IOA</strong></span></h1>
-            <form action="" method="" class="clearfix">
-                <div class="form-group mb-4">
-                    <fieldset>
-                        <legend>Email</legend>
-                        <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
-                    </fieldset>
+            <form action="" method="" class="clearfix custom-fieldset">
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <fieldset>
-                        <legend>Pasword</legend>
-                        <input type="password" id="password" class="form-control" aria-describedby="password" placeholder="Password">
-                    </fieldset>
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Password">
                 </div>
                 <button class="btn float-right mt-3" type="button" data-toggle="modal" data-target="#loginModal">log in</button>
-                <div class="forgot-password float-right mt-3" data-toggle="modal" data-target="#passwordModal"><a href="#">forgot password?</a></div>
+                <div class="forgot-password float-right mt-3" data-toggle="modal" data-target="#passwordModal"><a href="#">Forgot password?</a></div>
             </form>
         </div>
     </div>
@@ -63,24 +59,20 @@
                     <div class="login-form">
                         <h2 class="mb-2"><strong>Reset Password</strong></h2>
                         <small>Insert a new password for your account</small>
-                        <form action="" method="" class="clearfix text-left">
+                        <form action="" method="" class="clearfix text-left custom-fieldset">
                             <div class="form-group mb-4">
-                                <fieldset>
-                                    <legend>New Password</legend>
-                                    <div class="form-wrap-eye">
-                                        <input type="password" id="newPassword" class="form-control" aria-describedby="newPassword" placeholder="New Password">
-                                        <i class="fa fa-eye disabled" aria-hidden="true"></i>
-                                    </div>
-                                </fieldset>
+                                <label for="">New Password</label>
+                                <div class="form-wrap-eye">
+                                    <input type="password" id="newPassword" class="form-control" aria-describedby="newPassword" placeholder="New Password">
+                                    <i class="fa fa-eye disabled" aria-hidden="true"></i>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <fieldset>
-                                    <legend>Retype Password</legend>
-                                    <div class="form-wrap-eye">
-                                        <input type="text" id="retypePassword" class="form-control" aria-describedby="retypePassword" placeholder="Retype Password">
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </div>
-                                </fieldset>
+                                <label for="">Retype Password</label>
+                                <div class="form-wrap-eye">
+                                    <input type="text" id="retypePassword" class="form-control" aria-describedby="retypePassword" placeholder="Retype Password">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </div>
                             </div>
                             <button class="btn mt-4 mx-auto d-block" type="button">Reset password</button>
                         </form>

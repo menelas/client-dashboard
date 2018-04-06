@@ -36,6 +36,29 @@
     top: 0;
     z-index: 2;
 }
+.news-and-updates .custom-fieldset{
+    border: 1px solid #005697;
+    padding: 10px 15px 5px;
+    height: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.news-and-updates .custom-legend{
+    width: auto;
+    color: #005697;
+    padding: 3px 9px;
+    background-color: #f3f4f4;
+    font-size: 13px;
+    position: absolute;
+    left: 15px;
+    z-index: 2;
+    top: -9px
+}
+.news-and-updates .custom-fieldset:hover{
+    background-color: #005697;
+    color: #fff;
+    cursor: pointer;
+}
 .news-fap:hover {
     background-image: none;
 }
@@ -46,7 +69,7 @@
 }
  .content-parag{
      font-size: 14px;
-     line-height: 1.7;
+     line-height: 15px;
 }
  .news-and-updates .box-menus .item-box{
      background-color: transparent;
@@ -78,7 +101,7 @@
 }
  .news-date {
      color: #005697;
-     font-size: 40px;
+     font-size: 39px;
 }
  .news-date .special-mon{
      font-weight: bold;
@@ -90,10 +113,10 @@
      word-wrap: break-word;
  }
  .news-content h3{
-     font-size: 18px;
+     font-size: 16px;
      color: #005697;
 }
- .news-and-updates fieldset:hover .news-date, .news-and-updates fieldset:hover .news-content h3{
+ .news-and-updates .custom-fieldset:hover .news-date, .news-and-updates .custom-fieldset:hover .news-content h3{
      color: #fff;
 }
  .mCSB_outside+.mCS-minimal-dark.mCSB_scrollTools_vertical {

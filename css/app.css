@@ -66,6 +66,18 @@
      text-align: left;
      vertical-align: middle;
 }
+
+.col-md-4 h4 span{
+    max-width: 210px;
+}
+
+.col-md-3 h4 span{
+    max-width: 180px;
+}
+
+.col-5-10 h4 span{
+    max-width: 140px;
+}
 /************ Navigation ************/
  .exit-icon {
      background: url("../images/menu/exit.png") no-repeat;
@@ -623,19 +635,20 @@
  footer {
     font-size: 14px;
     margin: 0;
+    position: fixed;
     bottom: 0;
     z-index: 9999;
-    color: #000;
+    background: #fff;
     min-height: 25px;
     width: 100%;
-    margin-top: 5px;
+    padding-top: 5px;
 }
  footer > a {
      float: left;
 }
  footer .ft-quote {
      font-family: "gotham_htflight_italic", Helvetica Neue, sans-serif;
-     width: 100%;
+     width: 96%;
      text-align: right;
 }
  @media (max-width: 1024px){
@@ -1448,18 +1461,6 @@ span.exit.pull-right{
 label {
     width: 100%;
     text-align: left;
-}
-fieldset {
-    border: 1px solid #005697;
-    margin-bottom: 45px;
-    height: 65px;
-}
-legend{
-    width: auto;
-    padding: 0 5px;
-    font-size: 14px;
-    margin: 0 10px;
-    font-weight: 600;
     color: #005697;
 }
 .form-control {
@@ -1504,7 +1505,7 @@ input::-ms-input-placeholder {
     border: 1px solid #005697;
     margin-bottom: 30px;
 }
-#admin-modal form .form-group > label, #profile-modal form .form-group > label{
+#admin-modal form .form-group > label, #profile-modal form .form-group > label, .custom-fieldset .form-group > label{
     position: absolute;
     top: -10px;
     display: inline-block;
@@ -1515,19 +1516,19 @@ input::-ms-input-placeholder {
     z-index: 2;
 }
 input, textarea{
-    color: #005697 !important;
+    color: #005697;
 }
 input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #005697 !important;
+    color: #005697;
 }
 input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #005697 !important;
+    color: #005697;
 }
 input::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #005697 !important;
+    color: #005697;
 }
 /***** Input fields ****************************/
 .input-page {
@@ -1597,6 +1598,12 @@ input::-ms-input-placeholder {
     padding: 7px;
     width: 100% !important;
     margin:  0 !important;
+}
+@-moz-document url-prefix() {
+    select {
+        -moz-appearance: none;
+        text-overflow: "";
+    }
 }
 
  
