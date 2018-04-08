@@ -9,6 +9,12 @@
  .human-resource .main-nav .col-sm-6 {
      padding: 0;
 }
+.image-modal {
+  padding: 40px;
+}
+.pt-image {
+  padding-left: 40px !important;
+}
  h4.d-inline-flex.flex-column.acatall {
      padding-top: 150px;
 }
@@ -24,17 +30,17 @@
  .employee-benefits .box-menus h4 a span {
      text-align: center;
 }
- div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right{
-     background: #1e518a;
-}
- div#top-middle-container:focus div#top-middle{
-     height: 100% !important;
-}
  h4.d-inline-flex.flex-column.bump{
      padding-top: 140px;
 }
 .item-box.nav-has-sub h4 ul, .item-box.nav-has-sub-tot h4 ul {
     width: auto;
+}
+ div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right{
+     background: #1e518a;
+}
+ div#top-middle-container:focus div#top-middle{
+     height: 100% !important;
 }
  @media (max-width: 767px) {
      div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right{

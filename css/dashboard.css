@@ -24,7 +24,7 @@
      background: url("../images/dashboard/documents.jpg") no-repeat center;
      background-size: cover;
 }
- #claims > .bg-cover-img{
+ #claims > .bg-cover-img, .claims .image-tran-wrap .bg-cover-img{
      background: url("../images/dashboard/claims.jpg") no-repeat center;
      background-size: cover;
 }

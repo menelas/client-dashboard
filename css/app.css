@@ -61,6 +61,7 @@
      margin-right: 15px;
      vertical-align: middle;
 }
+
  .box-menus h4 span{
      display: inline-block;
      text-align: left;
@@ -758,6 +759,7 @@
      font-size: 14px;
      font-weight: 400;
      width: 175px;
+     font-family: "gotham_htfbook", Helvetica Neue, sans-serif;
 }
  .item-box.nav-has-sub h4 ul li, .item-box.nav-has-sub-tot h4 ul li{
      margin-bottom: 10px;
@@ -900,12 +902,13 @@ div#top-left-container:focus div#top-left,div#top-middle-container:focus div#top
     pointer-events: auto;
     overflow-y: hidden;
 }
-div#top-left,div#top-middle,div#top-right,div#middle-left,div#middle-middle,div#middle-right,div#bottom-left,div#bottom-middle,div#bottom-right{
+div#top-left,div#top-middle,div#top-right,div#middle-left,div#middle-middle,div#middle-right,div#bottom-left,div#bottom-middle,div#bottom-right, div#risk-management{
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     z-index: 1;
     width: 100%;
     height: 120%;
+    /*/* disable visibility by default, delay to enable clicks */*/
     /*visibility: hidden;*/
     transition: visibility 0.5s;
 }
@@ -916,6 +919,9 @@ span.exit.pull-right{
      z-index: 990;
      display: none;
      font-size: 24px;
+}
+.main-nav .col-sm-6 {
+     text-align: center;
 }
  .expanded-menu-0{
      top:10px;
@@ -959,12 +965,10 @@ span.exit.pull-right{
      body{
          padding: 0;
     }
-     div#human-resource:focus,
-     div#human-resource.focused{
+     div#human-resource:focus {
          position: absolute;
     }
-     div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right,
-     div#top-left-container.focused div#top-left, div#top-middle-container.focused div#top-middle, div#top-right-container.focused div#top-right, div#middle-left-container.focused div#middle-left, div#middle-middle-container.focused div#middle-middle, div#middle-right-container.focused div#middle-right, div#bottom-left-container.focused div#bottom-left, div#bottom-middle-container.focused div#bottom-middle, div#bottom-right-container.focused div#bottom-right {
+     div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right, div#risk-management {
          width: 100%;
          position: fixed;
          top: 0;
@@ -982,8 +986,7 @@ span.exit.pull-right{
      div#two:hover{
          border:0 !important;
     }
-     div#news:focus div#risk-score,
-     div#news.focused div#risk-score{
+     div#news:focus div#risk-score {
          position: absolute !important;
     }
      span.exit.pull-right{
@@ -1022,8 +1025,7 @@ span.exit.pull-right{
      .chrome-even-numbers{
          left: -100%;
     }
-     div#human-resource:focus body#body, 
-     div#human-resource.focused body#body{
+     div#human-resource:focus body#body {
          overflow-y: hidden;
     }
 }

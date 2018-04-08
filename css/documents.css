@@ -48,6 +48,8 @@
  #start-date li, #ends-date li{
      padding: 15px 5px 15px 12px;
      margin-bottom: 10px;
+     word-wrap: break-word;
+     word-break: keep-all;
 }
  #start-date li:hover, #ends-date li:hover, #start-date li.active, #ends-date li.active{
      background-color: #d42043;
@@ -109,8 +111,8 @@
      padding: 10px 0;
 }
  .document-results .list li{
-     padding: 10px 15px 10px 90px;
-     background: url("../images/pdf_normal.png") no-repeat 50px center;
+     padding: 10px 15px 10px 80px;
+     background: url("../images/pdf_normal.png") no-repeat 40px center;
 }
  .p-search-wrap:after{
      position: absolute;
@@ -141,7 +143,54 @@
      display: inline-block;
 }
 a { cursor: pointer; }
+a.document-file {
+    min-width: 43%;
+    max-width: 43%;
+    min-height: 23px;
+    padding-right: 1%;
+    display: inline-block;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top;
+    font-size: 14px;
+}
+.box-menus .item-box:hover:not(:focus):not(.focused) {
+    border: 0;
+}
+span.doc-resource{
+    min-width: 22%;
+    max-width: 22%;
+    display: inline-block;
+    padding-right: 1%;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.4;
+    vertical-align: top;
+    font-size: 12px;
+}
+span.doc-year{
+    min-width: 16%;
+    max-width: 16%;
+    display: inline-block;
+    padding-right: 5%;
+    word-wrap: break-word;
+    word-break: break-all;
+    line-height: 1.4;
+    vertical-align: top;
+    font-size: 12px;
+    text-align: right;
 
+}
+@media (max-width: 1250px){
+    a.document-file {
+        min-width: 100%;
+        display: inline-block;
+    }
+    span.doc-resource, span.doc-year {
+        min-width: 80px;
+        max-width: 100%;
+    }
+}
 @media (min-width: 768px){
     .box-menus .item-box, .box-menus .item-box  {
         min-height: 100%;

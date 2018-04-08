@@ -6,15 +6,6 @@
   background: url(../images/sub-pages/safety-bg.jpg) no-repeat;
   background-size: cover;
 }
-.modal-title {
-  margin-top: 75px;
-}
-.image-modal {
-  padding: 40px;
-}
-.pt-image {
-  padding-left: 40px !important;
-}
 h2 {
   font-size: 20px;
 }
@@ -23,6 +14,24 @@ h4.d-inline-flex.flex-column{
 }
 .box-menus .expanded-menu:before{
   background-color: #1e518a;
+}
+div#top-left-container:focus div#top-left,
+div#top-middle-container:focus div#top-middle,
+div#top-right-container:focus div#top-right,
+div#middle-left-container:focus div#middle-left,
+div#middle-middle-container:focus div#middle-middle,
+div#middle-right-container:focus div#middle-right,
+div#bottom-left-container:focus div#bottom-left,
+div#bottom-middle-container:focus div#bottom-middle,
+div#bottom-right-container:focus div#bottom-right {
+  display: block !important;
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  z-index: 9;
+  border: 15px solid #fff;
+  cursor: pointer;
+  overflow-y: hidden;
 }
 div#top-left-container:focus div#top-left,
 div#top-middle-container:focus div#top-middle,

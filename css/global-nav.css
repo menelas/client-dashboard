@@ -1,15 +1,24 @@
 /************ Global Navigation Styling ************/
-
-
-div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right {
-     display: block !important;
+ div#top-left-container:focus, div#top-middle-container:focus, div#top-right-container:focus, div#middle-left-container:focus, div#middle-middle-container:focus, div#middle-right-container:focus, div#bottom-left-container:focus, div#bottom-middle-container:focus, div#bottom-right-container:focus{
+     pointer-events: none;
+}
+ div#top-left-container:focus div#top-left, div#top-middle-container:focus div#top-middle, div#top-right-container:focus div#top-right, div#middle-left-container:focus div#middle-left, div#middle-middle-container:focus div#middle-middle, div#middle-right-container:focus div#middle-right, div#bottom-left-container:focus div#bottom-left, div#bottom-middle-container:focus div#bottom-middle, div#bottom-right-container:focus div#bottom-right {
+     opacity: 1;
      position: absolute;
      width: 100%;
      height: 120%;
      z-index: 9;
      border: 15px solid #fff;
-     cursor: pointer;
+     pointer-events: auto;
      overflow-y: hidden;
+}
+ div#top-left, div#top-middle, div#top-right, div#middle-left, div#middle-middle, div#middle-right, div#bottom-left, div#bottom-middle, div#bottom-right{
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     z-index: 1;
+     width: 100%;
+     height: 120%;
+     transition: visibility 0.5s;
 }
  span.exit.pull-right{
      position: absolute;
@@ -19,6 +28,9 @@ div#top-left-container:focus div#top-left, div#top-middle-container:focus div#to
      display: none;
      font-size: 24px;
 }
+ .expanded-menu-0{
+     top:10px;
+}
  .expanded-menu-1{
      top:0;
 }
@@ -27,6 +39,9 @@ div#top-left-container:focus div#top-left, div#top-middle-container:focus div#to
 }
  .expanded-menu-3{
      top: -40px;
+}
+ .expanded-menu-4{
+     top: -70px;
 }
  .no-scroll{
      overflow-y: hidden;
@@ -99,4 +114,17 @@ div#top-left-container:focus div#top-left, div#top-middle-container:focus div#to
      .even-numbers{
          left: -100%;
     }
+     .item-box.nav-has-sub h4, .item-box.nav-has-sub-tot h4{
+         padding-top: 100px;
+    }
 }
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /*!* IE10+ CSS styles go here *!*/
+     h4.human {
+         padding-top: 150px;
+    }
+     .human-r {
+         top:0px;
+    }
+}
+ 
