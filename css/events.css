@@ -161,23 +161,25 @@
 }
 
 .event-type.color-1 {
-    background: #C1392B;
+    background: #fccd69;
+    color: #000;
 }
 
 .event-type.color-2 {
-    background: #D25400;
+    background: #38b768;
 }
 
 .event-type.color-3 {
-    background: #FFA800;
+    background: #d5c295;
+    color: #000;
 }
 
 .event-type.color-4 {
-    background: #8FB021;
+    background: #e67e22;
 }
 
 .event-type.color-5 {
-    background: #27AE61;
+    background: #356272;
 }
 
 .event-type.color-6 {
@@ -185,7 +187,7 @@
 }
 
 .event-type.color-7 {
-    background: #297FB8;
+    background: #545454;
 }
 
 .event-type.color-8 {
@@ -448,10 +450,10 @@
     background-color: #3ab75c;
 }
 .list-events li.holiday:before{
-    border: 1px solid #528fcd;
-    background: transparent;
+    border: 1px solid #d5c295;
+    background: #d5c295;
 }
 .list-events li.marketing:before{
-    border: 1px solid #384C81;
-    background: #384C81;
+    border: 1px solid #e67e22;
+    background: #e67e22;
 }

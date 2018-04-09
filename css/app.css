@@ -47,6 +47,7 @@
  .main-content-page {
      color: #fff;
      position: relative;
+     margin-bottom: 22px;
 }
  .main-content-page.container-fluid {
      padding: 0;
@@ -385,6 +386,13 @@
 .admin .tooltip-signoff {
     left: 74px;
     top: 187px;
+}
+
+.logged-in {
+    font-size: 14px;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #000;
 }
 /************ Page Load Animations *******/
  @keyframes fadein {

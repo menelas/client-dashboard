@@ -36,6 +36,9 @@
      line-height: 22px;
      z-index: 2;
 }
+.upcoming-webinars {
+    max-width: 450px;
+}
  .list-tick{
      z-index: 2;
  }
@@ -78,6 +81,7 @@
     background-color: #fff;
     color: #005697;
     text-decoration: none;
+    width: 380px;
 }
 .ribbon {
     position: absolute;
