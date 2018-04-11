@@ -11,6 +11,10 @@
     display: none;
 }
 
+.box-menus .item-box:hover:not(:focus):not(.focused) {
+    border: none;
+}
+
 .mCSB_container, .mCustomScrollBox{
     overflow: visible;
 }
@@ -31,6 +35,7 @@
     #events-fap h4 {
         font-size: 40px;
         line-height: 42px;
+        text-align: left;
     }
 
     #events-fap h5 {
@@ -239,11 +244,31 @@
 }
 
 .event-type-3 .event-share {
-    background-color: rgba(113, 71, 209, 0.9);
+    background-color: rgba(213, 194, 149, 0.9);
 }
 
 .event-type-4 .event-share {
-    background-color: rgba(253, 207, 84, 0.9);
+    background-color: rgba(231, 126, 35, 0.9);
+}
+
+.event-type-5 .event-share {
+    background-color: rgba(53, 98, 114, 0.9);
+}
+
+.event-type-6 .event-share {
+    background-color: rgba(22, 160, 134, 0.9);
+}
+
+.event-type-7 .event-share {
+    background-color: rgba(84, 84, 84, 0.9);
+}
+
+.event-type-8 .event-share {
+    background-color: rgba(56, 76, 129, 0.9);
+}
+
+.event-type-9 .event-share {
+    background-color: rgba(79, 43, 79, 0.9);
 }
 
 .event-type:hover .event-share {
@@ -305,16 +330,12 @@
     color: #000;
 }
 
-.event-type-2 .event-share a {
-    color: #fff;
-}
-
-.event-type-3 .event-share a {
-    color: #fff;
-}
-
 .event-type-4 .event-share a {
     color: #000;
+}
+
+.event-type-2 .event-share a, .event-type-4 .event-share a, .event-type-5 .event-share a,  .event-type-6 .event-share a,  .event-type-7 .event-share a,  .event-type-8 .event-share a,  .event-type-9 .event-share a  {
+    color: #fff;
 }
 
 .underline-date {

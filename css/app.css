@@ -467,10 +467,6 @@
  .box-menus .item-box:hover:before {
      background-image: linear-gradient(to bottom right,#1f88d8,#1f89d9) !important;
 }
- .box-menus .learn-more-box:before, .box-menus .learn-more-box:hover {
-    background-image: linear-gradient(to right,#4f4f4f,#454545) !important;
-    opacity: 0.7;
-}
 .box-menus .learn-more-box:hover:not(:focus):not(.focused) {
     background-image: linear-gradient(to right,#4f4f4f,#454545);
     opacity: 0.8;
@@ -647,10 +643,6 @@
 /************ Footer ************/
  footer {
     font-size: 14px;
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    z-index: 99;
     background: #fff;
     min-height: 25px;
     width: 100%;
@@ -661,13 +653,9 @@
 }
  footer .ft-quote {
      font-family: "gotham_htflight_italic", Helvetica Neue, sans-serif;
-     width: 96%;
+     color: #000;
+     width: 100%;
      text-align: right;
-}
- @media (max-width: 1024px){
-    footer {
-        position: initial;
-    }
 }
 .copyright {
     font-size: 13px;
@@ -842,10 +830,11 @@
      -webkit-backface-visibility: hidden;
 }
  .btn-learn-more{
-     position: relative;
+     position: absolute;
      z-index: 9;
-     margin-top: 25px;
      font-size: 14px;
+     margin-top: 60px;
+     margin-left: 40%;
 }
  .btn-border{
      border: 2px solid #fff;

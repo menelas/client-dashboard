@@ -500,6 +500,9 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
         -ms-flex-pack: center!important;
         justify-content: center!important;
     }
+    .btn-learn-more {
+        margin-left: 0%;
+    }
     #top-nav-container .top-nav-social i {
         padding: 15px 0
     }
