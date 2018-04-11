@@ -650,7 +650,7 @@
     margin: 0;
     position: fixed;
     bottom: 0;
-    z-index: 9999;
+    z-index: 99;
     background: #fff;
     min-height: 25px;
     width: 100%;
@@ -1594,11 +1594,10 @@ input::-ms-input-placeholder {
     background-color: #005697;
 }
 #profile-modal form > .form-group.form-group-pass{
-    margin: 60px 0px 60px 0px;
+    margin: 0px 0px 60px 0px;
 }
 .form-group-pass .password-verdict {
     position: absolute;
-    bottom: -55px;
 }
 /* Chosen */
 .chosen-single, .chosen-choices{

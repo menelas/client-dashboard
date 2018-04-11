@@ -11,6 +11,15 @@
     display: none;
 }
 
+.mCSB_container, .mCustomScrollBox{
+    overflow: visible;
+}
+
+.mCSB_scrollTools{
+    right: auto;
+    left: 0;
+}
+
 #events-fap {
     padding-bottom: 5%;
     background-image: url(../images/sub-pages/clock-bg.jpg);
@@ -287,6 +296,7 @@
         background-color: #fff;
         color: #005697;
     }
+
 
 .event-share a {
     display: inline-block;
