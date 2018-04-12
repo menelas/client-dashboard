@@ -208,7 +208,7 @@ h4.d-inline-flex.flex-column {
  .events .row {
      background-color: #66bcf5;
      border-top: 1px solid #fff;
-     padding: 5px 10px 5px 10px;
+     padding: 3px 10px 3px 10px;
      margin-left: 0px;
      margin-right: 0px;
 }
@@ -535,7 +535,8 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     word-wrap: break-word;
 }
 .carousel.slide{
-    min-height: 375px;
+    min-height: 350px;
+    max-height: 350px;
 }
 .entire-clickable{
     position: absolute;
@@ -578,8 +579,9 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
         min-height: 170px;
     }
     .sb-top h1 {
-        font-size: 45px;
+        font-size: 43px;
         padding: 0;
+        margin-bottom: 10px;
     }
     .img-fluid {
         max-width: 90%;
