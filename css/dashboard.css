@@ -304,7 +304,7 @@ h4.d-inline-flex.flex-column {
 }
  .top-nav-title:hover, #top-nav-container2+label:hover {
      color: #fff;
-     cursor: pointer;
+
 }
  .top-nav-content {
      color: #333;
@@ -328,7 +328,7 @@ h4.d-inline-flex.flex-column {
  .top-navi{
      text-align: right;
 }
- .top-navi-item:hover {
+ .top-nav-social:hover {
      opacity: 0.9;
      cursor: pointer;
 }
@@ -481,7 +481,7 @@ h4.d-inline-flex.flex-column {
      height: 40px;
      top: 50%;
      left: -4%;
-     margin-top: -20px;
+     margin-top: -33px;
      background-color: #fff;
      width: 1px;
      opacity: 0.2;
