@@ -13,12 +13,12 @@
 .item-box h4 {
     margin-left: 23%;
 }
-#safety > .bg-cover-img {
+#safety > .bg-cover-img, .safety .image-tran-wrap .bg-cover-img {
      background: url("../images/dashboard/safety.jpg") no-repeat center;
      background-size: cover;
 }
 
- #employee-benefits > .bg-cover-img {
+ #employee-benefits > .bg-cover-img, .employee-benefits .image-tran-wrap .bg-cover-img {
      background: url("../images/dashboard/employee-benefits.jpg") no-repeat center;
      background-size: cover;
 }
@@ -34,7 +34,7 @@
      background: url("../images/dashboard/claims.jpg") no-repeat center;
      background-size: cover;
 }
- #business-insurance > .bg-cover-img{
+ #business-insurance > .bg-cover-img, .bg-cover-img, .business-insurance .image-tran-wrap .bg-cover-img {
      background: url("../images/dashboard/business-insurance.jpg") no-repeat center;
      background-size: cover;
 }
@@ -46,23 +46,11 @@
      background: url("../images/dashboard/webinar.jpg") no-repeat center;
      background-size: cover;
 }
- #human-resource > .bg-cover-img{
+ #human-resource > .bg-cover-img, .human-resource .image-tran-wrap .bg-cover-img{
      background: url("../images/dashboard/human-resource.jpg") no-repeat center;
      background-size: cover;
 }
- #middle-middle-container .image-tran-wrap .bg-cover-img{
-     background-size: cover;
-}
- #middle-middle-container > .bg-cover-img, #middle-middle-container .image-tran-wrap .bg-cover-img{
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-}
- #bottom-middle-container .bg-cover-img {
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-}
+
  .dash-1 {
      background: url("../images/dashboard/icons/shield.png") no-repeat;
      width: 50px;
@@ -118,6 +106,14 @@
      width: 50px;
      height: 50px;
 }
+
+ .btn-learn-more{
+     position: absolute;
+     z-index: 3;
+     font-size: 14px;
+     margin-top: 60px;
+     margin-left: 35%;
+}
 /************ Team Carousel ************/
  .carousel-control-prev-icon {
      background-image : url("../images/menu/left-carousel.png");
@@ -138,11 +134,64 @@
      padding: 0 15px;
 }
  .team-title {
-     font-size: 13px;
+     font-size: 12px;
 }
 
 .dash-left {
     margin-left: 20%;
+}
+
+/************ Dashboard Hover Menus ************/
+div#top-left-container:hover {
+    pointer-events: none;
+}
+div#top-left-container:hover div#top-left{
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    z-index: 9;
+    border: 15px solid #fff;
+    pointer-events: auto;
+    overflow-y: hidden;
+}
+
+div#middle-middle-container:hover {
+    pointer-events: none;
+}
+div#middle-middle-container:hover div#middle-middle{
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    z-index: 9;
+    border: 15px solid #fff;
+    pointer-events: auto;
+    overflow-y: hidden;
+}
+
+.box-menus .item-box-hover:hover:not(:focus):not(.focused) {
+    border: none;
+}
+
+.item-box.nav-has-sub h4 ul, .item-box.nav-has-sub-tot h4 ul {
+  width: 100%;
+}
+
+h4.d-inline-flex.flex-column {
+    margin-left: 8%;
+}
+
+.nav-sub-2 li:hover:before {
+    display: none;
+}
+
+.nav-sub-2 li:hover {
+    padding-left: 0px;
+}
+
+.claims-widget {
+    margin-left: 0% !important;
 }
 /************ Calendar ************/
  .sb-top {
@@ -321,7 +370,7 @@
  .weather i {
      margin-right: -10px;
 }
- .cloud {
+ .weather-container {
      margin-top: -9px;
      margin-bottom: 7px;
 }
@@ -486,7 +535,18 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     word-wrap: break-word;
 }
 .carousel.slide{
-    min-height: 325px;
+    min-height: 375px;
+}
+.entire-clickable{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    top: 0
+}
+.item-box.nav-has-sub h4 ul {
+    margin-top: -10px;
 }
 @media (max-width: 1300px){
     .col-md-4 h4 span {
@@ -502,6 +562,7 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     }
     .btn-learn-more {
         margin-left: 0%;
+        margin-top: 60px;
     }
     #top-nav-container .top-nav-social i {
         padding: 15px 0

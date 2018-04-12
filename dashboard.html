@@ -57,7 +57,7 @@
                         <input id="top-nav-container5" type="radio" class="position-top-nav" name="top-nav-container" checked="checked">
                         <label for="top-nav-container5" class="mw-13 top-nav-title">
                             <div class="top-navi-item d-flex lblue weather flex-column weather-item">
-                                <div class="d-flex align-items-center justify-content-center cloud"><div class="clear-sky"></div> <span class="t-sup">76<sup>O</sup></span></div>
+                                <div class="d-flex align-items-center justify-content-center weather-container"><div class="clear-sky"></div> <span class="t-sup">76<sup>O</sup></span></div>
                                 <span class="date-time">Monday 3/4</span>
                             </div>
                         </label>
@@ -66,28 +66,28 @@
 
                                 <div class="expand-item">
                                     <div class="top-navi-item d-flex lblue weather flex-column weather-item">
-                                        <div class="d-flex align-items-center justify-content-center cloud">
+                                        <div class="d-flex align-items-center justify-content-center weather-container">
                                             <div class="scattered-clouds"></div> <span class="t-sup">71<sup>O</sup></span></div>
                                         <span class="date-time">Tuesday 3/5</span>
                                     </div>
                                 </div>
                                 <div class="expand-item">
                                     <div class="top-navi-item d-flex lblue weather flex-column weather-item">
-                                        <div class="d-flex align-items-center justify-content-center cloud">
+                                        <div class="d-flex align-items-center justify-content-center weather-container">
                                             <div class="rain"></div> <span class="t-sup">73<sup>O</sup></span></div>
                                         <span class="date-time">Wednesday 3/6</span>
                                     </div>
                                 </div>
                                 <div class="expand-item">
                                     <div class="top-navi-item d-flex lblue weather flex-column weather-item">
-                                        <div class="d-flex align-items-center justify-content-center cloud">
+                                        <div class="d-flex align-items-center justify-content-center weather-container">
                                             <div class="snow"></div> <span class="t-sup">32<sup>O</sup></span></div>
                                         <span class="date-time">Thursday 3/7</span>
                                     </div>
                                 </div>
                                 <div class="expand-item">
                                     <div class="top-navi-item d-flex lblue weather flex-column weather-item">
-                                        <div class="d-flex align-items-center justify-content-center cloud">
+                                        <div class="d-flex align-items-center justify-content-center weather-container">
                                             <div class="thunderstorm"></div> <span class="t-sup">75<sup>O</sup></span></div>
                                         <span class="date-time">Friday 3/8</span>
                                     </div>
@@ -96,7 +96,7 @@
                         </div>
 
                         <!-- commented out for phase 1, to re-add remove class weather-only from line 63 and uncomment this div
-                        clear sky, scattered clouds, rain, thunderstorm , snow 
+                        clear sky, scattered weather-containers, rain, thunderstorm , snow 
                         <div>
                             <input id="top-nav-container6" type="radio" class="position-top-nav" name="top-nav-container">
                             <label for="top-nav-container6" class="mw-13 top-navi-item dblue d-flex align-items-center stock justify-content-center top-nav-title">
@@ -163,38 +163,132 @@
                 <div class="col-lg-9 col-md-12 col-sm-12 col-12 main-nav">
                     <div class="row no-gutters box-menus">
 
-                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition" id="safety">
-                            <a href="safety.html" class="cover-href">&nbsp;</a>
-                            <div class="bg-cover-img image-transition"><img alt="Safety" src="images/dashboard/safety.jpg"></div>
-                            <h4 class="d-inline-flex"><a href="safety.html"><span class="dash-1"></span> <span>Safety</span></a></h4>
+                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition nav-has-sub safety" id="top-left-container">
+                            <div class="image-tran-wrap non-sub-item">
+                                <div class="bg-cover-img image-transition"><img alt="Safety" src="images/dashboard/safety.jpg"></div>
+                            </div>
+                            <h4 class="d-inline-flex non-sub-item"><a href="safety.html"><span class="dash-1"></span> <span>Safety</span></a></h4>
+                            <div id="top-left" class="expanded-menu expanded-menu-1 align-items-center justify-content-center dash-transition">
+                                <div class="image-tran-wrap">
+                                    <div class="bg-cover-img image-transition"><img alt="Safety" src="images/dashboard/safety.jpg"></div>
+                                </div>
+                                <span class="exit pull-right"><a href="">X</a></span>
+                                <h4 class="d-inline-flex flex-column">
+                                    <a href="safety.html"><span class="dash-1"></span> <span>Safety</span></a>
+                                    <ul class="nav-sub-2 text-left">
+                                        <li>Learning Management System</li>
+                                        <li>Safety Calendar</li>
+                                        <li>RiskScore<sup>&trade;</sup> Client Portal</li>
+                                        <li>OSHA</li>
+                                        <li>Safety Links</li>
+                                        <li>Safety Manual</li>
+                                    </ul>
+                                </h4>
+                                <a href="safety.html" class="entire-clickable">&nbsp;</a>
+                            </div>
                         </div>
 
-                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition" id="human-resource">
-                            <a href="human-resource.html" class="cover-href">&nbsp;</a>
-                            <div class="bg-cover-img image-transition"><img alt="Safety" src="images/dashboard/human-resource.jpg"></div>
-                            <h4 class="d-inline-flex"><a href="human-resource.html"><span class="dash-2"></span> <span>Human Resources</span></a></h4>
+                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition nav-has-sub human-resource" id="top-left-container">
+                            <div class="image-tran-wrap non-sub-item">
+                                <div class="bg-cover-img image-transition"><img alt="Human Resources" src="images/dashboard/human-resource.jpg"></div>
+                            </div>
+                            <h4 class="d-inline-flex non-sub-item"><a href="human-resource.html"><span class="dash-2"></span> <span>Human Resources</span></a></h4>
+                            <div id="top-left" class="expanded-menu expanded-menu-1 align-items-center justify-content-center dash-transition">
+                                <div class="image-tran-wrap">
+                                    <div class="bg-cover-img image-transition"><img alt="Human Resources" src="images/dashboard/human-resource.jpg"></div>
+                                </div>
+                                <span class="exit pull-right"><a href="">X</a></span>
+                                <h4 class="d-inline-flex flex-column">
+                                    <a href="#"><span class="dash-2"></span> <span>Human Resources</span></a>
+                                    <ul class="nav-sub-2 text-left">
+                                        <li>Seay Management</li>
+                                        <li>RiskScore<sup>&trade;</sup> Client Portal</li>
+                                        <li>ACA Updates</li>
+                                        <li>Integrity Testing</li>
+                                        <li>Background Check</li>
+                                    </ul>
+                                </h4>
+                                <a href="human-resource.html" class="entire-clickable">&nbsp;</a>
+                            </div>
                         </div>
 
-                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition" id="claims">
-                            <a href="claims.html" class="cover-href">&nbsp;</a>
-                            <div class="bg-cover-img image-transition"><img alt="Safety" src="images/dashboard/claims.jpg"></div>
-                            <h4 class="d-inline-flex"><a href="claims.html"><span class="dash-3"></span> <span>Claims</span></a></h4>
+                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition nav-has-sub claims" id="top-left-container">
+                            <div class="image-tran-wrap non-sub-item">
+                                <div class="bg-cover-img image-transition"><img alt="Claims" src="images/dashboard/claims.jpg"></div>
+                            </div>
+                            <h4 class="d-inline-flex non-sub-item"><a href="#"><span class="dash-3"></span> <span>Claims</span></a></h4>
+                            <div id="top-left" class="expanded-menu expanded-menu-1 align-items-center justify-content-center dash-transition">
+                                <div class="image-tran-wrap">
+                                    <div class="bg-cover-img image-transition"><img alt="Claims" src="images/dashboard/claims.jpg"></div>
+                                </div>
+                                <span class="exit pull-right"><a href="">X</a></span>
+                                <h4 class="d-inline-flex flex-column claims-widget">
+                                    <a href="#"><span class="dash-3"></span> <span>Claims</span></a>
+                                    <ul class="nav-sub-2 text-left">
+                                        <li>CAMS</li>
+                                        <li>Claims Portal</li>
+                                        <li>Claims Kit</li>
+                                        <li>How to Report a Claim</li>
+                                    </ul>
+                                </h4>
+                                <a href="claims.html" class="entire-clickable">&nbsp;</a>
+                            </div>
                         </div>
 
-                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition" id="business-insurance">
-                            <a href="business-insurance.html" class="cover-href"></a>
-                            <div class="bg-cover-img image-transition"><img alt="Business Insurance" src="images/dashboard/business-insurance.jpg"></div>
-                            <h4 class="d-inline-flex"><a href="business-insurance.html"><span class="dash-4"></span> <span>Business Insurance</span></a></h4>
+                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition nav-has-sub business-insurance" id="middle-middle-container">
+                            <div class="image-tran-wrap non-sub-item">
+                                <div class="bg-cover-img image-transition"><img alt="Business Insurance" src="images/dashboard/business-insurance.jpg"></div>
+                            </div>
+                            <h4 class="d-inline-flex non-sub-item"><a href="#"><span class="dash-4"></span> <span>Business Insurance</span></a></h4>
+                            <div id="middle-middle" class="expanded-menu expanded-menu-5 align-items-center justify-content-center dash-transition">
+                                <div class="image-tran-wrap">
+                                    <div class="bg-cover-img image-transition"><img alt="Business Insurance" src="images/dashboard/business-insurance.jpg"></div>
+                                </div>
+                                <span class="exit pull-right"><a href="">X</a></span>
+                                <h4 class="d-inline-flex flex-column">
+                                    <a href="#"><span class="dash-4"></span> <span>Business Insurance</span></a>
+                                    <ul class="nav-sub-2 text-left">
+                                        <li>Policies & Certificates</li>
+                                        <li>News & Information</li>
+                                        <li>ID Cards</li>
+                                        <li>Webinars</li>
+                                        <li>Risk Management</li>
+                                        <li>Service Calendar</li>
+                                    </ul>
+                                </h4>
+                                <a href="business-insurance.html" class="entire-clickable">&nbsp;</a>
+                            </div>
                         </div>
+
                         <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition" id="risk-score">
                             <a href="https://riskscore.ioausa.com" target="_blank" class="cover-href"></a>
                             <div class="bg-cover-img image-transition"><img alt="Risk" src="images/dashboard/risk-score.jpg"></div>
                             <h4 class="d-inline-flex"><a href="https://riskscore.ioausa.com" target="_blank"><span class="dash-5"></span> <span>RiskScore<sup>&trade;</sup></span></a></h4>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition" id="employee-benefits">
-                            <a href="employee-benefits.html" class="cover-href"></a>
-                            <div class="bg-cover-img image-transition"><img alt="Employee Benefits" src="images/dashboard/employee-benefits.jpg"></div>
-                            <h4 class="d-inline-flex"><a href="employee-benefits.html"><span class="dash-6"></span> <span>Employee Benefits</span></a></h4>
+
+
+                        <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition nav-has-sub employee-benefits" id="middle-middle-container">
+                            <div class="image-tran-wrap non-sub-item">
+                                <div class="bg-cover-img image-transition"><img alt="Business Insurance" src="images/dashboard/employee-benefits.jpg"></div>
+                            </div>
+                            <h4 class="d-inline-flex non-sub-item"><a href="#"><span class="dash-6"></span> <span>Employee Benefits</span></a></h4>
+                            <div id="middle-middle" class="expanded-menu expanded-menu-2 align-items-center justify-content-center dash-transition">
+                                <div class="image-tran-wrap">
+                                    <div class="bg-cover-img image-transition"><img alt="Business Insurance" src="images/dashboard/employee-benefits.jpg"></div>
+                                </div>
+                                <span class="exit pull-right"><a href="">X</a></span>
+                                <h4 class="d-inline-flex flex-column">
+                                    <a href="#"><span class="dash-6"></span> <span>Employee Benefits</span></a>
+                                    <ul class="nav-sub-2 text-left">
+                                        <li>Compliance Corner</li>
+                                        <li>Data Corner</li>
+                                        <li>New & Information</li>
+                                        <li>Webinars</li>
+                                        <li>Wellness & Well Being</li>
+                                    </ul>
+                                </h4>
+                                <a href="employee-benefits.html" class="entire-clickable">&nbsp;</a>
+                            </div>
                         </div>
 
                         <div class="col-6 col-sm-6 col-md-4 item-box item-box-hover d-flex align-items-center dash-transition" id="documents">
@@ -247,28 +341,29 @@
                                     <div class="carousel-item active">
                                         <div class="row no-gutters">
                                             <div class="col-6 mb-3">
-                                                <img class="img-fluid rounded-circle" alt="Risk Services" src="images/dashboard/my-ioa-1.jpg"><br /><strong>Martha Kent</strong><br /><span class="team-title">Risk Services</span></div>
-                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-2.jpg"><br /><strong>Marcus Right</strong><br /><span class="team-title">Broker</span></div>
-                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-3.jpg"><br /><strong>Lance Welch</strong><br /><span class="team-title">Broker</span></div>
-                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Account Manager" src="images/dashboard/my-ioa-4.jpg"><br /><strong>Lidia Mantel</strong><br /><span class="team-title">Account Manager</span></div>
+                                            <img class="img-fluid rounded-circle" alt="Risk Services" src="images/dashboard/my-ioa-1.jpg"><br /><strong>Martha Kent</strong><br /><span class="team-title">Employee Benefits <br />Producer</span></div>
+                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-2.jpg"><br /><strong>Marcus Right</strong><br /><span class="team-title">Employee Benefits <br />Claims Contact</span></div>
+                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-3.jpg"><br /><strong>Lance Welch</strong><br /><span class="team-title">Employee Benefits <br />Technical Contact</span></div>
+                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Account Manager" src="images/dashboard/my-ioa-4.jpg"><br /><strong>Lidia Mantel</strong><br /><span class="team-title">Employee Benefits <br />Account Manager</span></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row no-gutters">
-                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Risk Services" src="images/dashboard/my-ioa-1.jpg"><br /><strong>Martha Kent</strong><br /><span class="team-title">Risk Services</span></div>
-                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-2.jpg"><br /><strong>Marcus Right</strong><br /><span class="team-title">Broker</span></div>
-                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-3.jpg"><br /><strong>Lance Welch</strong><br /><span class="team-title">Broker</span></div>
-                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Account Manager" src="images/dashboard/my-ioa-4.jpg"><br /><strong>Lidia Mantel</strong><br /><span class="team-title">Account Manager</span></div>
+                                            <div class="col-6 mb-3">
+                                            <img class="img-fluid rounded-circle" alt="Risk Services" src="images/dashboard/my-ioa-1.jpg"><br /><strong>Martha Kent</strong><br /><span class="team-title">Employee Benefits <br />Producer</span></div>
+                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-2.jpg"><br /><strong>Marcus Right</strong><br /><span class="team-title">Employee Benefits <br />Claims Contact</span></div>
+                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-3.jpg"><br /><strong>Lance Welch</strong><br /><span class="team-title">Employee Benefits <br />Technical Contact</span></div>
+                                            <div class="col-6 mb-3"><img class="img-fluid rounded-circle" alt="Account Manager" src="images/dashboard/my-ioa-4.jpg"><br /><strong>Lidia Mantel</strong><br /><span class="team-title">Employee Benefits <br />Account Manager</span></div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row no-gutters">
                                              <div class="col-6 mb-3">
                                                 <img class="img-fluid rounded-circle" alt="Risk Services" src="images/dashboard/my-ioa-1.jpg"><br /><strong>Martha Kent</strong><br />
-                                                <span class="team-title">Risk Services</span>
+                                                <span class="team-title">Employee Benefits <br />Producer</span>
                                              </div>
                                             <div class="col-6 mb-3">
-                                                <img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-2.jpg"><br /><strong>Marcus Right</strong><br /><span class="team-title">Broker</span>
+                                                <img class="img-fluid rounded-circle" alt="Broker" src="images/dashboard/my-ioa-2.jpg"><br /><strong>Marcus Right</strong><br /><span class="team-title">Employee Benefits <br />Claims Contact</span>
                                             </div>
                                         </div>
                                     </div>
@@ -403,7 +498,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.weather-containerflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/password-checker.js"></script>

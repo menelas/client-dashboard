@@ -483,10 +483,10 @@
      padding-bottom: 10px;
      font-weight: lighter;
 }
- #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li:first-child, #middle-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li:first-child, #bottom-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li:first-child{
+ #top-left-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li:first-child, #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li:first-child, #middle-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li:first-child, #bottom-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition ul li:first-child{
      padding-top: 20px;
 }
- #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #middle-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #bottom-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a{
+  #top-left-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #top-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #middle-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a, #bottom-middle-container > div.expanded-menu.align-items-center.justify-content-center.dash-transition > h4 > a{
      padding-top: 30px;
 }
  .btn-open {
@@ -829,13 +829,6 @@
      transition: width 0.5s;
      -webkit-backface-visibility: hidden;
 }
- .btn-learn-more{
-     position: absolute;
-     z-index: 9;
-     font-size: 14px;
-     margin-top: 60px;
-     margin-left: 35%;
-}
  .btn-border{
      border: 2px solid #fff;
      border-radius: 0;
@@ -970,7 +963,7 @@ span.exit.pull-right{
          position: fixed;
          top: 0;
          left: 0;
-         height: 320%;
+         height: 120%;
          border: 0;
     }
      .box-menus .expanded-menu:before {
