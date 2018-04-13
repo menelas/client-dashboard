@@ -1500,7 +1500,7 @@ input::-ms-input-placeholder {
     border: 1px solid #005697;
     margin-bottom: 30px;
 }
-#admin-modal form .form-group > label, #profile-modal form .form-group > label, .custom-fieldset .form-group > label{
+#admin-modal form .form-group > label:first-child, #profile-modal form .form-group > label:first-child, .custom-fieldset .form-group > label:first-child{
     position: absolute;
     top: -10px;
     display: inline-block;
