@@ -539,6 +539,10 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     line-height: 1;
 }
 
+.carousel.slide{
+    min-height: 355px;
+    max-height: 355px;
+}
 .entire-clickable{
     position: absolute;
     width: 100%;
@@ -573,13 +577,8 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
         min-width: 0;
     }
 }
-
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-    .carousel.slide{
-        min-height: 355px;
-        max-height: 355px;
-    }
      .box-menus .item-box{
         min-height: 170px;
     }
@@ -629,3 +628,9 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
         padding-top: 100px;
     }
 }
+
+/* Tablet ----------- */
+@media only screen and (max-width : 992px) {
+    .carousel.slide {
+        max-height: 100%;
+    }
