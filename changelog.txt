@@ -1,6 +1,7 @@
 ## 2018-04-13
 • Updated app.css as well as other css pages
 • Updated dashboard.css to fix team section
+• Updated dashboard.css and app.css to fix issue with laptops
 
 ## 2018-04-12
 • Updated app.css, dashboard.html, and dashboard.css for menus

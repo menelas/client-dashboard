@@ -126,11 +126,10 @@
      height: 24px;
 }
  .team {
-     padding: 0px 15%;
-     line-height: 19px;
+     padding: 0px 10%;
 }
  .team img {
-     margin-bottom: 5px;
+     margin-bottom: 2px;
      padding: 0 15px;
 }
  .team-title {
@@ -139,10 +138,6 @@
 }
 .dash-left {
     margin-left: 20%;
-}
-
-.img-fluid {
-    max-width: 80%;
 }
 
 /************ Dashboard Hover Menus ************/
@@ -184,6 +179,7 @@ div#middle-middle-container:hover div#middle-middle{
 
 h4.d-inline-flex.flex-column {
     margin-left: 8%;
+    margin-top: -3%;
 }
 
 .nav-sub-2 li:hover:before {
@@ -212,7 +208,7 @@ h4.d-inline-flex.flex-column {
  .events .row {
      background-color: #66bcf5;
      border-top: 1px solid #fff;
-     padding: 3px 10px 3px 10px;
+     padding: 2px 10px 2px 10px;
      margin-left: 0px;
      margin-right: 0px;
 }
@@ -227,15 +223,15 @@ h4.d-inline-flex.flex-column {
      text-align: center;
 }
  .events .date strong {
-     font-size: 39px;
+     font-size: 35px;
      line-height: 35px;
 }
  .venue {
      line-height: 13px;
 }
  .sb-top h1 {
+     font-size: 43px;
      font-weight: 100;
-     font-size: 60px;
 }
  .sb-top h1 strong {
      font-weight: bold;
@@ -267,10 +263,10 @@ h4.d-inline-flex.flex-column {
     }
 }
  .carousel-control-prev {
-     left: -21%;
+     left: -12%;
 }
  .carousel-control-next {
-     right: -21%;
+     right: -12%;
 }
 /************ Top Navigation ************/
  #top-nav-container {
@@ -540,12 +536,9 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
 
 .carousel-item .col-6 strong{
     font-size: 15px;
-    line-height: 1.4;
+    line-height: 1;
 }
 
-.carousel.slide{
-    min-height: 350px;
-}
 .entire-clickable{
     position: absolute;
     width: 100%;
@@ -583,14 +576,46 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
+    .carousel.slide{
+        min-height: 355px;
+        max-height: 355px;
+    }
      .box-menus .item-box{
         min-height: 170px;
     }
     .sb-top h1 {
-        font-size: 43px;
         padding: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
+    .img-fluid {
+        max-width: 80%;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1024px) { 
+    body {
+        padding: 15px 25px 0px 15px;
+    }
+    .right-sidebar {
+        background-color: #f4f4f4;
+    }
+    .carousel-item .col-6 {
+        margin-top: 15px;
+    }
+    .events .row:nth-child(1), .events .row:nth-child(2) {
+        display: none;
+    }
+    .events {
+        position: absolute;
+        bottom: 0;
+    }
+    .item-box.nav-has-sub h4 ul {
+        font-size: 12px;
+        line-height: 0.9;
+    }
+    footer .ft-quote {
+        font-size: 12px;
+    }
+
 }
 
 /* Large screens ----------- */
