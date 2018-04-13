@@ -135,6 +135,7 @@
 }
  .team-title {
      font-size: 12px;
+     line-height: 0;
 }
 
 .dash-left {

@@ -41,7 +41,8 @@
     padding: 10px 15px 5px;
     height: 100%;
     position: relative;
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-bottom: 3px;
 }
 .news-and-updates .custom-legend{
     width: auto;
