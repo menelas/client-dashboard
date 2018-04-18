@@ -8,45 +8,44 @@
      height: 100% 
 }
 .col-md-4 h4 span {
-    max-width: 150px;
+    max-width: 100px;
 }
 .item-box h4 {
     margin-left: 23%;
 }
-#safety > .bg-cover-img, .safety .image-tran-wrap .bg-cover-img {
+#safety > .bg-cover-img, .safety .image-tran-wrap .bg-cover-img, .safety .bg-cover-img {
      background: url("../images/dashboard/safety.jpg") no-repeat center;
      background-size: cover;
 }
-
- #employee-benefits > .bg-cover-img, .employee-benefits .image-tran-wrap .bg-cover-img {
+#employee-benefits > .bg-cover-img, .employee-benefits .image-tran-wrap .bg-cover-img, .employee-benefits .bg-cover-img {
      background: url("../images/dashboard/employee-benefits.jpg") no-repeat center;
      background-size: cover;
 }
- #news > .bg-cover-img {
+#news > .bg-cover-img, .news .image-tran-wrap .bg-cover-img, .news .bg-cover-img {
      background: url("../images/dashboard/news.jpg") no-repeat center;
      background-size: cover;
 }
- #documents > .bg-cover-img{
+#documents > .bg-cover-img, .documents .image-tran-wrap .bg-cover-img, .documents .bg-cover-img {
      background: url("../images/dashboard/documents.jpg") no-repeat center;
      background-size: cover;
 }
- #claims > .bg-cover-img, .claims .image-tran-wrap .bg-cover-img{
+#claims > .bg-cover-img, .claims .image-tran-wrap .bg-cover-img, .claims .bg-cover-img {
      background: url("../images/dashboard/claims.jpg") no-repeat center;
      background-size: cover;
 }
- #business-insurance > .bg-cover-img, .bg-cover-img, .business-insurance .image-tran-wrap .bg-cover-img {
+#business-insurance > .bg-cover-img, .business-insurance .image-tran-wrap .bg-cover-img, .business-insurance .bg-cover-img {
      background: url("../images/dashboard/business-insurance.jpg") no-repeat center;
      background-size: cover;
 }
- #risk-score > .bg-cover-img {
+#risk-score > .bg-cover-img, .risk-score .image-tran-wrap .bg-cover-img, .risk-score .bg-cover-img {
      background: url("../images/dashboard/risk-score.jpg") no-repeat center;
      background-size: cover;
 }
- #webinar > .bg-cover-img {
+#webinar > .bg-cover-img, .webinar .image-tran-wrap .bg-cover-img, .webinar .bg-cover-img {
      background: url("../images/dashboard/webinar.jpg") no-repeat center;
      background-size: cover;
 }
- #human-resource > .bg-cover-img, .human-resource .image-tran-wrap .bg-cover-img{
+#human-resource > .bg-cover-img, .human-resource .image-tran-wrap .bg-cover-img, .human-resource .bg-cover-img {
      background: url("../images/dashboard/human-resource.jpg") no-repeat center;
      background-size: cover;
 }
@@ -90,6 +89,7 @@
      background: url("../images/dashboard/icons/bullhorn.png") no-repeat;
      width: 70px;
      height: 50px;
+     margin-left: -20px;
 }
  .dash-9 {
      background: url("../images/dashboard/icons/play-button.png") no-repeat;
@@ -107,12 +107,18 @@
      height: 50px;
 }
 
- .btn-learn-more{
+ .btn-learn-more {
      position: absolute;
+     display: block;
      z-index: 3;
      font-size: 14px;
-     margin-top: 60px;
-     margin-left: 35%;
+     margin-top: 70px;
+     margin-left: 40%;
+     font-family: "gotham_htfbook", Helvetica Neue, sans-serif;
+}
+
+.safety .btn-learn-more, .claims .btn-learn-more, .risk-score .btn-learn-more, .documents .btn-learn-more, .webinar .btn-learn-more  {
+    margin-top: 55px;
 }
 /************ Team Carousel ************/
  .carousel-control-prev-icon {
@@ -169,8 +175,8 @@ div#middle-middle-container:hover div#middle-middle{
     overflow-y: hidden;
 }
 
-.box-menus .item-box-hover:hover:not(:focus):not(.focused) {
-    border: none;
+.nav-has-sub {
+    border: 0 !important;
 }
 
 .item-box.nav-has-sub h4 ul, .item-box.nav-has-sub-tot h4 ul {
@@ -568,7 +574,6 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     }
     .btn-learn-more {
         margin-left: 0%;
-        margin-top: 60px;
     }
     #top-nav-container .top-nav-social i {
         padding: 15px 0
@@ -634,3 +639,12 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
     .carousel.slide {
         max-height: 100%;
     }
+}
+
+@media only screen and (max-width: 766px) {
+    .btn-learn-more {
+        font-size: 12px;
+        position: absolute;
+        top: 48px;
+    }
+}

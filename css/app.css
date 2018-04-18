@@ -174,7 +174,7 @@
  .btn-open:hover, #btn-close:hover {
      cursor: pointer;
 }
- .item-box-hover:hover {
+ .item-box-hover:hover, .learn-more:hover {
      border: 15px solid #fff;
      cursor: pointer;
      display: block;
@@ -311,7 +311,7 @@
 }
  @media (max-width: 1390px) {
      .main-nav .col-sm-6 {
-         padding: 10px;
+         padding: 7px;
     }
      .box-menus .item-box:hover:not(:focus):not(.focused) {
          border: 5px solid #fff;
@@ -441,7 +441,6 @@
      background-size: cover;
      position: relative;
      background-repeat: no-repeat;
-     border: 0;
      overflow: hidden;
      min-height: 190px;
 }
@@ -739,6 +738,9 @@
      width: 100%;
      height: 150%;
      z-index: 3;
+}
+.nav-has-sub:focus {
+    border: 0 !important;
 }
  .box-menus .remove-border.nav-has-sub:hover, .box-menus .remove-border.nav-sub-effected:hover, .box-menus .remove-border.nav-has-sub-tot:hover, .box-menus .remove-border.nav-sub-effected-tot:hover{
      border: 0;
