@@ -111,6 +111,7 @@
      position: absolute;
      display: block;
      z-index: 3;
+     left: 0;
      font-size: 14px;
      margin-top: 70px;
      margin-left: 40%;
