@@ -1,6 +1,7 @@
 ## 2018-04-23
 • Updated app.css to resize copyright notice
 • Updated login.css
+• Updated dashboard.css
 
 ## 2018-04-20
 • Updated human-resource.css to fix seay management responsive issue
