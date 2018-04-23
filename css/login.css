@@ -1,3 +1,7 @@
+body {
+    padding: 20px;
+}
+
 .main-login {
     position: relative;
     height: 100%;
@@ -141,4 +145,17 @@ input::-ms-input-placeholder {
     .main-login {
         min-height: 800px;
     }
+}
+
+@media only screen and (min-width:992px) and (max-width:1024px) { 
+    body {
+        padding: 15px 15px 0px 15px;
+    }
+    .main-login {
+        height: 92%;
+    }
+    footer .ft-quote {
+        font-size: 12px;
+    }
+
 }
