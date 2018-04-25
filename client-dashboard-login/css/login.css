@@ -212,7 +212,9 @@ input#login-username, input#login-password {
 }
 
 /************ Footer ************/
-
+.logo-footer {
+    margin-top: -70px;
+}
 .copyright {
     font-size: 11px;
     margin-bottom: 0px;
