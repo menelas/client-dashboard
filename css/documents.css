@@ -41,22 +41,22 @@
  #search-items a{
      color: #000;
 }
- .main-nav #start-date.col-sm-6, .main-nav #ends-date.col-sm-6{
+ .main-nav #type-filter.col-sm-6, .main-nav #ends-date.col-sm-6{
      padding: 0;
 }
 
- #start-date li, #ends-date li{
+ #type-filter li, #ends-date li{
      padding: 15px 5px 15px 12px;
      margin-bottom: 10px;
      word-wrap: break-word;
      word-break: keep-all;
 }
- #start-date li:hover, #ends-date li:hover, #start-date li.active, #ends-date li.active{
+ #type-filter li:hover, #ends-date li:hover, #type-filter li.active, #ends-date li.active{
      background-color: #d42043;
      color: #fff;
      cursor: pointer;
 }
- #start-date li:first-child, #ends-date li:first-child{
+ #type-filter li:first-child, #ends-date li:first-child{
      background-color: #005596;
 }
  #search-items select{

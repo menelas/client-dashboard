@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Office of America - myIOA</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    
+</head>
+<body class="login-page">
+
+    <div class="header-login">
+        <div class="text-center logo">
+            <img src="img/login.png">
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="loginbox" class="mainbox col-md-5 col-sm-7 col-xs-12">                    
+        <div class="panel panel-info" > 
+            <div class="panel-body" >
+
+                <form id="loginform" class="form-horizontal col-md-10">
+
+                    <div class="input-group">
+                        <label for="">Email</label>
+                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Email Address">
+                     </div>
+
+                     <div class="input-group">
+                         <label for="">Password</label>
+                        <input id="login-password" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+
+                    <div>
+                        <div class="checkbox">
+                            <label>
+                              <input id="login-remember" type="checkbox" name="remember" value="1"> Remember my email
+                            </label>
+                          </div>
+                        </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-6 col-md-6 col-xs-12 controls login-btn">
+                          <a id="btn-login" href="#" class="btn btn-lg">Login  </a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12 control text-center forgot">   
+                            <a href="#" data-toggle="modal" data-target="#forgotModal" data-dismiss="modal">Forgot password?</a>
+                        </div>
+                    </div>    
+                </form>     
+            </div>    
+        </div>                     
+    </div>
+
+    <!-- Modal forgot passord -->
+    <div class="modal fade" id="forgotModal" tabindex="-1" role="dialog" aria-labelledby="forgotModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close">×</button>
+                    <h4 class="modal-title">Forgot Password</h4>
+                </div>
+                <div class="modal-body">
+                        <script src="/Scripts/app/login.sendforgotpasswordemail.js"></script>
+                        <form id="forgotpassword-main-form" class="form-horizontal form-validation-enabled" action="/ForgotPassword/Email" method="post" novalidate="novalidate">
+                            <div class="alert alert-info">
+                                <strong>Note:</strong> An email will be sent to you with instructions on how to reset your password.
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-md-2 col-lg-2  control-label requiredfield" for="Email">Email</label>
+                                <div class="col-sm-10 col-md-10 col-lg-10">
+                                    <input type="text" class="form-control emailinput requiredfield" name="Email">
+                                </div>
+                            </div>
+                        </form>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-primary btn-submit" id="layout-savedialog-button">Send</button><button type="button" class="btn btn-default btn-cancel" id="layout-canceldialog-button">Cancel</button></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="dashboard.html"><img alt="Insurance Office of America" src="img/logo.ft.png"></a>
+        <div class="ft-quote">
+            “Success seems to be connected with action. Successful people keep moving. They make mistakes but they never quit.” <strong>—  Conrad Hilton</strong>
+            <div class="copyright">Copyright &copy; 2018 Insurance Office of America. All rights reserved.</div>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="js/tooltip.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "gotham_htfbook", Helvetica Neue, sans-serif;
+}
+.login-page{
+    padding: 20px;
+    animation: fadein .3s;
+}
+.header-login {
+    position: relative;
+}
+.panel-info {
+    border: medium none;
+    box-shadow: 0 1px 10px #ccc;
+}
+.logo {
+    position: absolute;
+    z-index: 2;
+    top: auto;
+    left: -10px;
+    right: 0;
+    bottom: -140px;
+    margin: 0;
+    margin-bottom: -40px;
+    width: 100%;
+}
+#loginform .input-group{
+    width: 100%;
+    border: 1px solid #005697;
+    margin-bottom: 30px;
+    padding: 0;
+}
+#loginform .input-group:nth-child(2) {
+    margin-bottom: 0;
+}
+input#login-remember {
+    margin-top: 3px;
+}
+.checkbox {
+    margin-top: 10px !important;
+    font-size: 12px;
+}
+.forgot {
+    text-align: right;
+    margin-top: 0px;
+    margin-left: 17px;
+    font-size: 12px;
+}
+.login-btn{
+    float: right;
+}
+.login-btn #btn-login {
+    padding: 8px;
+    font-size: 19px;
+    border: 0;
+    border-radius: 0;
+    background-color: #d52044;
+    color: #fff;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+}
+.forgot a, .login-btn a{
+    text-decoration: underline;
+}
+#loginform .input-group label, #forgotModal .form-group label{
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    width: auto;
+    padding: 0 5px;
+    left: 10px;
+    background-color: #fff;
+    z-index: 2;
+    font-weight: 500;
+}
+#loginform .input-group input{
+    padding: 15px;
+}
+#loginbox {
+    position: relative;
+    height: 93%;
+    padding: 0;
+    display: table;
+    width: 100%;
+    background: url(../img/login-bg.jpg) no-repeat;
+    /*background: url("../img/login-bg-2.jpg") no-repeat;
+    background: url("../img/login-bg-3.jpg") no-repeat;
+    background: url("../img/login-bg-4.jpg") no-repeat;*/
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px !important;
+}
+
+#loginbox:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right,#1b325a,#1e518a);
+    opacity: 0.3;
+}
+#loginbox .panel-info {
+    box-shadow: none;
+    background-color: transparent;
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 400px;
+}
+.modal-body .form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 2px;
+}
+.panel-body form{
+    border: medium none;
+    color: #005697;
+    background-color: #fff;
+    padding: 40px;
+    left: 30px;
+    top: 50px;
+}
+#loginform .form-group:last-child{
+    margin: 0;
+}
+#loginbox .panel-body{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.control-label.requiredfield::before {
+    content: "* ";
+    font-style: initial;
+    color: red;
+}
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+.modal-content{
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+}
+.login-form small{
+    font-size: 16px;
+}
+#forgotModal form {
+    color: #005697;
+    background-color: #fff;
+}
+#forgotModal form input{
+    border: 0;
+    border-radius: 0;
+    padding: 15px;
+    box-shadow: none;
+    height: auto;
+    outline: none;
+}
+#forgotModal .form-group {
+    position: relative;
+    border: 1px solid #005697;
+}
+.btn-submit, .btn-primary:hover, .btn-primary:active, .btn-primary:active:focus {
+    font-size: 17px;
+    border: 0;
+    border-radius: 0;
+    font-weight: 400;
+    background-color: #d52044;
+    color: #fff;
+}
+.btn-cancel {
+    float: left;
+    font-size: 17px;
+    border-radius: 0;
+    font-weight: 400;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+input, textarea{
+    color: #005697 !important;
+}
+input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #005697 !important;
+}
+input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #005697 !important;
+}
+input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #005697 !important;
+}
+input#login-username, input#login-password {
+  background: none;
+  height: auto;
+  border: 0;
+  box-shadow: none;
+}
+
+/************ Font Styling ************/
+ strong, .breadcrumb-item.active, .back, th, .special-mon {
+     font-family: "gotham_htfbold", Helvetica Neue, sans-serif;
+}
+
+/************ Footer ************/
+ footer {
+    font-size: 14px;
+    background: #fff;
+    min-height: 25px;
+    width: 100%;
+    padding-top: 5px;
+}
+ footer > a {
+     float: left;
+}
+ footer .ft-quote {
+     font-family: "gotham_htflight_italic", Helvetica Neue, sans-serif;
+     color: #000;
+     width: 100%;
+     text-align: right;
+}
+.copyright {
+    font-size: 11px;
+}
+
+@media only screen and (max-width: 1024px){
+    #loginbox{
+        max-height: 575px;
+    }
+    .logo {
+        top: 30px;
+    }
+}

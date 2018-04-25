@@ -81,7 +81,13 @@ fieldset a{
     background-color: transparent;
 }
 .card-header{
-    background-color: #4878af;
+    background-color: #005696;
+    background: -moz-linear-gradient(to right, #005696 0%, #e3eaed 37%, #4978ae 100%);
+    background: -webkit-linear-gradient(to right, #005696 0%,#e3eaed 37%,#4978ae 100%);
+    background: -o-linear-gradient(to right, #005696 0%,#e3eaed 37%,#4978ae 100%);
+    background: -ms-linear-gradient(to right, #005696 0%,#e3eaed 37%,#4978ae 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005696', endColorstr='#4978ae',GradientType=0 );
+    background: linear-gradient(to right, #005696 0%, #4978ae 100%);
     color: #fff;
 }
 .card-header:first-child{
