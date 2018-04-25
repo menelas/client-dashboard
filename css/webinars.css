@@ -79,7 +79,13 @@
      color: #fff;
      padding: 15px 20px 15px 20px;
  }
-#webinars-left ul li a:hover, #webinars-left ul li a.active{
+#webinars-left ul li a:hover{
+    background-color: #005697;
+    color: #fff;
+    text-decoration: none;
+    width: 380px;
+}
+#webinars-left ul li a.active{
     background-color: #fff;
     color: #005697;
     text-decoration: none;
@@ -335,14 +341,14 @@ input::-ms-input-placeholder {
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-    .box-menus .item-box {
+    #webinars-main {
         max-height: 650px;
     }
 }
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
-    .box-menus .item-box {
+    #webinars-main {
         min-height: 800px;
     }
 }

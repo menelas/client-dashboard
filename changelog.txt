@@ -1,5 +1,6 @@
 ## 2018-04-25
 • Created login.html with old version of layout
+• Updated webinars.html to change hover effect and removing the scrolling on desktops
 
 ## 2018-04-23
 • Updated app.css to resize copyright notice
