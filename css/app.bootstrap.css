@@ -31,6 +31,10 @@ select.form-control {
      opacity: 1;
      padding: 0px;
 }
+
+.modal-footer {
+    padding: .5rem;
+}
 /************ Button ************/
 .btn-primary {
     color: #fff;

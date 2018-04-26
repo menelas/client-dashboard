@@ -636,7 +636,10 @@ input[type="radio"]:checked+label~.top-nav-content.weather-only{
 
     .sb-top h1 {
         font-size: 45px;
-        padding-top: 100px;
+    }
+
+    .img-fluid {
+        max-width: 60%;
     }
 }
 

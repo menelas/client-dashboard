@@ -1126,6 +1126,19 @@ span.exit.pull-right{
          text-align: center;
     }
 }
+
+.no-title-modal {
+    height: 35px;
+}
+    .no-title-modal .close {
+        margin: -13px;
+        opacity: 0.2 !important;
+    }
+
+    .no-title-modal .close:hover {
+        margin: -13px;
+        opacity: 1 !important;
+    }
 /************ Global Tables ************/
  table {
      width: 100%;

@@ -1,6 +1,7 @@
 ## 2018-04-26
 • Updated webinars.html, js/scrollbar.js, webinars.css, team.css, and team.html for new changes
 • Updated client-dashboard-login/css/login.css for mobile
+• Updated app.bootstrap.css, app.css, and created the class .no-title-modal to add on the modal-header for the viewers
 
 ## 2018-04-25
 • Created login.html with old version of layout
