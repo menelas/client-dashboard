@@ -60,3 +60,7 @@ button:hover {
     border: none;
 }
  
+/************ Card ************/
+.card-body {
+    padding: .6em 1.25rem;
+}

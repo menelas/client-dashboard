@@ -116,7 +116,8 @@
  .webinbar-item h4{
      font-size: 18px;
      color: #3a3838;
-    font-family: "gotham_htfbook", Helvetica Neue, sans-serif;
+     font-family: "gotham_htfbook", Helvetica Neue, sans-serif;
+     text-align: left;
 }
  .webinbar-item a {
      color: #3a3838;
@@ -194,6 +195,10 @@ input::-ms-input-placeholder {
 .webinars h2 {
      font-size: 25px;
      margin-bottom: 10px;
+}
+#search-webinars {
+    height: 500px;
+    position: relative;
 }
  .p-search-wrap{
      position: relative;
@@ -338,19 +343,6 @@ input::-ms-input-placeholder {
 
 .box-menus .item-box:before, .box-menus .collapse-menu:before {
     background-image: none !important;
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-    #webinars-main {
-        max-height: 650px;
-    }
-}
-
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-    #webinars-main {
-        min-height: 800px;
-    }
 }
 
 @media only screen  and (max-width : 1024px) {

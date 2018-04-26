@@ -1,11 +1,11 @@
 (function($) {
-    $(".team-results, .webinars-results").mCustomScrollbar({
+    $(".team-results").mCustomScrollbar({
         setHeight:500,
         theme:"minimal-dark",
         alwaysShowScrollbar: 1
     });
-    $("#search-webinars").mCustomScrollbar({
-        setHeight:500,
+    $(".webinars-results").mCustomScrollbar({
+        setHeight:400,
         theme:"minimal-dark",
         alwaysShowScrollbar: 1
     });
