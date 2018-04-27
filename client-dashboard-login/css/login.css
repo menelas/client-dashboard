@@ -76,7 +76,7 @@ input#login-remember {
     padding: 0 5px;
     left: 10px;
     background-color: #fff;
-    z-index: 2;
+    z-index: 4;
     font-weight: 500;
 }
 #loginform .input-group input{
@@ -204,6 +204,19 @@ input#login-username, input#login-password {
   height: auto;
   border: 0;
   box-shadow: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #005697;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 /************ Font Styling ************/
