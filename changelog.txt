@@ -1,5 +1,6 @@
 ## 2018-04-27
 • Updated login.css 
+• Fixed IE bug with rounded corners for dashboard images and image height
 
 ## 2018-04-26
 • Updated webinars.html, js/scrollbar.js, webinars.css, team.css, and team.html for new changes
