@@ -211,7 +211,7 @@ h4.d-inline-flex.flex-column {
  .events {
      color: #fff;
      font-size: 12px;
-     background-color: #f4f4f4;
+     background-color: #f4f4f4;   
 }
  .events .row {
      background-color: #66bcf5;
@@ -237,6 +237,7 @@ h4.d-inline-flex.flex-column {
 
 .events-hidden {
       visibility: hidden;
+      height: 60px;
 }
  .venue {
      line-height: 13px;
