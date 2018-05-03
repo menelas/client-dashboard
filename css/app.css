@@ -69,19 +69,23 @@
 }
 
 .col-md-4 h4 span{
-    max-width: 210px;
+    max-width: 350px;
+    padding: 0px 20px 0px 20px;
 }
 
 .col-md-3 h4 span{
-    max-width: 180px;
+    max-width: 400px;
+    padding: 0px 20px 0px 20px;
 }
 
 .col-5-10 h4 span{
-    max-width: 140px;
+    max-width: 250px;
+    padding: 0px 20px 0px 20px;
 }
 
 .col-md-6 h4 span{
-    max-width: 460px;
+    max-width: 650px;
+    padding: 0px 20px 0px 20px;
 }
 /************ Navigation ************/
  .exit-icon {

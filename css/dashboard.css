@@ -9,6 +9,7 @@
 }
 .col-md-4 h4 span {
     max-width: 100px;
+    padding: 0px !important;
 }
 .item-box h4 {
     margin-left: 23%;

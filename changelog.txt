@@ -1,3 +1,9 @@
+## 2018-05-3
+• Updated app.css and dashboard.css with new column widths
+
+## 2018-04-30
+• Fix bug in dashboard.css
+
 ## 2018-04-27
 • Updated login.css 
 • Fixed IE bug with rounded corners for dashboard images and image height
