@@ -1,3 +1,6 @@
+## 2018-05-14
+• Changed info icon to linkedin icon
+
 ## 2018-05-3
 • Updated app.css and dashboard.css with new column widths
 
