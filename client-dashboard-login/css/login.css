@@ -9,6 +9,7 @@ html, body {
 }
 .header-login {
     position: relative;
+    margin-bottom: 20px;
 }
 .nav-background {
     display: none;
@@ -18,14 +19,14 @@ html, body {
     box-shadow: 0 1px 10px #ccc;
 }
 .logo {
-    position: absolute;
+    position: static;
     z-index: 2;
     top: auto;
     left: -10px;
     right: 0;
     bottom: -140px;
     margin: 0;
-    margin-bottom: -40px;
+    margin-bottom: 0;
     width: 100%;
 }
 #loginform .input-group{
@@ -122,8 +123,9 @@ input#login-remember {
     color: #005697;
     background-color: #fff;
     padding: 40px;
-    left: 30px;
-    top: 50px;
+    left: 0;
+    top: 0;
+    position: relative;
 }
 #loginform .form-group:last-child{
     margin: 0;
